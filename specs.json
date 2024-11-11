@@ -1,0 +1,50 @@
+{
+    "specs": [
+        {
+            "title": "DIDAS Glossary",
+            "spec_directory": "./spec",
+            "spec_terms_directory": "terms-definitions",
+            "output_path": "./docs",
+            "markdown_paths": [
+                "intro.md",
+                "terms-and-definitions-intro.md",
+                "outro.md"
+            ],
+            "logo": "https://www.didas.swiss/wp-content/uploads/2021/02/logo@2x.png",
+            "logo_link": "https://www.didas.swiss/",
+            "source": {
+                "host": "github",
+                "account": "DIDAS-swiss",
+                "repo": "didas-glossary"
+            },
+            "external_specs": [
+                {
+                    "toip-glossary": "https://glossary.trustoverip.org/"
+                }
+            ],
+            "external_specs_repos": [
+                {
+                    "external_spec": "toip-glossary",
+                    "url": "https://github.com/trustoverip/ctwg-main-glossary",
+                    "terms_dir": "spec/terms-definitions"
+                }
+            ],
+            "assets": [
+                {
+                    "path": "/custom-assets/custom.css"
+                },
+                {
+                    "path": "/custom-assets/custom-head.js",
+                    "inject": "head"
+                },
+                {
+                    "path": "/custom-assets/custom-body.js",
+                    "inject": "body",
+                    "module": true
+                }
+            ],
+            "katex": false,
+            "searchHighlightStyle": "ssi"
+        }
+    ]
+}
