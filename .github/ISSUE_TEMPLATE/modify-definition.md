@@ -1,6 +1,6 @@
 ---
-name: Modification to Term
-about: Suggest a modification to an existing term
+name: Modify an existing Definition
+about: Request a modification of an existing term/definition
 title: ''
 labels: glossary, modification of term
 assignees: jonpetersathan
