@@ -1,6 +1,6 @@
 ---
-name: New Term
-about: Suggest an new term
+name: New Definition
+about: Suggest a new definition
 title: ''
 labels: glossary, new term
 assignees: jonpetersathan
