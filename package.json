@@ -6,6 +6,9 @@
     "dotenv": "^16.4.5",
     "spec-up-t": "^1.0.8"
   },
+  "overrides": {
+    "axios": "^1.17.0"
+  },
   "scripts": {
     "edit": "node -e \"require('spec-up-t')()\"",
     "render": "node -e \"require('spec-up-t')({ nowatch: true })\"",
