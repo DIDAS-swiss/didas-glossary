@@ -1,3 +1,13 @@
-## Outro
+## Contributing
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+This glossary is a living document maintained by the DIDAS community. New terms, corrections, and improvements can be proposed by opening an issue or pull request in the [DIDAS Glossary repository](https://github.com/DIDAS-swiss/didas-glossary).
+
+When proposing a term, please check whether it is already covered by the [Trust over IP Main Glossary](https://glossary.trustoverip.org/). If so, a cross-reference (`[[xref: toip-glossary, term]]`) is preferred over a local duplicate definition. Local definitions should capture meaning that is specific to the Swiss or DIDAS context.
+
+## Further Resources
+
+- [DIDAS — Digital Identity & Data Sovereignty Association](https://www.didas.swiss/)
+- [swiyu Trust Infrastructure](https://github.com/swiyu-admin-ch) — the Swiss federal trust infrastructure for digital credentials
+- [Trust over IP Foundation Glossary](https://glossary.trustoverip.org/) — the international reference glossary this project aligns with
+- [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/) — the underlying credential standard
+- [BGEID](https://www.fedlex.admin.ch/) — Federal Act on Electronic Proof of Identity (Switzerland)
