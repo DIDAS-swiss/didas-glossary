@@ -30,6 +30,7 @@
         {
           "external_spec": "toip-glossary",
           "url": "https://github.com/trustoverip/ctwg-main-glossary",
+          "gh_page": "https://glossary.trustoverip.org/",
           "terms_dir": "spec/terms-definitions"
         }
       ],
