@@ -2,23 +2,26 @@
 name: fetch and push xrefs
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  schedule:
+    # Weekly drift check against the ToIP Main Glossary (Mon 06:00 UTC)
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 jobs:
-  build-and-deploy-spec:
+  refresh-xrefs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
           persist-credentials: false
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Fetch xrefs 🔧
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "start install"
           npm install
@@ -26,17 +29,24 @@ jobs:
           echo "Spec-Up-T version:"
           npm list spec-up-t
           echo "start fetching xrefs"
-          node -e "require('spec-up-t/src/get-xrefs-data.js').getXrefsData()"
+          node -e "require('spec-up-t/src/get-xrefs-data.js').getXrefsData(process.env.GITHUB_API_TOKEN)"
           rm -rf node_modules
-      
-      - name: Commit and Push Changes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Update Xrefs data via Github Action" || echo "No changes to commit"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:refs/heads/main
 
-          
+      # Upstream (ToIP) definition changes must be re-approved by the
+      # editorial team, so changes arrive as a PR, not a direct push to main.
+      # See GOVERNANCE.md, "Workflow B".
+      - name: Open PR with refreshed xrefs
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(federation): refresh ToIP xrefs cache"
+          branch: automation/refresh-xrefs
+          title: "Refresh ToIP xrefs cache (upstream drift check)"
+          body: |
+            Scheduled refresh of cached ToIP Main Glossary definitions.
+
+            Review the diff of `output/xrefs-data.json` — approving and merging
+            this PR constitutes editorial re-approval of the changed upstream
+            definitions (see GOVERNANCE.md, Workflow B).
+          labels: glossary
+          delete-branch: true

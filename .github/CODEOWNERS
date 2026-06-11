@@ -1,0 +1,8 @@
+# Glossary terms require editorial review (see GOVERNANCE.md).
+# NOTE: create the glossary-editors team in the DIDAS-swiss org and grant it
+# write access for this to take effect; until then the named user applies.
+/spec/terms-definitions/  @DIDAS-swiss/glossary-editors @danielsaeuberli
+/spec/                    @DIDAS-swiss/glossary-editors @danielsaeuberli
+/federation/              @DIDAS-swiss/glossary-editors @danielsaeuberli
+/GOVERNANCE.md            @danielsaeuberli
+/specs.json               @danielsaeuberli
