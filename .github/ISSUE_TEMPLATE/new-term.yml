@@ -1,0 +1,74 @@
+name: New term
+description: Propose a new term for the DIDAS Glossary
+title: "[Term] "
+labels: ["glossary", "new term", "proposal"]
+assignees:
+  - jonpetersathan
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a term. Please check the
+        [ToIP Main Glossary](https://glossary.trustoverip.org/#terms-and-definitions)
+        first — the answer determines how your proposal is handled
+        (see [GOVERNANCE.md](../blob/main/GOVERNANCE.md)).
+  - type: input
+    id: term
+    attributes:
+      label: Term (English)
+      description: The canonical English name of the term
+      placeholder: e.g. verifiable credential
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Proposed definition
+      description: The definition you propose, in English. Quote sources verbatim where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: "Where does this definition come from? (standard, law, publication, organisation — include links)"
+    validations:
+      required: true
+  - type: dropdown
+    id: toip-check
+    attributes:
+      label: ToIP check
+      description: Is this term in the ToIP Main Glossary, and is that definition sufficient?
+      options:
+        - Not in the ToIP glossary (suggests Tier 3 — own definition)
+        - In ToIP and sufficient as-is (suggests Tier 1 — adopt via tref)
+        - In ToIP but needs Swiss/swiyu context (suggests Tier 2 — extend)
+        - Defined by Swiss law — legal wording prevails (suggests Tier 3 — own)
+        - Not checked yet
+    validations:
+      required: true
+  - type: input
+    id: toip-link
+    attributes:
+      label: ToIP term link (if applicable)
+      placeholder: https://glossary.trustoverip.org/#term:...
+  - type: input
+    id: alias-de
+    attributes:
+      label: German alias(es)
+      placeholder: e.g. verifizierbarer Nachweis
+  - type: input
+    id: alias-fr
+    attributes:
+      label: French alias(es)
+      placeholder: e.g. attestation vérifiable
+  - type: input
+    id: alias-it
+    attributes:
+      label: Italian alias(es)
+      placeholder: e.g. attestato verificabile
+  - type: textarea
+    id: context
+    attributes:
+      label: Swiss / swiyu context (optional)
+      description: Anything specific to the Swiss legal context (BGEID, ZertES, LSIE) or the swiyu ecosystem that the definition must capture.
