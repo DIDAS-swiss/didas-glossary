@@ -110,6 +110,8 @@ const allTermRelations = {
         "ecosystem"
       ],
       "xrefs": [
+        "toip-glossary, issuer",
+        "toip-glossary, claim",
         "toip-glossary, verifiable-credential"
       ]
     }
