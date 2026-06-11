@@ -9,4 +9,5 @@ To document a change, add a new dated file here as part of the same pull request
 
 ## Entries
 
+- [2026-06-11 — Governance model and ToIP federation review process](2026-06-11-governance-implementation.md)
 - [2026-06-11 — Security fix, ToIP federation, multilingual model, first terms](2026-06-11-security-federation-first-terms.md)
