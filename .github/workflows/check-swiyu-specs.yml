@@ -1,0 +1,138 @@
+name: Check swiyu spec drift
+
+on:
+  schedule:
+    # Weekly drift check against swiyu-admin-ch specs (Mon 07:30 UTC,
+    # 90 min after the ToIP xrefs check at 06:00 to avoid concurrent runs)
+    - cron: "30 7 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check-drift:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check for spec changes
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SWIYU_REPO="swiyu-admin-ch/swiyu-admin-ch.github.io"
+          SPECS_PATH="_specifications"
+
+          # Latest commit that touched _specifications/
+          LATEST=$(curl -sf \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${SWIYU_REPO}/commits?path=${SPECS_PATH}&per_page=1" \
+            | jq -r '.[0].sha')
+
+          STORED=$(cat output/swiyu-specs-cache/last-seen-commit.txt 2>/dev/null || echo "none")
+
+          echo "stored=$STORED"   >> $GITHUB_OUTPUT
+          echo "latest=$LATEST"   >> $GITHUB_OUTPUT
+
+          if [ "$LATEST" = "$STORED" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in swiyu _specifications."
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Specs changed: $STORED → $LATEST"
+
+            # List files changed between the two commits
+            if [ "$STORED" = "none" ]; then
+              CHANGED_FILES="(initial run)"
+            else
+              CHANGED_FILES=$(curl -sf \
+                -H "Authorization: token $GH_TOKEN" \
+                "https://api.github.com/repos/${SWIYU_REPO}/compare/${STORED}...${LATEST}" \
+                | jq -r '.files[]?.filename' \
+                | grep "^${SPECS_PATH}/" \
+                | sed "s|^${SPECS_PATH}/||" \
+                | tr '\n' ' ')
+            fi
+            echo "files=${CHANGED_FILES}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Find affected glossary terms
+        if: steps.check.outputs.changed == 'true'
+        id: terms
+        run: |
+          CHANGED="${{ steps.check.outputs.files }}"
+          REPORT=""
+
+          for spec in $CHANGED; do
+            spec_base="${spec%.md}"
+            # Look up which terms reference this spec in federation/swiyu-refs.md
+            TERMS=$(grep -i "$spec_base" federation/swiyu-refs.md 2>/dev/null \
+              | grep -v "^#\|^|\s*Spec\|^|\s*---" \
+              | awk -F'|' '{gsub(/ /,"",$2); print $2}' \
+              | grep -v "^$" \
+              | sort -u \
+              | tr '\n' ', ' \
+              | sed 's/,$//')
+            if [ -n "$TERMS" ]; then
+              REPORT="${REPORT}- \`${spec}\`: terms \`${TERMS}\`\n"
+            else
+              REPORT="${REPORT}- \`${spec}\`: no mapped terms yet (check manually)\n"
+            fi
+          done
+
+          [ -z "$REPORT" ] && REPORT="No changed spec files matched — check all swiyu-context paragraphs manually."
+
+          {
+            echo "report<<EOF"
+            echo -e "$REPORT"
+            echo "EOF"
+          } >> $GITHUB_OUTPUT
+
+      - name: Update drift baseline
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          echo "${{ steps.check.outputs.latest }}" > output/swiyu-specs-cache/last-seen-commit.txt
+
+      # Spec changes arrive as a PR so editors can review the diff and
+      # confirm or update affected term definitions before merging.
+      - name: Open PR with updated baseline
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(federation): update swiyu spec drift baseline"
+          branch: automation/swiyu-spec-drift
+          title: "swiyu spec drift detected — review affected glossary terms"
+          body: |
+            ## swiyu spec drift detected
+
+            The [swiyu-admin-ch specifications](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/tree/main/_specifications) changed since the last check.
+
+            | | |
+            |---|---|
+            | Previous baseline | `${{ steps.check.outputs.stored }}` |
+            | Current commit    | `${{ steps.check.outputs.latest }}` |
+            | Changed files     | `${{ steps.check.outputs.files }}` |
+
+            [View diff on GitHub](https://github.com/swiyu-admin-ch/swiyu-admin-ch.github.io/compare/${{ steps.check.outputs.stored }}...${{ steps.check.outputs.latest }})
+
+            ## Possibly affected glossary terms
+
+            ${{ steps.terms.outputs.report }}
+
+            ## Action required
+
+            1. Open the diff link above and review what changed
+            2. Check the affected term files listed above in `spec/terms-definitions/`
+            3. If a swiyu-context paragraph is now incorrect, fix it in this PR or open a change-term issue
+            4. Merge this PR to update the drift baseline (this is the editorial re-approval)
+
+            See [`federation/swiyu-refs.md`](../federation/swiyu-refs.md) for the full term → spec mapping.
+            Add a row there whenever a new term gains a swiyu-context paragraph.
+          labels: glossary
+          delete-branch: true
