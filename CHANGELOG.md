@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Eight new term definitions implementing all open term-proposal issues (#1–#8):
+  `DIDAS` (#1), `verifiable credential` (#2), `digital product passport` (#3),
+  `E-Collecting` (#4), `protocol` (#5), `Minute of Agreement` (#6),
+  `governance` (#7) and `ecosystem` (#8) — each with DE/FR/IT aliases per the
+  multilingual house style, ToIP cross-references where an upstream term exists
+  (verifiable-credential, governance, digital-trust-ecosystem), and
+  inter-term `[[ref:]]` links
+- `output/xrefs-data.json` — cached eight additional ToIP definitions (claim,
+  issuer, holder, digital-credential, verifiable-credential, governance,
+  digital-trust-ecosystem, digital-ecosystem) at commit `00608bb`
+
 ### Removed
 
 - `spec/terms-definitions/term-2.md`, `term-3.md`, `term-4.md` — deleted the

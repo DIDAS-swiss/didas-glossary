@@ -11,13 +11,106 @@ const allTermRelations = {
         "attestato",
         "attestati"
       ],
+      "refs": [
+        "verifiable credentials"
+      ],
       "xrefs": [
         "toip-glossary, claim",
         "toip-glossary, issuer",
         "toip-glossary, holder",
         "toip-glossary, digital-credential",
-        "toip-glossary, verifiable-credential",
         "toip-glossary, credential"
+      ]
+    },
+    {
+      "term": "DIDAS",
+      "synonyms": [
+        "Digital Identity and Data Sovereignty Association"
+      ],
+      "refs": [
+        "ecosystem"
+      ]
+    },
+    {
+      "term": "digital product passport",
+      "synonyms": [
+        "DPP",
+        "digitaler Produktpass",
+        "passeport numérique de produit",
+        "passaporto digitale del prodotto"
+      ]
+    },
+    {
+      "term": "E-Collecting",
+      "synonyms": [
+        "elektronische Unterschriftensammlung",
+        "récolte électronique de signatures",
+        "raccolta elettronica delle firme"
+      ]
+    },
+    {
+      "term": "ecosystem",
+      "synonyms": [
+        "ecosystems",
+        "Ökosystem",
+        "Ökosysteme",
+        "écosystème",
+        "ecosistema"
+      ],
+      "refs": [
+        "protocol",
+        "governance"
+      ],
+      "xrefs": [
+        "toip-glossary, digital-trust-ecosystem",
+        "toip-glossary, digital-ecosystem"
+      ]
+    },
+    {
+      "term": "governance",
+      "synonyms": [
+        "gouvernance"
+      ],
+      "refs": [
+        "ecosystem"
+      ],
+      "xrefs": [
+        "toip-glossary, governance"
+      ]
+    },
+    {
+      "term": "Minute of Agreement",
+      "synonyms": []
+    },
+    {
+      "term": "protocol",
+      "synonyms": [
+        "protocols",
+        "Protokoll",
+        "protocole",
+        "protocollo"
+      ],
+      "refs": [
+        "Minute of Agreement",
+        "verifiable credentials"
+      ]
+    },
+    {
+      "term": "verifiable credential",
+      "synonyms": [
+        "verifiable credentials",
+        "VC",
+        "VCs",
+        "verifizierbarer Nachweis",
+        "attestation vérifiable",
+        "attestato verificabile"
+      ],
+      "refs": [
+        "credential",
+        "ecosystem"
+      ],
+      "xrefs": [
+        "toip-glossary, verifiable-credential"
       ]
     }
   ]
