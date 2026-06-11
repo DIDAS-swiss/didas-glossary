@@ -2,9 +2,13 @@
 name: spec-up-t render
 
 on:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
+    paths:
+      - "spec/**"
+      - "specs.json"
+      - "term-index.json"
   workflow_dispatch:
 
 jobs:
