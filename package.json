@@ -1,7 +1,7 @@
 {
-  "name": "spec-up-t-starterpack",
-  "version": "1.0.52",
-  "description": "Quick setup for a specification with the Spec-Up-T tool.",
+  "name": "didas-glossary",
+  "version": "1.0.0",
+  "description": "DIDAS Glossary — common language for the swiyu trust ecosystem, maintained by the DIDAS community.",
   "dependencies": {
     "dotenv": "^16.4.5",
     "spec-up-t": "^1.0.8"
@@ -18,11 +18,7 @@
     "removexref": "node remove-xref.js",
     "validatespec": "node -e \"require('spec-up-t/src/json-key-validator.js').runJsonKeyValidatorSync()\"",
     "addterms": "node -e \"require('spec-up-t/src/create-term-index.js').createTermIndex()\"",
-    "help": "cat help.txt",
     "menu": "bash ./main.sh",
-    "postinstall": "npm run postinstall:final",
-    "postinstall:final": "node postinstall-message.js && npm run printmessage",
-    "printmessage": "sleep 2 && node postinstall-message.js",
     "freeze": "node -e \"require('spec-up-t/src/freeze.js')\"",
     "references": "node -e \"require('spec-up-t/src/references.js')\"",
     "publish": "node -e \"require('spec-up-t/src/create-term-index.js').createTermIndex()\" && node -e \"require('spec-up-t/src/create-pdf.js')\" && GITHUB_API_TOKEN=$(grep GITHUB_API_TOKEN .env | cut -d '=' -f2) node -e \"require('spec-up-t/src/get-xrefs-data.js').getXrefsData(process.env.GITHUB_API_TOKEN)\" && node -e \"require('spec-up-t')({ nowatch: true })\""
