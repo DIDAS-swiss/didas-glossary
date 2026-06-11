@@ -8,6 +8,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- `output/xrefs-data.json` / `.js` — refreshed the cached ToIP `credential`
+  definition from commit `a74b75d` (2024) to `2872b8b` (October 2025, the
+  "key format" revision of the ToIP Main Glossary); the federation source
+  (`trustoverip/ctwg-main-glossary` → https://glossary.trustoverip.org/) was
+  already correct, only the cached snapshot was stale
+- `docs/` — re-rendered the published glossary from current sources; the
+  previous build dated from November 2024 and still contained placeholder
+  Lorem Ipsum content
+- `spec/terms-definitions/credential.md` — converted internal `[[ref:]]` links
+  pointing to locally undefined terms (claim, issuer, holder, digital
+  credential, verifiable credential) into `[[xref: toip-glossary, ...]]`
+  federation links, eliminating all unresolved-reference build warnings
+
 - `specs.json` — added `gh_page` field to `external_specs_repos` entry for the ToIP
   glossary; required by spec-up-t ≥ 1.6.x for `[[tref:]]` resolution and for
   upgrade-safe federation configuration
