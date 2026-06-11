@@ -1,0 +1,46 @@
+name: Change to existing term
+description: Request a modification of an existing term or definition
+title: "[Change] "
+labels: ["glossary", "modification of term", "proposal"]
+assignees:
+  - jonpetersathan
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Existing term
+      description: The term as it currently appears in the glossary
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposed change
+      description: What should change, and what should the new text say?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and sources
+      description: Why is the change needed? Include links to sources, standards or legal texts.
+    validations:
+      required: true
+  - type: dropdown
+    id: tier-impact
+    attributes:
+      label: Does this change the term's tier?
+      description: "Tiers per GOVERNANCE.md: 1 = adopted from ToIP, 2 = extended, 3 = own"
+      options:
+        - "No — same tier"
+        - "Yes — should become Tier 1 (adopt ToIP as-is)"
+        - "Yes — should become Tier 2 (extend ToIP)"
+        - "Yes — should become Tier 3 (own definition)"
+        - "Not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: aliases
+    attributes:
+      label: Alias changes (optional)
+      description: Any additions or corrections to the DE/FR/IT aliases.
