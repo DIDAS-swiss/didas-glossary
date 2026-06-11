@@ -10,7 +10,7 @@ Clear, shared terminology is a prerequisite for interoperability. When issuers, 
 
 The glossary covers concepts in the following areas:
 
-- **Digital identity and credentials** — the core data structures and roles of the swiyu ecosystem (credentials, verifiable credentials, holders, issuers, verifiers)
+- **Digital identity and credentials** — the core data structures and roles of the swiyu ecosystem ([[ref: credential]]s, verifiable credentials, holders, issuers, verifiers)
 - **Decentralized identity infrastructure** — identifiers, registries, wallets, and cryptographic foundations
 - **Governance** — trust frameworks, governance documents, and the regulatory context of the BGEID
 - **Alignment with international standards** — terms are aligned with the [Trust over IP (ToIP) Main Glossary](https://glossary.trustoverip.org/), the W3C Verifiable Credentials Data Model, and eSSIF-Lab where applicable

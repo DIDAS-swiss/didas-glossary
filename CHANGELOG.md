@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Removed
+
+- `spec/terms-definitions/term-2.md`, `term-3.md`, `term-4.md` — deleted the
+  remaining Lorem Ipsum placeholder terms from the starter pack; real DIDAS
+  terms will be added via the contribution process described in the outro
+
 ### Changed
 
 - `output/xrefs-data.json` / `.js` — refreshed the cached ToIP `credential`
