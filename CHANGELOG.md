@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- `specs.json` — added `gh_page` field to `external_specs_repos` entry for the ToIP
+  glossary; required by spec-up-t ≥ 1.6.x for `[[tref:]]` resolution and for
+  upgrade-safe federation configuration
+- `spec/terms-definitions/credential.md` — restructured as a Tier 2 (extend) term:
+  added multilingual aliases (DE: Nachweis/Nachweise, FR: attestation/attestations,
+  IT: attestato/attestati), added swiyu ecosystem context sentence, added
+  language-equivalents section with BGEID/LSIE terminology notes
+- `spec/outro.md` — expanded contribution guide with the three-tier term authoring
+  pattern (Tier 1 tref / Tier 2 def+xref / Tier 3 def), multilingual alias
+  conventions, and the ToIP cross-reference-first policy
+
 ### Added
 
 - `CHANGELOG.md` — this file, using Keep a Changelog format
