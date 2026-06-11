@@ -14,6 +14,7 @@ The glossary covers concepts in the following areas:
 - **Decentralized identity infrastructure** — identifiers, registries, wallets, and cryptographic foundations
 - **Governance** — trust frameworks, governance documents, and the regulatory context of the BGEID
 - **Alignment with international standards** — terms are aligned with the [Trust over IP (ToIP) Main Glossary](https://glossary.trustoverip.org/), the W3C Verifiable Credentials Data Model, and eSSIF-Lab where applicable
+- **Applications** — Swiss use cases building on the trust infrastructure, such as [[ref: E-Collecting]] and the [[ref: digital product passport]]
 
 Where a term is fully covered by the ToIP glossary, the DIDAS glossary cross-references it rather than duplicating the definition.
 
@@ -23,4 +24,4 @@ The **Digital Identity & Data Sovereignty Association (DIDAS)** is the Swiss eco
 
 In February 2026, DIDAS was designated a **swiyu Orchestrator** by Digital Administration Switzerland (DVS), consolidating requirements from business, government, and society and supporting their implementation in interoperable applications.
 
-This glossary is maintained by the DIDAS community. Contributions and corrections are welcome via the [DIDAS Glossary repository](https://github.com/DIDAS-swiss/didas-glossary) on GitHub.
+This glossary is maintained by the [[ref: DIDAS]] community. Contributions and corrections are welcome via the [DIDAS Glossary repository](https://github.com/DIDAS-swiss/didas-glossary) on GitHub.
