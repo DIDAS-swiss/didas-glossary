@@ -1,42 +1,118 @@
 {
   "defs": [
     {
-      "term": "Credential",
-      "synonyms": [],
+      "term": "credential",
+      "synonyms": [
+        "credentials",
+        "Nachweis",
+        "Nachweise",
+        "attestation",
+        "attestations",
+        "attestato",
+        "attestati"
+      ],
       "refs": [
-        "Term 2",
-        "Term Two",
-        "Term 3"
+        "verifiable credentials"
       ],
       "xrefs": [
+        "toip-glossary, claim",
+        "toip-glossary, issuer",
+        "toip-glossary, holder",
+        "toip-glossary, digital-credential",
         "toip-glossary, credential"
       ]
     },
     {
-      "term": "term 2",
+      "term": "DIDAS",
       "synonyms": [
-        "term two",
-        "Term Two"
+        "Digital Identity and Data Sovereignty Association"
       ],
       "refs": [
-        "Term 1",
-        "Term Three",
-        "Term 3",
-        "Term 4"
+        "ecosystem"
       ]
     },
     {
-      "term": "term 3",
+      "term": "digital product passport",
       "synonyms": [
-        "term three",
-        "Term Three"
+        "DPP",
+        "digitaler Produktpass",
+        "passeport numérique de produit",
+        "passaporto digitale del prodotto"
       ]
     },
     {
-      "term": "term 4",
+      "term": "E-Collecting",
       "synonyms": [
-        "term four",
-        "Term Four"
+        "elektronische Unterschriftensammlung",
+        "récolte électronique de signatures",
+        "raccolta elettronica delle firme"
+      ]
+    },
+    {
+      "term": "ecosystem",
+      "synonyms": [
+        "ecosystems",
+        "Ökosystem",
+        "Ökosysteme",
+        "écosystème",
+        "ecosistema"
+      ],
+      "refs": [
+        "protocol",
+        "governance"
+      ],
+      "xrefs": [
+        "toip-glossary, digital-trust-ecosystem",
+        "toip-glossary, digital-ecosystem"
+      ]
+    },
+    {
+      "term": "governance",
+      "synonyms": [
+        "gouvernance"
+      ],
+      "refs": [
+        "ecosystem"
+      ],
+      "xrefs": [
+        "toip-glossary, governance"
+      ]
+    },
+    {
+      "term": "Minute of Agreement",
+      "synonyms": []
+    },
+    {
+      "term": "protocol",
+      "synonyms": [
+        "protocols",
+        "Protokoll",
+        "protocole",
+        "protocollo"
+      ],
+      "refs": [
+        "Minute of Agreement",
+        "verifiable credentials"
+      ]
+    },
+    {
+      "term": "verifiable credential",
+      "synonyms": [
+        "verifiable credentials",
+        "VC",
+        "VCs",
+        "verifizierbarer Nachweis",
+        "attestation vérifiable",
+        "attestato verificabile"
+      ],
+      "refs": [
+        "credential",
+        "ecosystem"
+      ],
+      "xrefs": [
+        "toip-glossary, issuer",
+        "toip-glossary, claim",
+        "toip-glossary, verifiable-credential"
       ]
     }
   ]

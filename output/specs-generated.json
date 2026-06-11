@@ -9,9 +9,14 @@
         "intro.md",
         "terms-and-definitions-intro.md",
         "terms-definitions/credential.md",
-        "terms-definitions/term-2.md",
-        "terms-definitions/term-3.md",
-        "terms-definitions/term-4.md",
+        "terms-definitions/didas.md",
+        "terms-definitions/digital-product-passport.md",
+        "terms-definitions/e-collecting.md",
+        "terms-definitions/ecosystem.md",
+        "terms-definitions/governance.md",
+        "terms-definitions/minute-of-agreement.md",
+        "terms-definitions/protocol.md",
+        "terms-definitions/verifiable-credential.md",
         "outro.md"
       ],
       "logo": "https://www.didas.swiss/wp-content/uploads/2021/02/logo@2x.png",
@@ -30,6 +35,7 @@
         {
           "external_spec": "toip-glossary",
           "url": "https://github.com/trustoverip/ctwg-main-glossary",
+          "gh_page": "https://glossary.trustoverip.org/",
           "terms_dir": "spec/terms-definitions"
         }
       ],
