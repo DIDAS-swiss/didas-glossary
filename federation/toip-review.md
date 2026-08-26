@@ -214,7 +214,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `governed-information` | governed-information | pending | | |  |
 | `governed-party` | governed-party | pending | | |  |
 | `governed-use-case` | governed-use-case | pending | | |  |
-| `governing-authority` | governing-authority | pending | | |  |
+| `governing-authority` | governing-authority | extend | Governing Authority / autorité de gouvernance / autorità di governance | danielsaeuberli | [governing-authority.md](../spec/terms-definitions/governing-authority.md) |
 | `governing-body` | governing-body | pending | | |  |
 | `grc` | grc | pending | | |  |
 | `guardian` | guardian | pending | | |  |
