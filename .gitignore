@@ -8,4 +8,5 @@ dist
 coverage
 build
 .history
-.env.example.cache
+.env.example
+.cache
