@@ -9,6 +9,9 @@ on:
       - "spec/**"
       - "specs.json"
       - "term-index.json"
+      - "package.json"
+      - "package-lock.json"
+      - "docs/custom-assets/**"
   workflow_dispatch:
 
 jobs:
