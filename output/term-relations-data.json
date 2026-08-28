@@ -58,6 +58,9 @@
         "ecosistema"
       ],
       "refs": [
+        "governing authorities",
+        "trust infrastructure",
+        "trust space",
         "protocol",
         "governance"
       ],
@@ -79,6 +82,20 @@
       ]
     },
     {
+      "term": "governing authority",
+      "synonyms": [
+        "governing authorities",
+        "autorité de gouvernance",
+        "autorità di governance"
+      ],
+      "refs": [
+        "governance",
+        "trust space",
+        "credential",
+        "trust infrastructure"
+      ]
+    },
+    {
       "term": "Minute of Agreement",
       "synonyms": []
     },
@@ -93,6 +110,39 @@
       "refs": [
         "Minute of Agreement",
         "verifiable credentials"
+      ]
+    },
+    {
+      "term": "trust infrastructure",
+      "synonyms": [
+        "Vertrauensinfrastruktur",
+        "infrastructure de confiance",
+        "infrastruttura di fiducia"
+      ],
+      "refs": [
+        "credential",
+        "protocol",
+        "trust space",
+        "trust space",
+        "ecosystem"
+      ]
+    },
+    {
+      "term": "trust space",
+      "synonyms": [
+        "trust spaces",
+        "Vertrauensraum",
+        "Vertrauensräume",
+        "espace de confiance",
+        "spazio di fiducia"
+      ],
+      "refs": [
+        "governance",
+        "trust infrastructure",
+        "trust infrastructure",
+        "ecosystem",
+        "governing authority",
+        "credential"
       ]
     },
     {

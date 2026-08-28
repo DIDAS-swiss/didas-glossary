@@ -2,6 +2,7 @@
   "name": "didas-glossary",
   "version": "1.0.0",
   "description": "DIDAS Glossary — common language for the swiyu trust ecosystem, maintained by the DIDAS community.",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
     "spec-up-t": "^1.0.8"
