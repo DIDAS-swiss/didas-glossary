@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-28T19:43:26.085Z",
+    "totalMessages": 13,
+    "operations": [
+      "render"
+    ],
+    "messagesByType": {
+      "info": 6,
+      "success": 6,
+      "error": 1
+    }
+  },
+  "messages": [
+    {
+      "timestamp": "2026-08-28T19:43:24.451Z",
+      "type": "info",
+      "message": "Checking spec #1",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:24.452Z",
+      "type": "success",
+      "message": "All keys are present. No errors found. Continuing…",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:24.454Z",
+      "type": "success",
+      "message": "Term index created with 12 terms. Output: .cache/term-index.json",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:24.460Z",
+      "type": "success",
+      "message": "Index file created at docs/versions/index.html",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:25.398Z",
+      "type": "info",
+      "message": "Directory already exists: ./docs/",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:25.398Z",
+      "type": "success",
+      "message": "Ensured directory is ready: ./docs/",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:25.407Z",
+      "type": "info",
+      "message": "Rendering: DIDAS Glossary",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:25.694Z",
+      "type": "error",
+      "message": "External spec fetch failed",
+      "operation": "render",
+      "additionalData": [
+        "[object Object]"
+      ]
+    },
+    {
+      "timestamp": "2026-08-28T19:43:25.694Z",
+      "type": "success",
+      "message": "Merged xref terms: 0 matched, 0 skipped (not referenced). Total entries: 0",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:26.066Z",
+      "type": "info",
+      "message": "GitHub repo info: DIDAS-swiss,didas-glossary,claude/axios-prototype-pollution-fix-yte65z",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:26.074Z",
+      "type": "info",
+      "message": "Attempting to write to:",
+      "operation": "render",
+      "additionalData": [
+        "docs/index.html"
+      ]
+    },
+    {
+      "timestamp": "2026-08-28T19:43:26.084Z",
+      "type": "success",
+      "message": "Successfully wrote docs/index.html",
+      "operation": "render"
+    },
+    {
+      "timestamp": "2026-08-28T19:43:26.084Z",
+      "type": "info",
+      "message": "Render completed for:",
+      "operation": "render",
+      "additionalData": [
+        "./docs/"
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@
             "output_path": "./docs",
             "markdown_paths": [
                 "intro.md",
+                "status.md",
                 "terms-and-definitions-intro.md",
                 "outro.md"
             ],
@@ -19,14 +20,9 @@
             },
             "external_specs": [
                 {
-                    "toip-glossary": "https://glossary.trustoverip.org/"
-                }
-            ],
-            "external_specs_repos": [
-                {
                     "external_spec": "toip-glossary",
-                    "url": "https://github.com/trustoverip/ctwg-main-glossary",
                     "gh_page": "https://glossary.trustoverip.org/",
+                    "url": "https://github.com/trustoverip/ctwg-main-glossary",
                     "terms_dir": "spec/terms-definitions"
                 }
             ],
