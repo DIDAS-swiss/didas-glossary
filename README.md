@@ -41,3 +41,17 @@ npm run freeze     # snapshot a numbered version under docs/versions/
 | Package | Pinned to | Reason |
 |---------|-----------|--------|
 | axios   | ^1.17.0   | CVE-2026-44495 — prototype pollution in config merge |
+
+## Licensing
+
+| What | License |
+|---|---|
+| Glossary content (`spec/`, `federation/`, rendered `docs/`) | [CC BY 4.0](LICENSE-CONTENT) |
+| Software components (workflows, scripts, toolchain config) | [MIT](LICENSE) |
+| Third-party quoted/transcluded material | Original terms — see [NOTICE.md](NOTICE.md) |
+
+The [ToIP Main Glossary](https://glossary.trustoverip.org/), which this
+glossary federates with, is licensed under
+[OWFa 1.0](https://github.com/trustoverip/ctwg-main-glossary/blob/main/LICENSE.md);
+transclusions and extensions preserve attribution by linking each term to its
+ToIP source. See [NOTICE.md](NOTICE.md) for the full alignment rationale.
