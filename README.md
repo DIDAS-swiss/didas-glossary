@@ -3,6 +3,8 @@
 Repository for glossary.didas.swiss — the DIDAS Glossary, a common language for
 the swiyu trust ecosystem, maintained by the DIDAS community.
 
+**📖 Published glossary: https://didas-swiss.github.io/didas-glossary/**
+
 ## How it works
 
 - Terms live in `spec/terms-definitions/`, one markdown file per term, written
