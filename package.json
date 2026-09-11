@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "spec-up-t": "^1.0.8"
+    "spec-up-t": "^1.7.0"
   },
   "overrides": {
     "axios": "^1.17.0"

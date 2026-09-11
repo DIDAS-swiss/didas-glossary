@@ -132,7 +132,7 @@ jobs:
             3. If a swiyu-context paragraph is now incorrect, fix it in this PR or open a change-term issue
             4. Merge this PR to update the drift baseline (this is the editorial re-approval)
 
-            See [`federation/swiyu-refs.md`](../federation/swiyu-refs.md) for the full term → spec mapping.
+            See [`federation/swiyu-refs.md`](https://github.com/DIDAS-swiss/didas-glossary/blob/main/federation/swiyu-refs.md) for the full term → spec mapping.
             Add a row there whenever a new term gains a swiyu-context paragraph.
           labels: glossary
           delete-branch: true
