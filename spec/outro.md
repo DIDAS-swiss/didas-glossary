@@ -85,14 +85,14 @@ stops attesting to a credential; the status list is the mechanism that makes
 such an event checkable.
 ```
 
-"No equivalent term" is a finding rather than an omission. It is what makes a
-Tier 3 definition defensible, so the file says it out loud instead of leaving a
-reader to wonder whether anyone looked.
+Recording "no equivalent term" is what justifies defining the term locally at
+Tier 3. Stating it explicitly tells the reader that the upstream glossary was
+checked and the term was not there.
 
 Always write the reference as `[[xref: toip-glossary, <term>]]` and never as a
 link to `glossary.trustoverip.org`. An `[[xref:]]` renders with the upstream
-definition attached, and the federation workflow keeps it current; a pasted URL
-does neither.
+definition attached and the federation workflow keeps it current. A pasted URL
+renders as a plain link and the workflow cannot see it.
 
 `npm run check:toip` enforces all of this: one reference line per term, every
 `[[xref:]]` resolving to a cached upstream definition, every `[[ref:]]`

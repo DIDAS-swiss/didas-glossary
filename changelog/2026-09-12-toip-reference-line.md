@@ -30,15 +30,16 @@
   workflow cannot see it, so all four are now federated references. The two
   inline URLs in `verifiable-credential` were converted for the same reason
 - Terms that carried their upstream reference as `~ See also:` now carry it as
-  `~ ToIP reference:`, so one phrase means one thing across the glossary
+  `~ ToIP reference:`, so the same phrase is used consistently across the
+  glossary
 
 ## Notes
 
-- `ambition level` now points at [[xref: toip-glossary, assurance-level]] as
-  the term it is not, which is the confusion issue #31 recorded
+- `ambition level` now points at [[xref: toip-glossary, assurance-level]] and
+  states that the two are distinct, which is the confusion issue #31 recorded
 - Ten terms record no upstream equivalent: `ambition level`, `DIDAS`,
   `digital product passport`, `E-Collecting`, `Minute of Agreement`,
   `protocol`, `selective disclosure`, `status list`, `trust infrastructure` and
-  `trust protocol`. `protocol` is the surprising one: the ToIP Main Glossary
-  defines particular protocols and the layering around them, and not the
-  generic concept
+  `trust protocol`. `protocol` is worth noting: the ToIP Main Glossary defines
+  particular protocols and the layering around them, but not the generic
+  concept
