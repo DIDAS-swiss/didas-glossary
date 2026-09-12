@@ -491,7 +491,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `trust-community` | trust-community | pending | | |  |
 | `trust-context` | trust-context | pending | | |  |
 | `trust-decision` | trust-decision | pending | | |  |
-| `trust-domain` | trust-domain | pending | | |  |
+| `trust-domain` | trust-domain | own | Vertrauensraum / espace de confiance / spazio di fiducia | danielsaeuberli | [trust-domain.md](../spec/terms-definitions/trust-domain.md) |
 | `trust-ecosystem` | trust-ecosystem | pending | | |  |
 | `trust-establishment` | trust-establishment | pending | | |  |
 | `trust-factor` | trust-factor | pending | | |  |
