@@ -6,7 +6,7 @@
 
 ~ Entitlement is answered by [[ref: governance]]. Under the [[ref: trust protocol]] an issuer's authorisation to issue a given credential type is expressed as a trust statement carrying trust markers, which a [[ref: verifier]] reads when it decides whether to accept a presentation. A medical practice may issue an immunisation credential because it holds the vaccinator role. An insurer may not.
 
-~ See also: [[xref: toip-glossary, issuer]]
+~ ToIP reference: [[xref: toip-glossary, issuer]]
 
 ~ Language equivalents:
 

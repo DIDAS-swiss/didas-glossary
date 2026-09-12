@@ -63,6 +63,42 @@ cross-language notes:
 ~ [IT] **attestato**
 ```
 
+### The ToIP reference line
+
+Every term file carries one line stating its relationship to the ToIP Main
+Glossary, placed immediately before the language equivalents so a reader always
+finds it in the same position. It takes one of two shapes.
+
+Where an upstream term exists:
+
+```
+~ ToIP reference: [[xref: toip-glossary, credential]]
+```
+
+Where none exists, the absence is stated, with the nearest concept named when
+there is one:
+
+```
+~ ToIP reference: no equivalent term. The nearest concept is
+[[xref: toip-glossary, revocation]], which names the event where an issuer
+stops attesting to a credential; the status list is the mechanism that makes
+such an event checkable.
+```
+
+"No equivalent term" is a finding rather than an omission. It is what makes a
+Tier 3 definition defensible, so the file says it out loud instead of leaving a
+reader to wonder whether anyone looked.
+
+Always write the reference as `[[xref: toip-glossary, <term>]]` and never as a
+link to `glossary.trustoverip.org`. An `[[xref:]]` renders with the upstream
+definition attached, and the federation workflow keeps it current; a pasted URL
+does neither.
+
+`npm run check:toip` enforces all of this: one reference line per term, every
+`[[xref:]]` resolving to a cached upstream definition, every `[[ref:]]`
+resolving to a term this glossary defines and no bare upstream URLs. It runs in
+CI on every pull request that touches a term.
+
 ### Keeping federation up to date
 
 After adding any `[[xref:]]` or `[[tref:]]` reference, run:
@@ -81,9 +117,13 @@ A GitHub Actions workflow (`fetch-and-push-xrefs.yml`) runs this automatically o
 
 Before writing a new local definition, check whether the term is already covered by
 the [Trust over IP Main Glossary](https://glossary.trustoverip.org/). If so, use
-`[[tref:]]` (Tier 1) or `[[xref:]]` as a "See also" (Tier 2) rather than duplicating
-the definition. Local definitions should capture meaning that is specific to the Swiss,
-BGEID, or DIDAS/swiyu context only.
+`[[tref:]]` (Tier 1) or `[[xref:]]` on the ToIP reference line (Tier 2) rather than
+duplicating the definition. Local definitions should capture meaning that is specific
+to the Swiss, BGEID, or DIDAS/swiyu context only.
+
+Record the outcome of that check either way. Whichever answer it produced, it goes on
+the ToIP reference line described above, so the next reader inherits the check instead
+of repeating it.
 
 ## Further Resources
 

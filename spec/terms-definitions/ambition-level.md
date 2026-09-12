@@ -12,6 +12,8 @@
 
 ~ Source: Diskussionspapier zum «Zielbild E-ID», Federal Office of Justice, September 2021, chapter 4.2 ([consultation page](https://www.bj.admin.ch/bj/de/home/staat/gesetzgebung/staatliche-e-id/zielbild-e-id.html)); confirmed as direction by the [Federal Council's decision of 17 December 2021](https://www.eid.admin.ch/en/e-id-br-richtungsentscheid-e) that the trust infrastructure should carry more than the e-ID and be made available to cantonal authorities and private entities.
 
+~ ToIP reference: no equivalent term. Not to be confused with [[xref: toip-glossary, assurance-level]], which is a level of confidence in a claim.
+
 ~ Language equivalents:
 
 ~ [DE] **Ambitionsniveau**

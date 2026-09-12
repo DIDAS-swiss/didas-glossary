@@ -6,7 +6,7 @@
 
 ~ A status list holds status values only. It carries no [[ref: claim]]s, no personal data and no identifier for the person the credential is about.
 
-~ Nearest ToIP equivalent: [[xref: toip-glossary, revocation]], which names the event where an issuer stops attesting to a credential it has issued. The status list is the mechanism that makes such an event checkable by a verifier.
+~ ToIP reference: no equivalent term. The nearest concept is [[xref: toip-glossary, revocation]], which names the event where an issuer stops attesting to a credential it has issued; the status list is the mechanism that makes such an event checkable by a verifier.
 
 ~ Language equivalents:
 

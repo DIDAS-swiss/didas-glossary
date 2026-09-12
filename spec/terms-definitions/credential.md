@@ -4,7 +4,7 @@
 
 ~ In the swiyu trust ecosystem, credentials are issued as [[ref: verifiable credentials]] conforming to the W3C Verifiable Credentials Data Model and governed by the BGEID.
 
-~ See also: [[xref: toip-glossary, credential]]
+~ ToIP reference: [[xref: toip-glossary, credential]]
 
 ~ Supporting definitions:
 

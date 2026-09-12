@@ -6,7 +6,7 @@
 
 ~ In the DIDAS context, "ecosystem" usually refers to the swiyu trust ecosystem: the totality of actors — issuers, verifiers, holders, orchestrators, [[ref: governing authorities]], service providers — that build on the [[ref: trust infrastructure]] established under the BGEID and act in one or more [[ref: trust domain]]s, interacting through common [[ref: protocol]]s under shared [[ref: governance]].
 
-~ See also: [[xref: toip-glossary, digital-trust-ecosystem]], [[xref: toip-glossary, digital-ecosystem]]
+~ ToIP reference: [[xref: toip-glossary, digital-trust-ecosystem]]. The swiyu ecosystem is a digital trust ecosystem in the ToIP sense; the broader concept is [[xref: toip-glossary, digital-ecosystem]].
 
 ~ Language equivalents:
 

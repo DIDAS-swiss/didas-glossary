@@ -6,7 +6,7 @@
 
 ~ Because the claim is the unit of disclosure, it is also the unit that [[ref: governance]] is written against. An entitlement names the claims a role may ask for, and a protected claim needs an explicit authorisation on top of the entitlement. The AHV number, carried as `personal_administrative_number`, is such a claim under the [[ref: trust protocol]].
 
-~ See also: [[xref: toip-glossary, claim]]
+~ ToIP reference: [[xref: toip-glossary, claim]]
 
 ~ Supporting definitions:
 

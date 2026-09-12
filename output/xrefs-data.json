@@ -131,6 +131,116 @@
       "term": "revocation",
       "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
       "content": "[[def: revocation, revocation, revocations, revoke, revokes, revoked, revoking]]\n\n~ In the context of [[ref: digital credentials]], revocation is an event signifying that the [[ref: issuer]] no longer attests to the [[ref: validity]] of a [[ref: credential]] they have [[ref: issued]]. In the context of cryptographic keys, revocation is an event signifying that the [[ref: controller]] no longer attests to the [[ref: validity]] of a public/private key pair for which the [[ref: controller]] is [[ref: authoritative]].\n\n~ See also: [[ref: issuance]], [[ref: presentation]].\n\n~ Supporting definitions:\n\n~ [eSSIF-Lab](https://essif-lab.github.io/framework/docs/essifLab-glossary#revokerevocation): the act, by or on behalf of the [party](https://essif-lab.github.io/framework/docs/terms/party) that has issued the [credential](https://essif-lab.github.io/framework/docs/terms/credential), of no longer vouching for the correctness or any other qualification of (arbitrary parts of) that [credential](https://essif-lab.github.io/framework/docs/terms/credential).\n\n~ [NIST-CSRC](https://csrc.nist.gov/glossary/term/revocation): **\u200b\u200bFor digital certificates**: The process of permanently ending the binding between a certificate and the identity asserted in the certificate from a specified time forward. **For cryptographic keys**: A process whereby a notice is made available to affected entities that keys should be removed from operational use prior to the end of the established cryptoperiod of those keys.\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "governing-authority",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: governing-authority, governing authority, governing authorities]]\n\n~ See: [[ref: governing body]].\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "trust-domain",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: trust-domain, trust domain, trust domains]]\n\n~ A [[ref: security domain]] defined by a computer hardware or software architecture, a [[ref: security policy]], or a [[ref: trust community]], typically via a [[ref: trust framework]] or [[ref: governance framework]].\n\n~ See also: [[ref: trust context]], [[ref: digital trust ecosystem]].\n\n~ See also: [[xref: keri1, trust-domain]]\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "trust-context",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: trust-context, trust context, trust contexts]]\n\n~ The context in which a specific [[ref: party]] makes a specific [[ref: trust decision]]. Many different factors may be involved in establishing a trust context, such as: the relevant interaction or [[ref: transaction]]; the presence or absence of existing [[ref: trust relationships]]; the applicability of one or more [[ref: governance frameworks]]; and the location, time, network, and/or devices involved. A trust context may be implicit or explicit; if explicit, it may be identified using an [[ref: identifier]]. A [[ref: ToIP governance framework]] is an example of an explicit trust context identified by a [[ref: verifiable identifier]] (VID).\n\n~ See also: [[ref: trust domain]].\n\n~ For more information, see: [Design Principles for the ToIP Stack](https://trustoverip.org/our-work/design-principles/).\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "trust-community",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: trust-community, trust community, trust communities]]\n\n~ A set of [[ref: parties]] who collaborate to achieve a mutual set of [[ref: trust objectives]].\u00a0\n\n~ See also: [[ref: digital trust ecosystem]], [[ref: ToIP trust community]].\n\n~ Note: A trust community may be large or small, formal or informal. In a formal trust community, the set of [[ref: policies]] and [[ref: rules]] governing behavior of members are usually published in a [[ref: governance framework]] or [[ref: trust framework]]. In an informal trust community, the policies or rules governing the behavior of members may be [[ref: tribal knowledge]].\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "digital-trust-utility",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: digital-trust-utility, digital trust utility, digital trust utilities]]\n\n~ An information system, network, distributed database, or [[ref: blockchain]] designed to provide one or more supporting services to higher level components of decentralized digital trust infrastructure. In the [[ref: ToIP stack]], digital trust utilities are at [[ref: Layer 1]]. A [[ref: verifiable data registry]] is one type of digital trust utility.\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "trust-spanning-protocol",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: trust-spanning-protocol, trust spanning protocol]]\n\n~ See: [[ref: ToIP Trust Spanning Protocol]].\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "assurance-level",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: assurance-level, assurance level, assurance levels]]\n\n~ A level of confidence in a [[ref: claim]] that may be relied on by others. Different types of assurance levels are defined for different types of trust assurance mechanisms. Examples include [[ref: authenticator assurance level]], [[ref: federation assurance level]], and [[ref: identity assurance level]].\n\n~ For verifiable credentials, the Level of Assurance measures the degree of certainty in an identity's authenticity or a credential's validity, ensuring the credential is from a trusted source and has not been tampered with. The level is determined by the strength of the identity assurance process, the robustness of the authentication process, and the management of the credential issuer.\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "presentation",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: presentation, presentation, presentations, present, presents, presenting, presented]]\n\n~ A [[ref: verifiable]] [[ref: message]] that a [[ref: holder]] may send to a [[ref: verifier]] containing [[ref: proofs]] of one or more [[ref: claims]] derived from one or more [[ref: digital credentials]] from one or more [[ref: issuers]] as a response to a specific [[ref: presentation request]] from a\u00a0 [[ref: verifier]].\n\n~ Supporting definitions:\u00a0\n\n~ [eSSIF-Lab](https://essif-lab.github.io/framework/docs/terms/presentation): A (signed) digital [[ref: message]] that a [[ref: holder]] component may send to a [[ref: verifier]] component that contains [[ref: data]] derived from one or more [[ref: verifiable credentials]] (that (a [colleague](https://essif-lab.github.io/framework/docs/terms/colleague) component of) the [holder](https://essif-lab.github.io/framework/docs/terms/holder) component has received from [issuer](https://essif-lab.github.io/framework/docs/terms/issuer) components of one or more [parties](https://essif-lab.github.io/framework/docs/terms/party)), as a response to a specific [[ref: presentation request]] of a\u00a0 [[ref: verifier ]]component.\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "protocol-stack",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: protocol-stack, protocol stack, protocol stacks]]\n\n~ The protocol stack or network stack is an implementation of a computer networking protocol suite or protocol family. Some of these terms are used interchangeably but strictly speaking, the _suite_ is the definition of the communication protocols, and the _stack_ is the software implementation of them.\n\n~ Source: [Wikipedia](https://en.wikipedia.org/wiki/Protocol_stack)\n\n~ See also: [[ref: protocol layer]].\n"
+    },
+    {
+      "repoUrl": "https://github.com/trustoverip/ctwg-main-glossary",
+      "terms_dir": "spec/terms-definitions",
+      "owner": "trustoverip",
+      "repo": "ctwg-main-glossary",
+      "site": "https://glossary.trustoverip.org/",
+      "externalSpec": "toip-glossary",
+      "term": "subject",
+      "commitHash": "00608bb6ce7f7e6285f202b580548d61ee716621",
+      "content": "[[def: subject, subject, subjects]]\n\n~ The [[ref: entity]] described by one or more [[ref: claims]], particularly in the context of [[ref: credentials]].\n\n~ Supporting definitions:\n\n~ [W3C VC](https://www.w3.org/TR/vc-data-model/#terminology): A thing about which [claims](https://www.w3.org/TR/vc-data-model/#dfn-claims) are made.\n\n~ [eSSIF-Lab:](https://essif-lab.github.io/framework/docs/essifLab-glossary#subject) the (single) [[ref: entity]] to which a given set of coherent [[ref: data]] relates/pertains. Examples of such sets include attributes, [[ref: Claims]]/Assertions, files/dossiers, [[ref: verifiable credentials]], [(partial) identities](https://essif-lab.github.io/framework/docs/terms/partial-identity), [employment contracts](https://essif-lab.github.io/framework/docs/terms/employment-contract), etc.\n"
     }
   ]
 }

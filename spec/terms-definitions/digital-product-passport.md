@@ -4,6 +4,8 @@
 
 ~ Source: [CIRPASS — DPP in a nutshell](https://cirpassproject.eu/dpp-in-a-nutshell/).
 
+~ ToIP reference: no equivalent term.
+
 ~ Language equivalents:
 
 ~ [DE] **digitaler Produktpass**
