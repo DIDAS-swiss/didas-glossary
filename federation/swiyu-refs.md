@@ -24,7 +24,7 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 | `issuer` | `swiss-profile-issuance.md` | all | the OpenID4VCI issuance path an issuer serves | not verified |
 | `issuer` | `swiss-profile-anchor.md` | all | `did:webvh` registration and the key an issuer publishes | not verified |
 | `verifier` | `swiss-profile-verification.md` | all | OpenID4VP with DCQL; the `direct_post.jwt` response mode | not verified |
-| `selective-disclosure` | `swiss-profile-vc.md` | all | SD-JWT VC as the mandated format, which is what makes claim-level disclosure possible | not verified |
+| `selective-disclosure` | `swiss-profile-vc.md` | all | SD-JWT VC as the mandated format, which permits claim-level disclosure | not verified |
 | `status-list` | `swiss-profile-vc.md` | all | the status mechanism a credential must carry (IETF Token Status List) | not verified |
 
 **On the eight rows marked `not verified`.** They were added with the terms in
