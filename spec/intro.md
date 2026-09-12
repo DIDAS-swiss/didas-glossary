@@ -22,6 +22,6 @@ Where a term is fully covered by the ToIP glossary, the DIDAS glossary cross-ref
 
 The **Digital Identity & Data Sovereignty Association (DIDAS)** is the Swiss ecosystem association with the goal to enable an inclusive, privacy-first, and frictionless future for society's digital and data needs. DIDAS advocates for global standards with local governance, and supports the shift in how social, public, and business sectors operate, interact, and transact through digital identity.
 
-In February 2026, DIDAS was designated a **swiyu Orchestrator** by Digital Administration Switzerland (DVS), consolidating requirements from business, government, and society and supporting their implementation in interoperable applications.
+In February 2026, DIDAS was designated a **swiyu Orchestrator** by the Federal Office of Justice, alongside the Digital Administration Switzerland (Digitale Verwaltung Schweiz, DVS), consolidating requirements from business, government, and society and supporting their implementation in interoperable applications.
 
 This glossary is maintained by the [[ref: DIDAS]] community. Contributions and corrections are welcome via the [DIDAS Glossary repository](https://github.com/DIDAS-swiss/didas-glossary) on GitHub.
