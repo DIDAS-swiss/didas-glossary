@@ -89,10 +89,10 @@ Recording "no equivalent term" is what justifies defining the term locally at
 Tier 3. Stating it explicitly tells the reader that the upstream glossary was
 checked and the term was not there.
 
-Always write the reference as `[[xref: toip-glossary, <term>]]` and never as a
-link to `glossary.trustoverip.org`. An `[[xref:]]` renders with the upstream
-definition attached and the federation workflow keeps it current. A pasted URL
-renders as a plain link and the workflow cannot see it.
+Always write the reference as `[[xref: toip-glossary, <term>]]`, not as a link to
+`glossary.trustoverip.org`. An `[[xref:]]` renders with the upstream definition
+attached, and the federation workflow keeps that definition current. The workflow
+does not detect plain URLs, so a pasted link is never updated.
 
 `npm run check:toip` enforces all of this: one reference line per term, every
 `[[xref:]]` resolving to a cached upstream definition, every `[[ref:]]`
