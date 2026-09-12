@@ -131,4 +131,4 @@ of repeating it.
 - [swiyu Trust Infrastructure](https://github.com/swiyu-admin-ch) — the Swiss federal trust infrastructure for digital credentials
 - [Trust over IP Foundation Glossary](https://glossary.trustoverip.org/) — the international reference glossary this project aligns with
 - [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/) — the international credential data model. Not the format swiyu uses: the Swiss Profile lists "W3C VCDM" as NOT SUPPORTED and contains IETF SD-JWT VC instead
-- [BGEID](https://www.fedlex.admin.ch/eli/fga/2025/20/de) — Bundesgesetz über den elektronischen Identitätsnachweis und andere elektronische Nachweise (E-ID-Gesetz) of 20 December 2024, BBl 2025 20. Governs the federal trust infrastructure and the EID
+- **BGEID** — Bundesgesetz über den elektronischen Identitätsnachweis und andere elektronische Nachweise (E-ID-Gesetz) of 20 December 2024, BBl 2025 20, published on [fedlex.admin.ch](https://www.fedlex.admin.ch/). Governs the federal trust infrastructure and the EID
