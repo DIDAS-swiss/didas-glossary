@@ -20,7 +20,7 @@
 
 ~ **gucaTM** (Governed use case authorization Trust Marker) — the issuer or verifier holds the authorisation by the governing actor to process this use case.
 
-~ The [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) (`swiss-profile-trust:1.0`) defines which markers are required for a trusted relationship: a verifier MUST decline a governed use case ([[ref: credential]] under gucTM) presented without the matching authorisation (gucaTM), SHOULD decline a counterparty without a verified identity (viTM), and MAY decline on caTM or tvTM.
+~ The [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) (`swiss-profile-trust:1.0`) defines which markers are required for a trusted relationship, and it addresses the two normative levels to different parties. An **actor** of the ecosystem MUST decline a trust relationship that carries the gucTM but not the gucaTM, and SHOULD decline one without the viTM. The **wallet** MAY decline a relationship without the caTM, and MAY decline one without the tvTM; the profile gives a holder-consented override of the tvTM requirement as a good reason not to require it.
 
 ~ ToIP reference: no equivalent term. The nearest concept is [[xref: toip-glossary, trust-spanning-protocol]], which provides authentic and optionally confidential message transport between endpoints, where the trust protocol provides authorisation. For the generic concept, see [[ref: protocol]].
 

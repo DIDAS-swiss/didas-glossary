@@ -2,7 +2,7 @@
 
 ~ A published list with one entry per [[ref: credential]], saying whether that credential is still valid. Each credential carries the index that finds its own entry, and nothing else connects the two.
 
-~ In the swiyu trust [[ref: ecosystem]] status lists follow the **IETF Token Status List** specification and are published through the Base Registry. A [[ref: verifier]] fetches the whole list and reads the entry the presented credential points at, so the [[ref: issuer]] learns nothing about which credential was checked, or when, or by whom. A verifier that asked the issuer directly would disclose exactly that.
+~ In the swiyu trust [[ref: ecosystem]] status lists follow the **IETF Token Status List** specification (Draft 20) and are published through the Base Registry. [Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/) §12.1 requires it: "To prevent observability of Issuers, the Status Provider **MUST** be the registry provided by FOITT", which forces the Status Issuer and the Status Provider to be different entities. A [[ref: verifier]] fetches the whole list and reads the entry the presented credential points at, so the [[ref: issuer]] learns nothing about which credential was checked, or when, or by whom. A verifier that asked the issuer directly would disclose exactly that.
 
 ~ A status list holds status values only. It carries no [[ref: claim]]s, no personal data and no identifier for the person the credential is about.
 
