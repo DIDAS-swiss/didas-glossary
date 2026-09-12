@@ -88,7 +88,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `chaining` | chaining | pending | | |  |
 | `channel` | channel | pending | | |  |
 | `ciphertext` | ciphertext | pending | | |  |
-| `claim` | claim | pending | | |  |
+| `claim` | claim | extend | Angabe / affirmation / affermazione | danielsaeuberli | [claim.md](../spec/terms-definitions/claim.md) |
 | `coalition-for-content-provenance-and-authenticity` | coalition-for-content-provenance-and-authenticity | pending | | |  |
 | `collective-signature` | collective-signature | pending | | |  |
 | `communication-channel` | communication-channel | pending | | |  |
@@ -168,7 +168,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `digital-trust-ecosystem` | digital-trust-ecosystem | pending | | |  |
 | `digital-trust-utility` | digital-trust-utility | pending | | |  |
 | `digital-vault` | digital-vault | pending | | |  |
-| `digital-wallet` | digital-wallet | pending | | |  |
+| `digital-wallet` | digital-wallet | extend | Wallet / portefeuille / portafoglio | danielsaeuberli | [wallet.md](../spec/terms-definitions/wallet.md) |
 | `discovery` | discovery | pending | | |  |
 | `distributed-ledger` | distributed-ledger | pending | | |  |
 | `domain` | domain | pending | | |  |
@@ -255,7 +255,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `ip` | ip | pending | | |  |
 | `issuance-request` | issuance-request | pending | | |  |
 | `issuance` | issuance | pending | | |  |
-| `issuer` | issuer | pending | | |  |
+| `issuer` | issuer | extend | Aussteller / émetteur / emittente | danielsaeuberli | [issuer.md](../spec/terms-definitions/issuer.md) |
 | `jurisdiction` | jurisdiction | pending | | |  |
 | `kate` | kate | pending | | |  |
 | `keri` | keri | pending | | |  |
@@ -547,7 +547,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `verifiable-message` | verifiable-message | pending | | |  |
 | `verifiable` | verifiable | pending | | |  |
 | `verification` | verification | pending | | |  |
-| `verifier` | verifier | pending | | |  |
+| `verifier` | verifier | extend | Verifikator / vérificateur / verificatore | danielsaeuberli | [verifier.md](../spec/terms-definitions/verifier.md) |
 | `vid-relationship` | vid-relationship | pending | | |  |
 | `vid-to-vid` | vid-to-vid | pending | | |  |
 | `vid` | vid | pending | | |  |
@@ -557,7 +557,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `voip` | voip | pending | | |  |
 | `w3c-verifiable-credentials-data-model-specification` | w3c-verifiable-credentials-data-model-specification | pending | | |  |
 | `wallet-engine` | wallet-engine | pending | | |  |
-| `wallet` | wallet | pending | | |  |
+| `wallet` | wallet | extend | Wallet / portefeuille / portafoglio | danielsaeuberli | [wallet.md](../spec/terms-definitions/wallet.md) |
 | `witness` | witness | pending | | |  |
 | `zero-knowledge-proof` | zero-knowledge-proof | pending | | |  |
 | `zero-knowledge-service-provider` | zero-knowledge-service-provider | pending | | |  |
