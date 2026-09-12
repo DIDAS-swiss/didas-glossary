@@ -14,8 +14,8 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 |---|---|---|---|---|
 | `verifiable-credential` | `swiss-profile-vc.md` | all | SD-JWT VC format, `profile_version` header requirement, status list | 2026-06-11 |
 | `verifiable-credential` | `swiss-profile-issuance.md` | 3.3.1 | Only IETF SD-JWT VC is supported; W3C VCDM and ISO mdoc are not | 2026-06-11 |
-| `protocol` | `trust-protocol-v2-0.md` | Introduction, Trust Markers | swiyu trust protocol based on JWTs; trust markers (viTM, caTM, tvTM, gucTM) | 2026-06-11 |
-| `protocol` | `swiss-profile-trust.md` | all | swiyu trust ecosystem context; root trust anchors; trust registry URL | 2026-06-11 |
+| `trust-protocol` | `trust-protocol-v2-0.md` | Introduction, Trust Markers, Statement types | swiyu trust protocol based on JWTs; the five trust markers (viTM, caTM, tvTM, gucTM, gucaTM); statement types (idTS, vqPS, pvaTS, piaTS, PITLS, Non-Compliance TLS) | 2026-09-12 |
+| `trust-protocol` | `swiss-profile-trust.md` | all | required trust markers and their normative strength (MUST/SHOULD/MAY); root trust anchors; trust registry URL | 2026-09-12 |
 | `ecosystem` | `swiss-profile-trust.md` | Introduction | swiyu trust ecosystem definition and governance | 2026-06-11 |
 | `credential` | `swiss-profile-vc.md` | all | swiyu credential structure (SD-JWT VC, `vct`, `sub`, `iat`, status list) | 2026-06-11 |
 
