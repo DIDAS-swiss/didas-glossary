@@ -20,8 +20,8 @@ Where a term is fully covered by the ToIP glossary, the DIDAS glossary cross-ref
 
 ## About DIDAS
 
-The **Digital Identity & Data Sovereignty Association (DIDAS)** is the Swiss ecosystem association with the goal to enable an inclusive, privacy-first, and frictionless future for society's digital and data needs. DIDAS advocates for global standards with local governance, and supports the shift in how social, public, and business sectors operate, interact, and transact through digital identity.
+The **Digital Identity and Data Sovereignty Association (DIDAS)** is a charitable, not-for-profit association under Art. 60 ff. of the Swiss Civil Code, seated in Rotkreuz in the Canton of Zug. Its purpose under the statutes is the establishment and promotion of Switzerland as a leading ecosystem in the development and adoption of technologies, services and products for the protection of privacy and of data sovereignty, which make digital identities together with electronically verifiable data and credentials possible, protect them and render them usable.
 
-In February 2026, DIDAS was designated a **swiyu Orchestrator** by the Federal Office of Justice, alongside the Digital Administration Switzerland (Digitale Verwaltung Schweiz, DVS), consolidating requirements from business, government, and society and supporting their implementation in interoperable applications.
+The statutes name the orchestrator role: DIDAS takes on the role of ecosystem orchestrator for building, coordinating and sustainably developing a digital trust ecosystem on the basis of the federal trust infrastructure swiyu and beyond. In February 2026 the Federal Office of Justice designated DIDAS a **swiyu Orchestrator**, consolidating requirements from business, government and society and supporting their implementation in interoperable applications.
 
 This glossary is maintained by the [[ref: DIDAS]] community. Contributions and corrections are welcome via the [DIDAS Glossary repository](https://github.com/DIDAS-swiss/didas-glossary) on GitHub.
