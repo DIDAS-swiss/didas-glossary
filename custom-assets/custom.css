@@ -1,0 +1,27 @@
+/* ==========================================================================
+   DIDAS Glossary — branding layer
+   spec-up-t ≥1.7 ships the ToIP-style UI natively (term cards, definition
+   detail levels, dark mode, font-size controls). This file only adds DIDAS
+   branding on top; it deliberately does not restyle the components.
+   ========================================================================== */
+
+/* accent: DIDAS blue, readable in both Bootstrap themes */
+:root {
+  --didas-accent: #1971c2;
+}
+[data-bs-theme="dark"] {
+  --didas-accent: #4dabf7;
+}
+
+/* keep the DIDAS wordmark at a sensible size in the top bar */
+#logo img,
+a[logo] img,
+.navbar-brand img {
+  max-height: 2.25rem;
+  width: auto;
+}
+
+/* headings slightly tightened, DIDAS-blue section marks */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
