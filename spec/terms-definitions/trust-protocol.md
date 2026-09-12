@@ -22,7 +22,7 @@
 
 ~ The [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) (`swiss-profile-trust:1.0`) defines which markers are required for a trusted relationship: a verifier MUST decline a governed use case ([[ref: credential]] under gucTM) presented without the matching authorisation (gucaTM), SHOULD decline a counterparty without a verified identity (viTM), and MAY decline on caTM or tvTM.
 
-~ See also: [Trust Spanning Protocol](https://glossary.trustoverip.org/#term:trust-spanning-protocol) (ToIP Main Glossary — adjacent, not the same: TSP provides authentic and optionally confidential message transport between endpoints; the trust protocol provides authorisation). For the generic concept, see [[ref: protocol]].
+~ ToIP reference: no equivalent term. The nearest concept is [[xref: toip-glossary, trust-spanning-protocol]], which provides authentic and optionally confidential message transport between endpoints, where the trust protocol provides authorisation. For the generic concept, see [[ref: protocol]].
 
 ~ Language equivalents:
 

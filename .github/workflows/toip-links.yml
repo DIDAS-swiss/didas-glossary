@@ -1,0 +1,38 @@
+# Every term states its relationship to the ToIP Main Glossary.
+#
+# The three-tier rule turns on one question per term: is this term upstream?
+# The answer belongs in the term file, in the same place in every file. A
+# convention nobody checks drifts, so this runs on every pull request that
+# touches a term, the cached upstream definitions or the check itself.
+#
+# It reads term files only. It does not build or render anything.
+name: toip links
+
+on:
+  pull_request:
+    paths:
+      - 'spec/terms-definitions/**'
+      - 'output/xrefs-data.json'
+      - 'scripts/check-toip-links.mjs'
+      - '.github/workflows/toip-links.yml'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies: the check reads the term files and the cached
+      # definitions that are committed alongside them.
+      - name: Check the ToIP references
+        run: node scripts/check-toip-links.mjs

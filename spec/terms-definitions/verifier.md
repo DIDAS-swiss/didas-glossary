@@ -8,7 +8,7 @@
 
 ~ Checking the proofs establishes that the claims are authentic. Whether the credential is still valid is a second check, which the verifier makes by reading the entry the credential points at in the issuer's [[ref: status list]].
 
-~ See also: [[xref: toip-glossary, verifier]]
+~ ToIP reference: [[xref: toip-glossary, verifier]]
 
 ~ Language equivalents:
 

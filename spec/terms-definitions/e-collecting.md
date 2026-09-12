@@ -8,6 +8,8 @@
 
 ~ For business stakeholders: E-Collecting is a secure digital solution that streamlines signature collection for political initiatives, reducing administrative costs, ensuring compliance, and fostering civic engagement through trusted digital infrastructure.
 
+~ ToIP reference: no equivalent term.
+
 ~ Language equivalents:
 
 ~ [DE] **E-Collecting**, **elektronische Unterschriftensammlung**

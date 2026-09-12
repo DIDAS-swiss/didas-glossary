@@ -4,7 +4,7 @@
 
 ~ A trust domain is to be distinguished from the [[ref: trust infrastructure]] (the Confederation's technical and organisational basis) and from the [[ref: ecosystem]] (the totality of actors building on it). A trust domain becomes concretely visible where a [[ref: governing authority]] publishes via the trust infrastructure which actors may issue which [[ref: credential]] types. Complementary registries of a trust domain's own are possible, provided they remain connected to the Confederation's trust infrastructure; the governing-authority role and registry operation lie with the respectively competent bodies.
 
-~ See also: [trust domain](https://glossary.trustoverip.org/#term:trust-domain), [trust context](https://glossary.trustoverip.org/#term:trust-context), [trust community](https://glossary.trustoverip.org/#term:trust-community) (ToIP Main Glossary — the ToIP definition of *trust domain* is technology-oriented and differs; this entry is the Swiss/DIDAS governance definition)
+~ ToIP reference: [[xref: toip-glossary, trust-domain]]. The upstream definition is technology-oriented and differs from this one, which is the Swiss governance definition. Nearby upstream: [[xref: toip-glossary, trust-context]] and [[xref: toip-glossary, trust-community]].
 
 ~ Language equivalents:
 

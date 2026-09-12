@@ -17,6 +17,7 @@
     "xrefs": "GITHUB_API_TOKEN=$(grep GITHUB_API_TOKEN .env | cut -d '=' -f2) node -e \"require('spec-up-t/src/get-xrefs-data.js').getXrefsData(process.env.GITHUB_API_TOKEN)\"",
     "topdf": "node -e \"require('spec-up-t/src/create-pdf.js')\"",
     "removexref": "node remove-xref.js",
+    "check:toip": "node scripts/check-toip-links.mjs",
     "validatespec": "node -e \"require('spec-up-t/src/json-key-validator.js').runJsonKeyValidatorSync()\"",
     "addterms": "node -e \"require('spec-up-t/src/create-term-index.js').createTermIndex()\"",
     "menu": "bash ./main.sh",

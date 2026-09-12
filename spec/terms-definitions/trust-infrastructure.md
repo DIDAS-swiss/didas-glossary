@@ -4,7 +4,7 @@
 
 ~ To be distinguished from the [[ref: trust domain]] (a governance-defined scope of mutual recognition built on the infrastructure) and from the [[ref: ecosystem]] (the totality of actors building on it).
 
-~ See also: [digital trust utility](https://glossary.trustoverip.org/#term:digital-trust-utility) (ToIP Main Glossary — nearest related concept)
+~ ToIP reference: no equivalent term. The nearest concept is [[xref: toip-glossary, digital-trust-utility]], a supporting service at Layer 1 of the ToIP stack, where this term is the Confederation's basis for issuance, holding and verification.
 
 ~ Language equivalents:
 

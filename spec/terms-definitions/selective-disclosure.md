@@ -6,7 +6,7 @@
 
 ~ Selective disclosure limits what one verifier learns from one presentation. It does not by itself prevent two verifiers, or one verifier across two presentations, from recognising that they saw the same holder. That property is unlinkability and it is a separate question.
 
-~ No equivalent term exists in the ToIP Main Glossary, which is why this term is defined locally rather than adopted. The nearest neighbours upstream are [presentation](https://glossary.trustoverip.org/#term:presentation) and [verifiable credential](https://glossary.trustoverip.org/#term:verifiable-credential), and neither names this property.
+~ ToIP reference: no equivalent term, which is why this term is defined locally. The nearest neighbours upstream are [[xref: toip-glossary, presentation]] and [[xref: toip-glossary, verifiable-credential]], and neither names this property.
 
 ~ Language equivalents:
 

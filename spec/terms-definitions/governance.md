@@ -8,7 +8,7 @@
 
 ~ [DIDAS — ecosystem governance]: ecosystem governance guides how an [[ref: ecosystem]] is directed and its relationships with its shareholders and stakeholders. With the right structure and systems in place, good governance enables ecosystems to create an environment of trust, transparency and accountability, which promotes long-term digital trust between all participants.
 
-~ See also: [[xref: toip-glossary, governance]]
+~ ToIP reference: [[xref: toip-glossary, governance]]
 
 ~ Supporting definitions:
 
