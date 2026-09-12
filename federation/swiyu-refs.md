@@ -18,6 +18,23 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 | `trust-protocol` | `swiss-profile-trust.md` | all | required trust markers and their normative strength (MUST/SHOULD/MAY); root trust anchors; trust registry URL | 2026-09-12 |
 | `ecosystem` | `swiss-profile-trust.md` | Introduction | swiyu trust ecosystem definition and governance | 2026-06-11 |
 | `credential` | `swiss-profile-vc.md` | all | swiyu credential structure (SD-JWT VC, `vct`, `sub`, `iat`, status list) | 2026-06-11 |
+| `claim` | `swiss-profile-vc.md` | all | the claim as the unit of disclosure in SD-JWT VC | not verified |
+| `wallet` | `swiss-profile-issuance.md` | all | what reaches the wallet at issuance | not verified |
+| `wallet` | `swiss-profile-verification.md` | all | what leaves the wallet at presentation | not verified |
+| `issuer` | `swiss-profile-issuance.md` | all | the OpenID4VCI issuance path an issuer serves | not verified |
+| `issuer` | `swiss-profile-anchor.md` | all | `did:webvh` registration and the key an issuer publishes | not verified |
+| `verifier` | `swiss-profile-verification.md` | all | OpenID4VP with DCQL; the `direct_post.jwt` response mode | not verified |
+| `selective-disclosure` | `swiss-profile-vc.md` | all | SD-JWT VC as the mandated format, which is what makes claim-level disclosure possible | not verified |
+| `status-list` | `swiss-profile-vc.md` | all | the status mechanism a credential must carry (IETF Token Status List) | not verified |
+
+**On the eight rows marked `not verified`.** They were added with the terms in
+the same pull request, as this file asks. The specification pages are
+unreachable from the environment the terms were drafted in, so the section
+column says `all` and the date column says `not verified` instead of claiming a
+check that did not happen. Someone who can open the specifications should narrow
+the sections and date the rows. The drift workflow reads the Term column only,
+so the rows already do their job of naming which terms to review when a spec
+changes.
 
 ## Specs watched
 
