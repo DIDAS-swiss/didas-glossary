@@ -1,14 +1,12 @@
 [[def: governance, gouvernance]]
 
-~ The system by which an organisation is controlled and operates, and the mechanisms by which it, and its people, are held to account. Ethics, risk management, compliance and administration are all elements of governance.
-
-~ Governance refers to all processes of governing, the institutions, processes and practices through which issues of common concern are decided upon and regulated. Good governance adds a normative or evaluative attribute to the process of governing.
+~ The system by which an organisation is controlled and operates, and the mechanisms by which it, and its people, are held to account.
 
 ~ Source: Chartered Governance Institute of Australia.
 
-~ [DIDAS — ecosystem governance]: ecosystem governance guides how an [[ref: ecosystem]] is directed and its relationships with its shareholders and stakeholders. With the right structure and systems in place, good governance enables ecosystems to create an environment of trust, transparency and accountability, which promotes long-term digital trust between all participants.
+~ Relation to ToIP: equivalent with Swiss extension — [[xref: toip-glossary, governance]].
 
-~ ToIP reference: [[xref: toip-glossary, governance]]
+~ [DIDAS — ecosystem governance]: the operational rules of a digital trust [[ref: ecosystem]]: who holds which decision rights and responsibilities; who is accountable to whom; who may participate in which role and under which requirements; how authorisations are granted, published and withdrawn; how policies evolve; and how non-compliance is detected and handled. In the swiyu ecosystem, parts of these rules become technically checkable through the [[ref: trust protocol]]; a [[ref: governing authority]] exercises them for a [[ref: trust domain]].
 
 ~ Supporting definitions:
 

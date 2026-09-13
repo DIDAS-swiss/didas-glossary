@@ -8,7 +8,7 @@
 
 ~ **AN3** is the open [[ref: ecosystem]], where private and public issuers and verifiers meet and private organisations issue on the same infrastructure.
 
-~ The levels describe the **scope of an ecosystem, not the strength of an identity check**: ambition level is unrelated to *assurance level*, which describes confidence in an identity claim — the abbreviations look alike and are easily confused. The levels are a policy target rather than a technical capability, and the two can differ: a capability may be delivered for AN1 and AN2 while AN3 remains the stated goal.
+~ The levels are **policy-scope categories originating in Swiss e-ID policy work** — they are not runtime trust levels, not assurance levels, and not technical capability tiers. Ambition level describes the scope of an ecosystem; *assurance level* describes confidence in an identity claim; the abbreviations look alike and are easily confused. As policy targets, the levels can differ from delivered capability: a capability may be delivered for AN1 and AN2 while AN3 remains the stated goal.
 
 ~ Source: Diskussionspapier zum «Zielbild E-ID», Federal Office of Justice, September 2021, chapter 4.2 ([consultation page](https://www.bj.admin.ch/bj/de/home/staat/gesetzgebung/staatliche-e-id/zielbild-e-id.html)); confirmed as direction by the [Federal Council's decision of 17 December 2021](https://www.eid.admin.ch/en/e-id-br-richtungsentscheid-e) that the trust infrastructure should carry more than the e-ID and be made available to cantonal authorities and private entities.
 

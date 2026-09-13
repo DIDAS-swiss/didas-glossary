@@ -1,12 +1,12 @@
 [[def: trust protocol, trust protocols, Vertrauensprotokoll, protocole de confiance, protocollo di fiducia]]
 
-~ The rules by which a party in a digital trust [[ref: ecosystem]] establishes what role another party is authorised to play, and by which that authorisation is published in a form the first party can check for itself.
+~ The rules by which a party in a digital trust [[ref: ecosystem]] establishes what role another party is authorised to play, and by which that authorisation is published in a form the first party can evaluate for itself.
 
-~ A trust protocol answers a different question from the protocols that carry the data. OpenID4VCI and OpenID4VP establish that a message is well formed and correctly signed; the trust protocol establishes whether the sender is authorised to make the statement it is making, or to ask the question it is asking.
+~ A trust protocol answers a different question from the protocols that carry credentials. OpenID4VCI and OpenID4VP are protocols for [[ref: credential]] issuance and presentation respectively; the trust protocol is the mechanism for publishing and evaluating ecosystem trust information, governed-use-case information and authorisations.
 
-~ [DIDAS — trust protocol]: establishes a secure framework for trusting digital identities between issuers and verifiers, ensuring proper authentication.
+~ Relation to ToIP: no equivalent term. The nearest concept is [[xref: toip-glossary, trust-spanning-protocol]], but it differs because TSP addresses message transport between endpoints (authenticity and optional confidentiality of the channel), whereas the trust protocol addresses authorisation and trust information about the parties. For the generic concept, see [[ref: protocol]].
 
-~ [swiyu — Trust Protocol 2.0]: the swiyu trust protocol, at version 2.0 (status: draft), introduced by change dossier [CD-006](https://swiyu-admin-ch.github.io/change-dossiers/CD-006-Trust-Protocol-2.0/) and specified in [trust-protocol-v2-0](https://swiyu-admin-ch.github.io/specifications/trust-protocol-v2-0/). The protocol is based on [JWTs](https://datatracker.ietf.org/doc/html/rfc7519) signed by a root trust anchor; in the context of the protocol these JWTs are referred to as statements (trust statements, trust list statements and public statements). Actors resolve statements into **trust markers** to assess the trust relationship in an ongoing interaction.
+~ swiyu context — specification ([Trust Protocol 2.0](https://swiyu-admin-ch.github.io/specifications/trust-protocol-v2-0/), draft, introduced by change dossier [CD-006](https://swiyu-admin-ch.github.io/change-dossiers/CD-006-Trust-Protocol-2.0/)): the protocol is based on [JWTs](https://datatracker.ietf.org/doc/html/rfc7519) signed by a root trust anchor. Four artefact kinds must be kept apart: **statements** (trust statements, issued per actor after a manual verification process; trust list statements, applying to multiple subjects; and public statements), **trust markers** (the evaluated result an actor derives from valid statements), and **authorisations** (what a marker such as gucaTM attests — the governing actor's permission for a use case). A statement that fails validation **MUST NOT** set its marker.
 
 ~ The protocol describes five trust markers:
 
@@ -14,15 +14,15 @@
 
 ~ **caTM** (Compliant Actor Trust Marker) — the actor was not identified as a non-compliant actor in the ecosystem.
 
-~ **tvTM** (Transparent Verification Trust Marker) — the type of verification being performed is published for third-party review.
+~ **tvTM** (Transparent Verification Trust Marker) — the type of verification being performed is published for third-party review; not the individual verification, only its published type.
 
 ~ **gucTM** (Governed use case Trust Marker) — the issuance or verification is identified as protected by a governing actor; a valid authorisation is needed to proceed.
 
 ~ **gucaTM** (Governed use case authorization Trust Marker) — the issuer or verifier holds the authorisation by the governing actor to process this use case.
 
-~ The [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) (`swiss-profile-trust:1.0`) defines which markers are required for a trusted relationship: a verifier MUST decline a governed use case ([[ref: credential]] under gucTM) presented without the matching authorisation (gucaTM), SHOULD decline a counterparty without a verified identity (viTM), and MAY decline on caTM or tvTM.
+~ swiyu context — normative force ([Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/), version 1.0, draft): an ecosystem actor **MUST** validate the trust relationship; an actor **MUST** decline a trust relationship that carries gucTM without gucaTM; an actor **SHOULD** decline a trust relationship without viTM; and the **wallet MAY** decline, during verification, a trust relationship without caTM or without tvTM. The Swiss Profile Trust also defines the environment specifics: root trust anchors, the swiyu Trust Registry, and the protected fields (currently the AHV number, `personal_administrative_number`).
 
-~ ToIP reference: no equivalent term. The nearest concept is [[xref: toip-glossary, trust-spanning-protocol]], which provides authentic and optionally confidential message transport between endpoints, where the trust protocol provides authorisation. For the generic concept, see [[ref: protocol]].
+~ Does not imply: a satisfied trust marker attests exactly the property named above — no more. In particular, viTM does not make an actor authorised for a use case, gucaTM does not make its statements factually true, and no marker obliges a relying party to accept a presentation.
 
 ~ Language equivalents:
 

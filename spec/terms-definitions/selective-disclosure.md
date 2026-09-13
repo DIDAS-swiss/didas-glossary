@@ -1,12 +1,14 @@
 [[def: selective disclosure, selektive Bekanntgabe, divulgation sélective, divulgazione selettiva]]
 
-~ The property that a [[xref: toip-glossary, holder]] can release some of the [[ref: claim]]s in a [[ref: credential]] and keep the others, so a [[ref: verifier]] receives the claims it asked for and is entitled to, and learns nothing about the remaining claims.
+~ Selective disclosure allows selected [[ref: claim]]s from a [[ref: credential]] to be included in a presentation while other selectively disclosable claim values are omitted.
 
-~ In the swiyu trust [[ref: ecosystem]] selective disclosure is a property of the credential format. Credentials are issued as **IETF SD-JWT VC**, in which the [[ref: issuer]] commits to each claim separately at issuance time and the holder chooses at presentation time which of those commitments to open. A verifier can check every claim it receives against the issuer's original signature while the claims it did not receive stay hidden from it.
+~ Four separate points, none of which follows from the definition above: the scope of a request is defined by the presentation request; whether a [[ref: verifier]] is authorised to request a claim is a [[ref: governance]] question, not a property of the disclosure mechanism; omitted claim values are not included in the presentation — no stronger secrecy property is implied; and which claims are selectively disclosable at all is determined by the credential format profile at issuance time.
 
-~ Selective disclosure limits what one verifier learns from one presentation. It does not by itself prevent two verifiers, or one verifier across two presentations, from recognising that they saw the same holder. That property is unlinkability and it is a separate question.
+~ Relation to ToIP: no equivalent term; defined locally. The nearest upstream concepts are [[xref: toip-glossary, presentation]] and [[xref: toip-glossary, verifiable-credential]], and neither names this property.
 
-~ ToIP reference: no equivalent term, which is why this term is defined locally. The nearest neighbours upstream are [[xref: toip-glossary, presentation]] and [[xref: toip-glossary, verifiable-credential]], and neither names this property.
+~ swiyu context (Swiss Profile, `swiss-profile-vc:1.0.0`): credentials use **SD-JWT** ([RFC 9901](https://www.rfc-editor.org/rfc/rfc9901.html)) as profiled by the [Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/): the issuer commits to each selectively disclosable claim separately at issuance, and the holder chooses at presentation time which disclosures to include. Application claims must be selectively disclosable, while specified registered JWT claims (such as `iat` and `exp`) are excluded from disclosure — see [[ref: claim]] for the exact rules. A verifier can check every disclosed claim against the issuer's signature.
+
+~ Does not imply: selective disclosure does not by itself establish anonymity, unlinkability, verifier authorisation or legal data-minimisation compliance. In particular, it does not prevent two verifiers, or one verifier across two presentations, from recognising that they saw the same holder — unlinkability is a separate property with separate mechanisms.
 
 ~ Language equivalents:
 
