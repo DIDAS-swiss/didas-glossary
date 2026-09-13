@@ -12,29 +12,24 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 
 | Term | Spec file | Section | What the term references | Last verified |
 |---|---|---|---|---|
-| `verifiable-credential` | `swiss-profile-vc.md` | all | SD-JWT VC format, `profile_version` header requirement, status list | 2026-06-11 |
-| `verifiable-credential` | `swiss-profile-issuance.md` | 3.3.1 | Only IETF SD-JWT VC is supported; W3C VCDM and ISO mdoc are not | 2026-06-11 |
-| `trust-protocol` | `trust-protocol-v2-0.md` | Introduction, Trust Markers, Statement types | swiyu trust protocol based on JWTs; the five trust markers (viTM, caTM, tvTM, gucTM, gucaTM); statement types (idTS, vqPS, pvaTS, piaTS, PITLS, Non-Compliance TLS) | 2026-09-12 |
-| `trust-protocol` | `swiss-profile-trust.md` | all | required trust markers and their normative strength (MUST/SHOULD/MAY); root trust anchors; trust registry URL | 2026-09-12 |
-| `ecosystem` | `swiss-profile-trust.md` | Introduction | swiyu trust ecosystem definition and governance | 2026-06-11 |
-| `credential` | `swiss-profile-vc.md` | all | swiyu credential structure (SD-JWT VC, `vct`, `sub`, `iat`, status list) | 2026-06-11 |
-| `claim` | `swiss-profile-vc.md` | all | the claim as the unit of disclosure in SD-JWT VC | not verified |
-| `wallet` | `swiss-profile-issuance.md` | all | what reaches the wallet at issuance | not verified |
-| `wallet` | `swiss-profile-verification.md` | all | what leaves the wallet at presentation | not verified |
-| `issuer` | `swiss-profile-issuance.md` | all | the OpenID4VCI issuance path an issuer serves | not verified |
-| `issuer` | `swiss-profile-anchor.md` | all | `did:webvh` registration and the key an issuer publishes | not verified |
-| `verifier` | `swiss-profile-verification.md` | all | OpenID4VP with DCQL; the `direct_post.jwt` response mode | not verified |
-| `selective-disclosure` | `swiss-profile-vc.md` | all | SD-JWT VC as the mandated format, which is what makes claim-level disclosure possible | not verified |
-| `status-list` | `swiss-profile-vc.md` | all | the status mechanism a credential must carry (IETF Token Status List) | not verified |
-
-**On the eight rows marked `not verified`.** They were added with the terms in
-the same pull request, as this file asks. The specification pages are
-unreachable from the environment the terms were drafted in, so the section
-column says `all` and the date column says `not verified` instead of claiming a
-check that did not happen. Someone who can open the specifications should narrow
-the sections and date the rows. The drift workflow reads the Term column only,
-so the rows already do their job of naming which terms to review when a spec
-changes.
+| `verifiable-credential` | `swiss-profile-vc.md` | Referenced specs table; §4; SD-JWT VC section | SD-JWT = RFC 9901, SD-JWT VC = draft-15, TSL = draft-20; `profile_version` = swiss-profile-vc:1.0.0; `cnf`/SD-JWT+KB key binding | 2026-09-13 |
+| `verifiable-credential` | `swiss-profile-issuance.md` | §3.3.1 | Only IETF SD-JWT VC is supported; W3C VCDM and ISO mdoc are NOT SUPPORTED | 2026-09-13 |
+| `credential` | `swiss-profile-vc.md` | §4; SD-JWT VC section | swiyu credential structure (SD-JWT VC, `vct`, registered claims, status reference) | 2026-09-13 |
+| `claim` | `swiss-profile-vc.md` | §4.1; SD-JWT VC section (registered claims) | payload MUST NOT contain permanently disclosed claims; `iat`/`exp`/`vct_metadata_uri` MUST NOT be disclosures; `sub` and `expiry_date` MUST be disclosures | 2026-09-13 |
+| `claim` | `swiss-profile-trust.md` | Protected fields | protected field `personal_administrative_number` (AHV number) requires verifier authorisation | 2026-09-13 |
+| `selective-disclosure` | `swiss-profile-vc.md` | §4.1–4.2 | SD-JWT (RFC 9901) disclosure mechanics; decoy digests NOT SUPPORTED; recursive disclosures MUST be supported | 2026-09-13 |
+| `status-list` | `swiss-profile-vc.md` | Token Status List (TSL) Draft 20 sections | status list token signing rules; status provider MUST be the FOITT registry ("to prevent observability of Issuers"); size and freshness rules | 2026-09-13 |
+| `issuer` | `swiss-profile-issuance.md` | §3.3.1; §3.3.3; DPoP sections | OpenID4VCI 1.0; Pre-Authorized Code Flow MUST be supported; key attestation for hardware-bound keys | 2026-09-13 |
+| `issuer` | `swiss-profile-anchor.md` | did:webvh sections | did:webvh 1.0 registration in the Base Registry; published key material; DID document constraints | 2026-09-13 |
+| `verifier` | `swiss-profile-verification.md` | JAR and OpenID4VP sections | verification requests as JAR; OpenID4VP 1.0; DCQL query; `response_mode` MUST be direct_post.jwt | 2026-09-13 |
+| `wallet` | `swiss-profile-issuance.md` | DPoP sections | what reaches the wallet at issuance; DPoP nonce handling; key attestation duty | 2026-09-13 |
+| `wallet` | `swiss-profile-vc.md` | Validation of aud claim in Key Binding JWT | wallet MUST verify the verifier's `client_id` before including it in the KB JWT `aud` | 2026-09-13 |
+| `wallet` | `swiss-profile-verification.md` | OpenID4VP sections | what leaves the wallet at presentation | 2026-09-13 |
+| `trust-protocol` | `trust-protocol-v2-0.md` | Introduction; Trust Markers; Statement types | based on JWTs signed by a root trust anchor; the five trust markers (viTM, caTM, tvTM, gucTM, gucaTM); statement kinds (trust / trust list / public statements; idTS, vqPS, pvaTS, piaTS, PITLS, Non-Compliance TLS) | 2026-09-13 |
+| `trust-protocol` | `swiss-profile-trust.md` | Trust requirements; Environment specific details | actor MUST decline gucTM without gucaTM; actor SHOULD decline without viTM; the wallet MAY decline without caTM or tvTM; root trust anchors; swiyu Trust Registry | 2026-09-13 |
+| `trust-infrastructure` | `swiss-profile-anchor.md` | Base Registry sections | Base Registry as identifier/key publication component | 2026-09-13 |
+| `trust-infrastructure` | `swiss-profile-trust.md` | Environment specific details | root trust anchors; swiyu Trust Registry base URL | 2026-09-13 |
+| `ecosystem` | `swiss-profile-trust.md` | Introduction | identification of public ecosystem actors and protection against impersonation | 2026-09-13 |
 
 ## Specs watched
 

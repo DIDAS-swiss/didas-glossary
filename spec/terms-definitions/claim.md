@@ -1,12 +1,12 @@
 [[def: claim, claims, Angabe, Angaben, affirmation, affirmations, affermazione, affermazioni]]
 
-~ An assertion about a subject, made by the [[ref: issuer]] of the [[ref: credential]] that carries it and judged by the [[ref: verifier]] that receives it.
+~ An assertion about a subject. A claim is asserted by the [[ref: issuer]] of the [[ref: credential]] that carries it; whether it is disclosed in a given presentation is decided by the [[xref: toip-glossary, holder]]; whether the received proofs verify is evaluated technically by the [[ref: verifier]]; and whether the claim is accepted for a purpose is a decision of the relying party. None of these four steps implies any of the others, and none of them establishes the factual truth of the assertion.
 
-~ In the swiyu trust [[ref: ecosystem]] the claim is also the unit of disclosure. Credentials are issued in the **IETF SD-JWT VC** format, in which each claim can be released or withheld on its own, so a [[xref: toip-glossary, holder]] answers a request with the claims that request names while the remaining claims stay in the [[ref: wallet]]. See [[ref: selective disclosure]].
+~ Relation to ToIP: equivalent with Swiss extension — [[xref: toip-glossary, claim]].
 
-~ Because the claim is the unit of disclosure, it is also the unit that [[ref: governance]] is written against. An entitlement names the claims a role may ask for, and a protected claim needs an explicit authorisation on top of the entitlement. The AHV number, carried as `personal_administrative_number`, is such a claim under the [[ref: trust protocol]].
+~ swiyu context (Swiss Profile, `swiss-profile-vc:1.0.0`): credentials are issued in the **IETF SD-JWT VC** format, in which the claim is the unit of [[ref: selective disclosure]] — with defined exceptions. Application claims must be selectively disclosable (the issuer-signed payload "MUST NOT contain one or more permanently disclosed claims"), while specified registered JWT claims are excluded from disclosure: `iat`, `exp` and `vct_metadata_uri` must not be disclosures, whereas `sub` and the business claim `expiry_date` — contrary to the upstream standard's default — must be disclosures ([Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/), sections 4.1 and "SD-JWT VC"). It is therefore not the case that every claim in a credential can independently be released or withheld.
 
-~ ToIP reference: [[xref: toip-glossary, claim]]
+~ swiyu governance context: the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) defines *protected fields* — claims that a verifier needs a specific authorisation to verify, enforced through the [[ref: trust protocol]]. The currently listed protected field is the AHV number, carried as `personal_administrative_number`. Which claims a verifier may request or process is a governance question, separate from the disclosure mechanics above.
 
 ~ Supporting definitions:
 

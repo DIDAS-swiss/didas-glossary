@@ -1,12 +1,14 @@
 [[def: issuer, issuers, Aussteller, Ausstellerin, émetteur, émettrice, emittente, emittenti]]
 
-~ The role an organisation performs when it signs a set of [[ref: claim]]s as a [[ref: credential]] and hands that credential to a [[xref: toip-glossary, holder]].
+~ The role an actor performs when it signs a set of [[ref: claim]]s as a [[ref: credential]] and provides that credential to a [[xref: toip-glossary, holder]].
 
-~ In the swiyu trust [[ref: ecosystem]] an issuer is onboarded before it can issue: it registers a `did:webvh` identifier in the Base Registry and publishes the key its credentials are signed with. Onboarding makes an issuer's credentials verifiable, which is a separate question from whether the issuer was entitled to make the statement.
+~ Relation to ToIP: equivalent with Swiss extension — [[xref: toip-glossary, issuer]].
 
-~ Entitlement is answered by [[ref: governance]]. Under the [[ref: trust protocol]] an issuer's authorisation to issue a given credential type is expressed as a trust statement carrying trust markers, which a [[ref: verifier]] reads when it decides whether to accept a presentation. A medical practice may issue an immunisation credential because it holds the vaccinator role. An insurer may not.
+~ swiyu protocol context: before issuing, an issuer registers a `did:webvh` identifier (version 1.0) in the Base Registry and publishes the key material its credentials are signed with ([Swiss Profile Anchor](https://swiyu-admin-ch.github.io/specifications/swiss-profile-anchor/)). This publication provides the information a [[ref: verifier]] needs for cryptographic signature verification — no more: it identifies the signing key, not the organisation's legitimacy. Issuance itself follows **OpenID4VCI 1.0** as profiled by [Swiss Profile Issuance](https://swiyu-admin-ch.github.io/specifications/swiss-profile-issuance/).
 
-~ ToIP reference: [[xref: toip-glossary, issuer]]
+~ The following are separate properties and none follows from another: that a credential's signature verifies (cryptography); who the issuer is (identifier registration); whether the issuer's identity has been validated by the governing actor (viTM under the [[ref: trust protocol]]); whether the issuer is authorised to issue a given credential type (gucaTM for governed use cases); what the credential's current status is ([[ref: status list]]); and whether a relying party accepts credentials from this issuer (acceptance policy).
+
+~ swiyu governance context: for governed use cases, an issuer's authorisation to issue a given credential type is expressed through trust statements resolved into trust markers under the [[ref: trust protocol]]; the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) defines the normative force of each marker.
 
 ~ Language equivalents:
 

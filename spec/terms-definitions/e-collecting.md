@@ -1,14 +1,10 @@
 [[def: E-Collecting, elektronische Unterschriftensammlung, récolte électronique de signatures, raccolta elettronica delle firme]]
 
-~ The digital collection of legally valid signatures for popular initiatives and referenda in Switzerland.
+~ The electronic collection of signatures for popular initiatives and referenda in Switzerland, as a digital counterpart to the paper-based signature collection governed by the Federal Act on Political Rights.
 
-~ For the general public: E-Collecting is the digital way of signing petitions or initiatives, allowing people to support political causes online in a secure and legally valid way.
+~ Scope note: whether an electronically collected signature is legally valid, and under which conditions, is determined by the applicable legislation and any pilot ordinances — not by the collection technology. Architectures under discussion build on the [[ref: trust infrastructure]] and the e-ID for signer identification; such architecture statements describe proposals, not enacted law, unless a legal source is cited.
 
-~ For political stakeholders: E-Collecting is a digital process for collecting legally binding signatures for initiatives and referenda, enhancing accessibility, trust, and efficiency in democratic participation.
-
-~ For business stakeholders: E-Collecting is a secure digital solution that streamlines signature collection for political initiatives, reducing administrative costs, ensuring compliance, and fostering civic engagement through trusted digital infrastructure.
-
-~ ToIP reference: no equivalent term.
+~ Relation to ToIP: no equivalent term.
 
 ~ Language equivalents:
 
