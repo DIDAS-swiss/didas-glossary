@@ -24,7 +24,7 @@
 
 ~ Does not imply: because all attribute values are self-declared, a cryptographically verified Beta-ID presentation establishes issuer authorship, integrity and status — nothing about the person. Verifier and holder applications must treat Beta-ID data as untrusted user input (including the portrait image), and the Beta-ID must not be used as an identity credential in productive business cases.
 
-~ Sources: [How to use Beta-ID for my business](https://swiyu-admin-ch.github.io/cookbooks/how-to-use-beta-id/) (swiyu cookbook, including the issued-credential example this schema listing is taken from); [I14Y dataset urn:vct:ch.admin.bcs.betaid](https://www.i14y.admin.ch/en/catalog/datasets/urn:vct:ch.admin.bcs.betaid/description) (dataset record verified 2026-09-14 against the official export; attribute-level concept descriptions on I14Y not yet cross-checked); vct activation per [swiyu release note 2026-06-25](https://swiyu-admin-ch.github.io/2026/06/25/new-versions-released.html).
+~ Sources: [How to use Beta-ID for my business](https://swiyu-admin-ch.github.io/cookbooks/how-to-use-beta-id/) (swiyu cookbook, including the issued-credential example this schema listing is taken from); [I14Y dataset urn:vct:ch.admin.bcs.betaid](https://www.i14y.admin.ch/en/catalog/datasets/urn:vct:ch.admin.bcs.betaid/description) (dataset record verified 2026-09-14 against the official export; the attribute-level structure view on I14Y is access-restricted, consistent with the record's *restricted* classification — the swiyu cookbook example is the publicly accessible schema source); vct activation per [swiyu release note 2026-06-25](https://swiyu-admin-ch.github.io/2026/06/25/new-versions-released.html).
 
 ~ Language equivalents:
 
