@@ -12,8 +12,9 @@
  * The convention is one line per term, immediately before the language
  * equivalents:
  *
- *     ~ ToIP reference: [[xref: toip-glossary, credential]]
- *     ~ ToIP reference: no equivalent term. The nearest concept is
+ *     ~ Relation to ToIP: equivalent with Swiss extension — [[xref: toip-glossary, credential]]
+ *     ~ Relation to ToIP: related but not equivalent — [[xref: toip-glossary, trust-domain]]
+ *     ~ Relation to ToIP: no equivalent term. The nearest concept is
  *       [[xref: toip-glossary, revocation]], which ...
  *
  * "no equivalent term" is a finding rather than an omission: it is what makes
@@ -39,7 +40,12 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const TERMS_DIR = join(ROOT, 'spec', 'terms-definitions');
 const XREFS = join(ROOT, 'output', 'xrefs-data.json');
 
-const MARKER = '~ ToIP reference:';
+const MARKER = '~ Relation to ToIP:';
+// The 2026-09-13 precision pass replaced the original '~ ToIP reference:' with
+// this wording, which carries the tier judgement in the line itself. The old
+// spelling is still recognised so a stale term file is reported as the wrong
+// marker rather than as a missing one.
+const LEGACY_MARKER = '~ ToIP reference:';
 
 function cachedTerms() {
   if (!existsSync(XREFS)) return null;
@@ -75,15 +81,23 @@ let withReference = 0;
 let noEquivalent = 0;
 
 for (const { name, text } of files) {
-  const markers = text.split('\n').filter((line) => line.startsWith(MARKER));
+  const lines = text.split('\n');
+  const markers = lines.filter((line) => line.startsWith(MARKER));
+  const legacy = lines.filter((line) => line.startsWith(LEGACY_MARKER));
 
-  if (markers.length === 0) {
+  if (markers.length === 0 && legacy.length > 0) {
     problems.push(
-      `${name}: no ToIP reference line. Add "${MARKER} [[xref: toip-glossary, <term>]]", or ` +
+      `${name}: uses the old marker "${LEGACY_MARKER}". The convention is now ` +
+        `"${MARKER}", which states the relation as well as naming the term`
+    );
+  } else if (markers.length === 0) {
+    problems.push(
+      `${name}: no ToIP relation line. Add "${MARKER} equivalent with Swiss extension — ` +
+        `[[xref: toip-glossary, <term>]]", "${MARKER} related but not equivalent — …", or ` +
         `"${MARKER} no equivalent term." when the ToIP Main Glossary has none`
     );
   } else if (markers.length > 1) {
-    problems.push(`${name}: ${markers.length} ToIP reference lines; there should be one`);
+    problems.push(`${name}: ${markers.length} ToIP relation lines; there should be one`);
   } else {
     withReference += 1;
     if (/no equivalent term/.test(markers[0])) noEquivalent += 1;
@@ -119,7 +133,7 @@ if (cache === null) {
   problems.push('output/xrefs-data.json is missing, so ToIP references could not be checked');
 }
 
-console.log(`${files.length} terms, ${withReference} with a ToIP reference line ` +
+console.log(`${files.length} terms, ${withReference} with a ToIP relation line ` +
   `(${noEquivalent} recording no upstream equivalent)`);
 
 if (problems.length > 0) {

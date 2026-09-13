@@ -4,4 +4,4 @@
 
 ~ Source: [Wikipedia](https://en.wikipedia.org/wiki/Minute_of_agreement).
 
-~ ToIP reference: no equivalent term.
+~ Relation to ToIP: no equivalent term.

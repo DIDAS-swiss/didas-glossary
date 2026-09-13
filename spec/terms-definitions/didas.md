@@ -12,4 +12,4 @@
 
 ~ Source: Statuten des Vereins «Digital Identity and Data Sovereignty», version 2.0 of 10 April 2026, §1 to §3, on the basis of version 1.0 of 9 September 2020. Published with the regulations at [didas.swiss](https://www.didas.swiss/).
 
-~ ToIP reference: no equivalent term. DIDAS is an organisation rather than a concept.
+~ Relation to ToIP: no equivalent term. DIDAS is an organisation rather than a concept.
