@@ -63,23 +63,32 @@ cross-language notes:
 ~ [IT] **attestato**
 ```
 
-### The ToIP reference line
+### The ToIP relation line
 
 Every term file carries one line stating its relationship to the ToIP Main
-Glossary, placed immediately before the language equivalents so a reader always
-finds it in the same position. It takes one of two shapes.
+Glossary, placed after the definition body so a reader always finds it in the
+same position. It takes one of three shapes, and the wording carries the tier
+judgement rather than leaving a reader to infer it.
 
-Where an upstream term exists:
+Where the upstream term means the same thing and this glossary adds Swiss or
+swiyu context:
 
 ```
-~ ToIP reference: [[xref: toip-glossary, credential]]
+~ Relation to ToIP: equivalent with Swiss extension — [[xref: toip-glossary, credential]]
+```
+
+Where an upstream term is adjacent and the concepts differ:
+
+```
+~ Relation to ToIP: related but not equivalent — [[xref: toip-glossary, trust-domain]],
+whose definition is technology-oriented where this one is a governance definition.
 ```
 
 Where none exists, the absence is stated, with the nearest concept named when
 there is one:
 
 ```
-~ ToIP reference: no equivalent term. The nearest concept is
+~ Relation to ToIP: no equivalent term. The nearest concept is
 [[xref: toip-glossary, revocation]], which names the event where an issuer
 stops attesting to a credential; the status list is the mechanism that makes
 such an event checkable.
@@ -94,7 +103,7 @@ link to `glossary.trustoverip.org`. An `[[xref:]]` renders with the upstream
 definition attached, and the federation workflow keeps it current; a pasted URL
 does neither.
 
-`npm run check:toip` enforces all of this: one reference line per term, every
+`npm run check:toip` enforces all of this: one relation line per term, every
 `[[xref:]]` resolving to a cached upstream definition, every `[[ref:]]`
 resolving to a term this glossary defines and no bare upstream URLs. It runs in
 CI on every pull request that touches a term.
