@@ -8,7 +8,7 @@
 
 ~ swiyu protocol context ([Swiss Profile Verification](https://swiyu-admin-ch.github.io/specifications/swiss-profile-verification/), version 1.0): a verifier sends verification requests as JWT-Secured Authorization Requests (JAR) under **OpenID4VP 1.0**, names the claims it seeks in a DCQL query, and receives the response in `direct_post.jwt` mode. The presentation request identifies the claims sought by the verifier; separate governance rules and wallet policy may restrict which claims the verifier is authorised to request or process — see the protected fields in [[ref: claim]] and the trust markers in [[ref: trust protocol]].
 
-~ swiyu governance context: a verifier's standing can be made visible to the holder before disclosure — under the [[ref: trust protocol]] the wallet resolves the verifier's trust statements into trust markers and can display them, and the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) attaches normative force to specific markers.
+~ swiyu governance context: a verifier's standing can be made visible to the holder before disclosure. Under the [[ref: trust protocol]] the wallet retrieves the applicable [[ref: trust statement]]s about the verifier, validates them, derives the [[ref: trust marker]]s for that interaction, and can display them; it then applies its own policy, and the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) attaches normative force to specific markers. A verifier does not have a marker: the wallet derives one for the interaction in front of it.
 
 ~ Language equivalents:
 
