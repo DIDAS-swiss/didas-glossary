@@ -25,7 +25,7 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 | `wallet` | `swiss-profile-issuance.md` | DPoP sections | what reaches the wallet at issuance; DPoP nonce handling; key attestation duty | 2026-09-13 |
 | `wallet` | `swiss-profile-vc.md` | Validation of aud claim in Key Binding JWT | wallet MUST verify the verifier's `client_id` before including it in the KB JWT `aud` | 2026-09-13 |
 | `wallet` | `swiss-profile-verification.md` | OpenID4VP sections | what leaves the wallet at presentation | 2026-09-13 |
-| `trust-protocol` | `trust-protocol-v2-0.md` | Introduction; Trust Markers; Statement types | based on JWTs signed by a root trust anchor; the five trust markers (viTM, caTM, tvTM, gucTM, gucaTM); statement kinds (trust / trust list / public statements; idTS, vqPS, pvaTS, piaTS, PITLS, Non-Compliance TLS) | 2026-09-13 |
+| `trust-protocol` | `trust-protocol-v2-0.md` | Introduction; Trust Markers; Statement types | based on JWTs signed by a root trust anchor; the five trust markers (viTM, caTM, tvTM, gucTM, gucaTM); statement kinds (trust / trust list / public statements; idTS, vqPS, pvaTS, piaTS, piTLS, ncTLS) | 2026-09-13 |
 | `trust-protocol` | `swiss-profile-trust.md` | Trust requirements; Environment specific details | actor MUST decline gucTM without gucaTM; actor SHOULD decline without viTM; the wallet MAY decline without caTM or tvTM; root trust anchors; swiyu Trust Registry | 2026-09-13 |
 | `trust-infrastructure` | `swiss-profile-anchor.md` | Base Registry sections | Base Registry as identifier/key publication component | 2026-09-13 |
 | `trust-infrastructure` | `swiss-profile-trust.md` | Environment specific details | root trust anchors; swiyu Trust Registry base URL | 2026-09-13 |

@@ -1,10 +1,10 @@
 [[def: trust marker, trust markers, Vertrauensmerkmal, Vertrauensmerkmale, marqueur de confiance, marcatore di fiducia]]
 
-~ An evaluation result: the outcome an actor derives, for one trust relationship or interaction, from the applicable valid [[ref: trust statement]]s and the rules of the [[ref: trust protocol]]. The governing actor publishes the statement; the evaluating actor derives the marker.
+~ An evaluation result derived by an actor, for a specific trust relationship in an ongoing interaction, from applicable valid [[ref: trust statement]]s and the validation rules of the [[ref: trust protocol]]. The applicable statement is issued or published under the trust protocol; the evaluating actor derives the marker.
 
 ~ A trust marker is **not** a [[ref: credential]] issued to an actor, not a persistent attribute stored against a DID or held by an organisation, not a registry entry, and not an authorisation document. Two evaluations may produce different marker sets where the applicable statements, the interaction context or the validation inputs differ. The evaluating actor subsequently applies the applicable Swiss Profile requirements and its own policy to those markers when deciding how to proceed.
 
-~ The layers, in order: applicable statements; the validation the protocol defines; the trust markers for this interaction; the Swiss Profile requirements and local policy applied to them; and the resulting decision to continue, refuse or take some other relying-party action. The protocol defines the validation from which a trust relationship is marked. Policy determines which markers are required and what the actor does with the result. Policy does not change how viTM, caTM, tvTM, gucTM or gucaTM are derived.
+~ The sequence is: applicable statements → protocol-defined validation → trust markers for the interaction → applicable Swiss Profile requirements and local policy → decision. Policy determines which markers are required and how an actor acts on the result; it does not alter the protocol-defined conditions from which the markers are derived.
 
 ~ Relation to ToIP: no equivalent term. The nearest upstream concept is [[xref: toip-glossary, trust-decision]] — the decision a party makes about whether to engage in an interaction. A marker is an input to such a decision rather than the decision itself: deriving a marker does not settle whether to proceed.
 
@@ -12,7 +12,7 @@
 
 ~ swiyu context — normative force ([Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/), version 1.0, draft): an ecosystem actor **MUST** validate the trust relationship; an actor **MUST** decline a trust relationship for which the evaluation derives gucTM without gucaTM; an actor **SHOULD** decline one without viTM; and the **wallet MAY** decline, during verification, one without caTM or without tvTM.
 
-~ Does not imply: a derived marker attests exactly the property named above and no more. viTM does not make an actor authorised for a use case. gucaTM does not make the statements behind it factually true. The presence of a marker does not oblige a relying party to accept a transaction unless the applicable specification or policy requires that conclusion.
+~ Does not imply: a derived marker indicates only the property defined for that marker and does not establish additional properties. viTM does not establish authorisation for a governed use case. gucaTM does not establish the factual truth of credential claims. A marker does not by itself oblige a relying party to accept a transaction unless the applicable specification or policy requires that result.
 
 ~ On implementation objects: a verifier's API response may carry a field named for a marker. Such a field is the result of that verifier's evaluation for that interaction, and is not a property of the counterparty that can be cached and reused as one.
 
