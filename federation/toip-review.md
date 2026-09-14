@@ -46,7 +46,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `appraisability` | appraisability | pending | | |  |
 | `appropriate-friction` | appropriate-friction | pending | | |  |
 | `assurance-level` | assurance-level | pending | | |  |
-| `attestation` | attestation | pending | | |  |
+| `attestation` | attestation | referenced | | danielsaeuberli | nearest concept for [trust-statement.md](../spec/terms-definitions/trust-statement.md), related but not equivalent |
 | `attribute-based-access-control` | attribute-based-access-control | pending | | |  |
 | `attribute` | attribute | pending | | |  |
 | `attributional-trust` | attributional-trust | pending | | |  |
@@ -490,7 +490,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `trust-chain` | trust-chain | pending | | |  |
 | `trust-community` | trust-community | pending | | |  |
 | `trust-context` | trust-context | pending | | |  |
-| `trust-decision` | trust-decision | pending | | |  |
+| `trust-decision` | trust-decision | referenced | | danielsaeuberli | nearest concept for [trust-marker.md](../spec/terms-definitions/trust-marker.md); a marker is an input to such a decision, not the decision |
 | `trust-domain` | trust-domain | own | Vertrauensraum / espace de confiance / spazio di fiducia | danielsaeuberli | [trust-domain.md](../spec/terms-definitions/trust-domain.md) |
 | `trust-ecosystem` | trust-ecosystem | pending | | |  |
 | `trust-establishment` | trust-establishment | pending | | |  |
@@ -498,7 +498,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `trust-framework` | trust-framework | pending | | |  |
 | `trust-graph` | trust-graph | pending | | |  |
 | `trust-limit` | trust-limit | pending | | |  |
-| `trust-list` | trust-list | pending | | |  |
+| `trust-list` | trust-list | referenced | | danielsaeuberli | secondary reference from [trust-statement.md](../spec/terms-definitions/trust-statement.md) for the list-shaped case |
 | `trust-network` | trust-network | pending | | |  |
 | `trust-objective` | trust-objective | pending | | |  |
 | `trust-over-ip` | trust-over-ip | pending | | |  |
