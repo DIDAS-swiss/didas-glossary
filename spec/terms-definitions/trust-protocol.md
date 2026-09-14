@@ -1,6 +1,8 @@
 [[def: trust protocol, trust protocols, Vertrauensprotokoll, protocole de confiance, protocollo di fiducia]]
 
-~ The rules by which a party in a digital trust [[ref: ecosystem]] establishes what role another party is authorised to play, and by which that authorisation is published in a form the first party can evaluate for itself.
+~ The rules and mechanisms by which actors in a digital trust [[ref: ecosystem]] publish, provision, retrieve, validate and evaluate trust and governance statements, and derive [[ref: trust marker]]s for an interaction that is under way.
+
+~ Authorisation is one application of that mechanism and not the whole of it. The statements a trust protocol carries also express validated identity, whether an actor has been identified as non-compliant, whether the type of a verification is published for third-party review, and whether an issuance or verification is identified as a governed use case at all. Establishing what an actor is authorised to do is the application that most often motivates the protocol; it is not its definition.
 
 ~ A trust protocol answers a different question from the protocols that carry credentials. OpenID4VCI and OpenID4VP are protocols for [[ref: credential]] issuance and presentation respectively; the trust protocol is the mechanism for publishing and evaluating ecosystem trust information, governed-use-case information and authorisations.
 

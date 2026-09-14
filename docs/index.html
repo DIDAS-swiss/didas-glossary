@@ -357,7 +357,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Does not imply: because all attribute values are self-declared, a cryptographically verified Beta-ID presentation establishes issuer authorship, integrity and status — nothing about the person. Verifier and holder applications must treat Beta-ID data as untrusted user input (including the portrait image), and the Beta-ID must not be used as an identity credential in productive business cases.</p>
 </dd><dd>
-<p>Sources: <a href="https://swiyu-admin-ch.github.io/cookbooks/how-to-use-beta-id/">How to use Beta-ID for my business</a> (swiyu cookbook, including the issued-credential example this schema listing is taken from); <a href="https://www.i14y.admin.ch/en/catalog/datasets/urn:vct:ch.admin.bcs.betaid/description">I14Y dataset urn:vct:ch.admin.bcs.betaid</a> (dataset record verified 2026-09-14 against the official export; attribute-level concept descriptions on I14Y not yet cross-checked); vct activation per <a href="https://swiyu-admin-ch.github.io/2026/06/25/new-versions-released.html">swiyu release note 2026-06-25</a>.</p>
+<p>Sources: <a href="https://swiyu-admin-ch.github.io/cookbooks/how-to-use-beta-id/">How to use Beta-ID for my business</a> (swiyu cookbook, including the issued-credential example this schema listing is taken from); <a href="https://www.i14y.admin.ch/en/catalog/datasets/urn:vct:ch.admin.bcs.betaid/description">I14Y dataset urn:vct:ch.admin.bcs.betaid</a> (dataset record verified 2026-09-14 against the official export; the attribute-level structure view on I14Y is access-restricted, consistent with the record’s <em>restricted</em> classification — the swiyu cookbook example is the publicly accessible schema source); vct activation per <a href="https://swiyu-admin-ch.github.io/2026/06/25/new-versions-released.html">swiyu release note 2026-06-25</a>.</p>
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
@@ -599,7 +599,9 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dt data-sourcefile="terms-definitions/trust-marker.md" class="term-local"><span id="term:marcatore-di-fiducia"><span id="term:marqueur-de-confiance"><span id="term:vertrauensmerkmale"><span id="term:vertrauensmerkmal"><span id="term:trust-markers"><span id="term:trust-marker">trust markers <span class="term-local-parenthetical-terms">(Vertrauensmerkmal, Vertrauensmerkmale, marqueur de confiance, marcatore di fiducia, <span class="term-local-original-term term-original-term" title="original term">trust marker</span>)</span></span></span></span></span></span></span></dt><dd>
 <p>An evaluation result: the outcome an actor derives, for one trust relationship or interaction, from the applicable valid <a class="term-reference" href="#term:trust-statement">trust statement</a>s and the rules of the <a class="term-reference" href="#term:trust-protocol">trust protocol</a>. The governing actor publishes the statement; the evaluating actor derives the marker.</p>
 </dd><dd>
-<p>A trust marker is <strong>not</strong> a <a class="term-reference" href="#term:credential">credential</a> issued to an actor, not a persistent attribute stored against a DID or held by an organisation, not a registry entry, and not an authorisation document. Two actors evaluating the same subject at the same moment may derive different markers, because each applies its own policy to the statements available to it.</p>
+<p>A trust marker is <strong>not</strong> a <a class="term-reference" href="#term:credential">credential</a> issued to an actor, not a persistent attribute stored against a DID or held by an organisation, not a registry entry, and not an authorisation document. Two evaluations may produce different marker sets where the applicable statements, the interaction context or the validation inputs differ. The evaluating actor subsequently applies the applicable Swiss Profile requirements and its own policy to those markers when deciding how to proceed.</p>
+</dd><dd>
+<p>The layers, in order: applicable statements; the validation the protocol defines; the trust markers for this interaction; the Swiss Profile requirements and local policy applied to them; and the resulting decision to continue, refuse or take some other relying-party action. The protocol defines the validation from which a trust relationship is marked. Policy determines which markers are required and what the actor does with the result. Policy does not change how viTM, caTM, tvTM, gucTM or gucaTM are derived.</p>
 </dd><dd>
 <p>Relation to ToIP: no equivalent term. The nearest upstream concept is <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:trust-decision" href="https://glossary.trustoverip.org/#term:trust-decision">trust-decision</a> — the decision a party makes about whether to engage in an interaction. A marker is an input to such a decision rather than the decision itself: deriving a marker does not settle whether to proceed.</p>
 </dd><dd>
@@ -619,7 +621,9 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>[IT] <strong>marcatore di fiducia</strong></p>
 </dd><dt data-sourcefile="terms-definitions/trust-protocol.md" class="term-local"><span id="term:protocollo-di-fiducia"><span id="term:protocole-de-confiance"><span id="term:vertrauensprotokoll"><span id="term:trust-protocols"><span id="term:trust-protocol">trust protocols <span class="term-local-parenthetical-terms">(Vertrauensprotokoll, protocole de confiance, protocollo di fiducia, <span class="term-local-original-term term-original-term" title="original term">trust protocol</span>)</span></span></span></span></span></span></dt><dd>
-<p>The rules by which a party in a digital trust <a class="term-reference" href="#term:ecosystem">ecosystem</a> establishes what role another party is authorised to play, and by which that authorisation is published in a form the first party can evaluate for itself.</p>
+<p>The rules and mechanisms by which actors in a digital trust <a class="term-reference" href="#term:ecosystem">ecosystem</a> publish, provision, retrieve, validate and evaluate trust and governance statements, and derive <a class="term-reference" href="#term:trust-marker">trust marker</a>s for an interaction that is under way.</p>
+</dd><dd>
+<p>Authorisation is one application of that mechanism and not the whole of it. The statements a trust protocol carries also express validated identity, whether an actor has been identified as non-compliant, whether the type of a verification is published for third-party review, and whether an issuance or verification is identified as a governed use case at all. Establishing what an actor is authorised to do is the application that most often motivates the protocol; it is not its definition.</p>
 </dd><dd>
 <p>A trust protocol answers a different question from the protocols that carry credentials. OpenID4VCI and OpenID4VP are protocols for <a class="term-reference" href="#term:credential">credential</a> issuance and presentation respectively; the trust protocol is the mechanism for publishing and evaluating ecosystem trust information, governed-use-case information and authorisations.</p>
 </dd><dd>
@@ -653,7 +657,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>[IT] <strong>protocollo di fiducia</strong></p>
 </dd><dt data-sourcefile="terms-definitions/trust-statement.md" class="term-local"><span id="term:dichiarazione-di-fiducia"><span id="term:déclaration-de-confiance"><span id="term:vertrauensaussagen"><span id="term:vertrauensaussage"><span id="term:trust-statements"><span id="term:trust-statement">trust statements <span class="term-local-parenthetical-terms">(Vertrauensaussage, Vertrauensaussagen, déclaration de confiance, dichiarazione di fiducia, <span class="term-local-original-term term-original-term" title="original term">trust statement</span>)</span></span></span></span></span></span></span></dt><dd>
-<p>A signed artefact, published under a <a class="term-reference" href="#term:trust-protocol">trust protocol</a>, that expresses trust or governance information about one or more actors or interactions, and that another actor can validate as an input to trust evaluation. A statement is published by a governing or otherwise authoritative actor; it is not sent to the actor it concerns, and holding one is not what makes an actor trusted or authorised. What follows from a valid statement is determined by the trust protocol’s evaluation rules and by the evaluating party’s own policy.</p>
+<p>A signed artefact, published under a <a class="term-reference" href="#term:trust-protocol">trust protocol</a>, that expresses trust or governance information about one or more actors or interactions, and that another actor can validate as an input to trust evaluation. A statement is issued or published by a governing or otherwise authoritative actor. It may concern a specific actor identifier and may be provisioned through the protocol by that actor, for example through issuer metadata or an authorization request. It is not a credential held by the subject, and being the subject or the carrier of a statement does not itself establish the resulting <a class="term-reference" href="#term:trust-marker">trust marker</a> or authorise the interaction: the evaluating actor validates the statement and derives the marker. What follows from a valid statement is determined by the trust protocol’s evaluation rules and by the evaluating party’s own policy.</p>
 </dd><dd>
 <p>Relation to ToIP: related but not equivalent — <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:attestation" href="https://glossary.trustoverip.org/#term:attestation">attestation</a>, whose definition is the issue of a statement, based on a decision, that fulfilment of specified requirements has been demonstrated, usually carrying a digital signature. The concepts overlap in shape. They differ in scope: an attestation is any such signed statement, while a trust statement is the specific artefact class a trust protocol defines, publishes and evaluates for the purpose of establishing what role an actor may play in an <a class="term-reference" href="#term:ecosystem">ecosystem</a>. For the list-shaped case see also <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:trust-list" href="https://glossary.trustoverip.org/#term:trust-list">trust-list</a>.</p>
 </dd><dd>
@@ -996,15 +1000,15 @@ of repeating it.</p>
                 </div>
             </div>
             <hr id="external-ref-changes-divider" style="display: none;">
-            <p class="d-none ps-3 pe-3" id="w3c-state">W3C Recommendation, 13 September 2026</p>
+            <p class="d-none ps-3 pe-3" id="w3c-state">W3C Recommendation, 14 September 2026</p>
             <!-- Build Information Section -->
             <div class="ps-3 pe-3">
                 <p class="mb-2 fw-bold">Build Information:</p>
                 <div id="build-info" class="small text-muted">
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-calendar-event me-2"></i>
-                        <time class="timestamp" datetime="2026-09-13T23:42:01.815Z">
-                            Generated: 2026-09-13T23:42:01.815Z
+                        <time class="timestamp" datetime="2026-09-14T00:16:04.175Z">
+                            Generated: 2026-09-14T00:16:04.175Z
                         </time>
                     </div>
                     <div class="d-flex align-items-center mb-1">

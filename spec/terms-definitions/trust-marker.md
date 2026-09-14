@@ -2,7 +2,9 @@
 
 ~ An evaluation result: the outcome an actor derives, for one trust relationship or interaction, from the applicable valid [[ref: trust statement]]s and the rules of the [[ref: trust protocol]]. The governing actor publishes the statement; the evaluating actor derives the marker.
 
-~ A trust marker is **not** a [[ref: credential]] issued to an actor, not a persistent attribute stored against a DID or held by an organisation, not a registry entry, and not an authorisation document. Two actors evaluating the same subject at the same moment may derive different markers, because each applies its own policy to the statements available to it.
+~ A trust marker is **not** a [[ref: credential]] issued to an actor, not a persistent attribute stored against a DID or held by an organisation, not a registry entry, and not an authorisation document. Two evaluations may produce different marker sets where the applicable statements, the interaction context or the validation inputs differ. The evaluating actor subsequently applies the applicable Swiss Profile requirements and its own policy to those markers when deciding how to proceed.
+
+~ The layers, in order: applicable statements; the validation the protocol defines; the trust markers for this interaction; the Swiss Profile requirements and local policy applied to them; and the resulting decision to continue, refuse or take some other relying-party action. The protocol defines the validation from which a trust relationship is marked. Policy determines which markers are required and what the actor does with the result. Policy does not change how viTM, caTM, tvTM, gucTM or gucaTM are derived.
 
 ~ Relation to ToIP: no equivalent term. The nearest upstream concept is [[xref: toip-glossary, trust-decision]] — the decision a party makes about whether to engage in an interaction. A marker is an input to such a decision rather than the decision itself: deriving a marker does not settle whether to proceed.
 
