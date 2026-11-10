@@ -6,6 +6,8 @@
 
 ~ swiyu context (Swiss Profile, `swiss-profile-vc:1.0.0`): credentials are issued as [[ref: verifiable credentials]] in the **IETF SD-JWT VC** format ([Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/)). The credential format profiles "W3C VCDM" and "ISO mdoc" are **NOT SUPPORTED** ([Swiss Profile Issuance §3.3.1](https://swiyu-admin-ch.github.io/specifications/swiss-profile-issuance/)). Under the BGEID, the legal term for a credential issued on the trust infrastructure is *elektronischer Nachweis* (electronic credential); the e-ID is one such credential among others.
 
+~ The BGEID covers the e-ID **and other electronic credentials** (Art. 1 para. 1 let. c), and three of its rules apply to any of them: anyone wishing to issue may use the trust infrastructure (Art. 5 para. 1); the [[xref: toip-glossary, holder]] receives the credential as a data package and may keep it by technical means of their own choosing (Art. 7); and on presentation the holder must be able to determine which parts of it, and which information derived from them, reach the [[ref: verifier]], with the [[ref: issuer]] learning nothing of the presentation (Art. 10). The duty of care that limits *what a verifier may ask for* is narrower: Art. 23 binds it only for the e-ID (see [[ref: verifier]]).
+
 ~ Does not imply: possession of a credential establishes neither the factual truth of its claims, nor that the issuer was authorised to issue it, nor that any relying party will accept it. Those are separate properties, established (or not) by separate mechanisms.
 
 ~ Supporting definitions:

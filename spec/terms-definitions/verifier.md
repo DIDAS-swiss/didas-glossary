@@ -10,6 +10,8 @@
 
 ~ swiyu governance context: trust and governance information about a verifier can be evaluated by the wallet before disclosure. Under the [[ref: trust protocol]] the wallet retrieves the applicable [[ref: trust statement]]s about the verifier, validates them, derives the [[ref: trust marker]]s for that interaction, and can display them; it then applies its own policy, and the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) attaches normative force to specific markers. The resulting trust marker is an evaluation result for that interaction, not a persistent property of the verifier.
 
+~ For the e-ID the limit on what a verifier may ask for is statutory, not only protocol-level. BGEID Art. 23 lets a verifier request the personal data the e-ID contains only where the check of identity, or of a partial aspect of it, is provided for in legislation, or where it is strictly necessary for the reliability of the transaction, in particular to prevent misuse and identity theft. A breach is entered in the trust register, visible to the holder during a transaction, and can lead to exclusion from the register. The Act sets no equivalent test for other electronic credentials; what a verifier may ask for there is left to the [[ref: governance]] of the [[ref: trust domain]].
+
 ~ Language equivalents:
 
 ~ [DE] **Verifikator**, **Verifikatorin**

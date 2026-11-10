@@ -139,6 +139,6 @@ of repeating it.
 - [DIDAS — Digital Identity & Data Sovereignty Association](https://www.didas.swiss/)
 - [swiyu Trust Infrastructure](https://github.com/swiyu-admin-ch) — the Swiss federal trust infrastructure for digital credentials
 - [Trust over IP Foundation Glossary](https://glossary.trustoverip.org/) — the international reference glossary this project aligns with
-- [IETF SD-JWT VC](https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-08.txt) — the credential format used in the swiyu ecosystem, as profiled by the [Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/)
+- [IETF SD-JWT VC](https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-15.html) (draft 15, the version `swiss-profile-vc:1.0.0` references) — the credential format used in the swiyu ecosystem, as profiled by the [Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/)
 - [W3C Verifiable Credentials Data Model](https://www.w3.org/TR/vc-data-model/) — conceptual reference for verifiable-credential terminology; not a supported format in the Swiss Profile
-- [BGEID](https://www.fedlex.admin.ch/) — Federal Act on Electronic Proof of Identity (Switzerland)
+- **BGEID** — Bundesgesetz über den elektronischen Identitätsnachweis und andere elektronische Nachweise (E-ID-Gesetz) of 20 December 2024, BBl 2025 20, published on [fedlex.admin.ch](https://www.fedlex.admin.ch/) (Federal Act on Electronic Proof of Identity and Other Electronic Credentials). Governs the federal trust infrastructure and the e-ID
