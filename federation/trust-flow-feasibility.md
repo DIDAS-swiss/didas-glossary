@@ -231,8 +231,8 @@ effort-to-value ratio in the whole proposal.
 | **3 — Own** | local `[[def:]]` + cited source | domain-local element + `link` to the nearest core/glossary concept. Full review. |
 
 The review economics are the same as the glossary's, and that is the point: tier-1
-adoptions batch cheaply, which is what makes federation affordable at ~20
-contributing organisations.
+adoptions batch cheaply, so federation stays affordable at ~20 contributing
+organisations.
 
 ---
 
