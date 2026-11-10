@@ -1,0 +1,174 @@
+/* ==========================================================================
+   DIDAS Glossary — branding layer
+   spec-up-t ≥1.7 ships the ToIP-style UI natively (term cards, definition
+   detail levels, dark mode, font-size controls). This file only adds DIDAS
+   branding on top; it deliberately does not restyle the components.
+   ========================================================================== */
+
+/* accent: DIDAS blue, readable in both Bootstrap themes */
+:root {
+  --didas-accent: #1971c2;
+}
+[data-bs-theme="dark"] {
+  --didas-accent: #4dabf7;
+}
+
+/* ===========================================================================
+   Shared DIDAS masthead
+   The same header across the DIDAS sites: the identity line from the
+   digital-health_swiyu showcase, in the bar geometry and hairline rule of the
+   Trust Flow landing page. Only the four --mh-* values below differ between
+   sites; everything after them is identical everywhere, so a change to the
+   design can be copied across without rereading each site's stylesheet.
+
+   Here the bar is prepended above spec-up-t's navbar by custom-body.js, since
+   the navbar is written by the toolchain on every render. The identity and the
+   controls move up into the masthead; spec-up-t's own buttons stay in the DOM
+   and keep doing the work, because the masthead's buttons click them.
+   =========================================================================== */
+.site-masthead {
+  --mh-rule:  var(--bs-border-color);
+  --mh-ink:   var(--bs-secondary-color);
+  --mh-hover: var(--didas-accent);
+  --mh-wash:  var(--bs-tertiary-bg);
+  --mh-width: 100%;   /* the glossary lays out full width, so the bar spans it */
+
+  border-bottom: 1px solid var(--mh-rule);
+  background: var(--bs-body-bg);
+}
+.site-masthead .bar {
+  max-width: var(--mh-width);
+  margin-inline: auto;
+  padding-inline: 24px;
+  padding-block: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 24px;
+}
+.site-masthead .id {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+.site-masthead .didas { display: inline-flex; align-items: center; line-height: 0; }
+.site-masthead .didas img { height: 20px; width: auto; display: block; }
+.site-masthead .eyebrow {
+  margin: 0;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mh-ink);
+}
+.site-masthead .repolink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--mh-ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-masthead .repolink svg { flex: none; }
+.site-masthead .repolink span {
+  border-bottom: 1px solid var(--mh-rule);
+  padding-bottom: 2px;
+}
+.site-masthead .repolink:hover { color: var(--mh-hover); }
+.site-masthead .repolink:hover span { border-bottom-color: currentColor; }
+
+/* The same controls the glossary carries — colour theme, layout width and text
+   size — reading and writing the same localStorage keys. All four DIDAS sites
+   are served from one origin, so a preference set on any of them is the
+   preference on all of them. */
+.site-masthead .tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+.site-masthead .seg {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--mh-rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.site-masthead button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 5px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--mh-ink);
+  cursor: pointer;
+  font: inherit;
+  line-height: 0;
+}
+.site-masthead .seg button + button { border-left: 1px solid var(--mh-rule); }
+.site-masthead button:hover { color: var(--mh-hover); }
+.site-masthead button[aria-pressed="true"] {
+  color: var(--mh-hover);
+  background: var(--mh-wash);
+}
+.site-masthead button svg { width: 14px; height: 14px; display: block; }
+.site-masthead .seg.text button {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1;
+  padding-block: 4px;
+}
+.site-masthead .seg.text button:first-child { font-size: 0.62rem; }
+.site-masthead .seg.text button:last-child  { font-size: 0.88rem; }
+/* The width control shows the action it would take, so it swaps icon rather
+   than carrying the pressed background the theme buttons use. */
+.site-masthead button[data-width-value] .w-contract { display: none; }
+.site-masthead button[data-width-value][aria-pressed="true"] { background: none; }
+.site-masthead button[data-width-value][aria-pressed="true"] .w-expand { display: none; }
+.site-masthead button[data-width-value][aria-pressed="true"] .w-contract { display: block; }
+/* === end shared DIDAS masthead ========================================== */
+
+/* Bootstrap's dark theme is opt-in per element, so the plate has to follow it
+   rather than prefers-color-scheme: the logo is a fixed-colour bitmap and on a
+   dark ground it needs its own light plate rather than a filter that would
+   distort its colours. */
+[data-bs-theme="dark"] .site-masthead .didas {
+  background: #FFFFFF; padding: 3px 7px; border-radius: 3px;
+}
+
+/* The masthead now carries the identity and the controls, so the navbar's own
+   logo and service menu would be a second copy of both directly beneath it.
+   They stay in the DOM because custom-body.js drives them: the masthead's
+   buttons click these, so spec-up-t's behaviour remains the one
+   implementation. */
+#logo,
+#header .service-menu {
+  display: none !important;
+}
+a[logo] img,
+.navbar-brand img {
+  max-height: 2.25rem;
+  width: auto;
+}
+/* What is left in the navbar is the sidebar toggle, which spec-up-t shows only
+   below the md breakpoint. Above it the bar would be an empty sticky strip. */
+#header.navbar {
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--mh-rule, var(--bs-border-color));
+}
+@media (min-width: 768px) {
+  #header.navbar { display: none; }
+}
+
+/* headings slightly tightened, DIDAS-blue section marks */
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
