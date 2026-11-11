@@ -8,7 +8,7 @@
 
 ~ swiyu context (Swiss Profile, `swiss-profile-vc:1.0.0`): credentials use **SD-JWT** ([RFC 9901](https://www.rfc-editor.org/rfc/rfc9901.html)) as profiled by the [Swiss Profile VC](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/): the issuer commits to each selectively disclosable claim separately at issuance, and the holder chooses at presentation time which disclosures to include. Application claims must be selectively disclosable, while specified registered JWT claims (such as `iat` and `exp`) are excluded from disclosure — see [[ref: claim]] for the exact rules. A verifier can check every disclosed claim against the issuer's signature.
 
-~ Does not imply: selective disclosure does not by itself establish anonymity, unlinkability, verifier authorisation or legal data-minimisation compliance. In particular, it does not prevent two verifiers, or one verifier across two presentations, from recognising that they saw the same holder — unlinkability is a separate property with separate mechanisms.
+~ Does not imply: selective disclosure does not by itself establish anonymity, unlinkability, verifier authorisation or legal data-minimisation compliance. In particular, it does not prevent two verifiers, or one verifier across two presentations, from recognising that they saw the same holder — [[ref: unlinkability]] is a separate property with separate mechanisms, such as [[ref: batch issuance]].
 
 ~ Language equivalents:
 

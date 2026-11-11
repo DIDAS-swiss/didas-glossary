@@ -1,5 +1,6 @@
 [
   "terms-definitions/ambition-level.md",
+  "terms-definitions/batch-issuance.md",
   "terms-definitions/beta-id.md",
   "terms-definitions/claim.md",
   "terms-definitions/credential.md",
@@ -10,6 +11,7 @@
   "terms-definitions/ecosystem.md",
   "terms-definitions/governance.md",
   "terms-definitions/governing-authority.md",
+  "terms-definitions/holder-binding.md",
   "terms-definitions/international-patient-summary.md",
   "terms-definitions/issuer.md",
   "terms-definitions/minute-of-agreement.md",
@@ -21,6 +23,7 @@
   "terms-definitions/trust-marker.md",
   "terms-definitions/trust-protocol.md",
   "terms-definitions/trust-statement.md",
+  "terms-definitions/unlinkability.md",
   "terms-definitions/verifiable-credential.md",
   "terms-definitions/verifier.md",
   "terms-definitions/wallet.md"
