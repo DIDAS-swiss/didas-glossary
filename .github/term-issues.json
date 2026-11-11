@@ -1,0 +1,2647 @@
+[
+{
+"term": "BOLA",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "ESSR",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "ITPS",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "LID",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "aal",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "abac",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "acceptance",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "acceptance-network",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "access-control",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "accreditation",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "acdc",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "action",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "actor",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "administering-authority",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "administering-body",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "agency",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "agent",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "aid",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "anonymous",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "anycast",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "anycast-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "appraisability",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "appropriate-friction",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "assurance-level",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "attribute",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "attribute-based-access-control",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "attributional-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "audit",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "audit-log",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "auditor",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "authentic-chained-data-container",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "authentic-data",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authentication",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "authenticator",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "authenticator-assurance-level",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "authenticity",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authoritative",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authoritative-source",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authority",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "authorization",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authorization-graph",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "authorized-organizational-representative",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "autonomic-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "autonomic-identity-system",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "autonomic-namespace",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "binding",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "biometric",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "blockchain",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "broadcast",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "broadcast-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "broken-object-level-authorization",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "c2pa",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "ca",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cai",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "capability",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "certificate",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "certificate-authority",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "certification",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "certification-authority",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "certification-body",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "chain-of-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "chained-credentials",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "chaining",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "channel",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "ciphertext",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "coalition-for-content-provenance-and-authenticity",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "collective-signature",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "communication",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "communication-channel",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "communication-endpoint",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "communication-metadata",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "communication-session",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "complex-password",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "compliance",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "concept",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "confidential-computing",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "confidentiality",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "connection",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "consent-management",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "content-authenticity-initiative",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "contextual-linkability",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "control-authority",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "controlled-document",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "controller",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "correlation-privacy",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "counterparty",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "credential-family",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "credential-governance-framework",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "credential-offer",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "credential-request",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "credential-schema",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "criterion",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "cryptographic-binding",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cryptographic-key",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cryptographic-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "cryptographic-verifiability",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cryptographically-bound",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cryptographically-verifiable",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "cryptography",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "custodial-wallet",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "custodian",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "custodianship-arrangement",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "dark-pattern",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "data",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "data-packet",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "data-schema",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "data-subject",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "data-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "datagram",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "dead-drop",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "decentralized-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "decentralized-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "decentralized-identity-foundation",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "decentralized-key-management-infrastructure",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "decentralized-web-node",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "deceptive-pattern",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "decryption",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "deep-link",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "definition",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "delegatee",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "delegation",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "delegation-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "delegator",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "dependent",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "device-controller",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "dictionary",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "did",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "did-controller",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "did-document",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "did-method",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "did-subject",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "did-url",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "digital-agent",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "digital-asset",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "digital-certificate",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "digital-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "digital-ecosystem",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "digital-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "digital-rights-management",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "digital-signature",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "digital-trust-ecosystem",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "digital-trust-utility",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "digital-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "discovery",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "distributed-ledger",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "domain",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "drm",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "dwn",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "ecosystem-governance-framework",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "eidas",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "encrypt-sender-sign-receiver",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "encrypted-data-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "encryption",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "end-to-end-encryption",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "end-to-end-principle",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "end-verifiability",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "end-verifiable",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "endpoint",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "endpoint-system",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "enterprise-data-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "enterprise-wallet",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "entity",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "ephemeral-connection",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "expression-language",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "fal",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "federated-identity",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "federation",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "federation-assurance-level",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "fiduciary",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "first-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "foundational-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "fourth-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "functional-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "gateway",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "gdpr",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "general-data-protection-regulation",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "glossary",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "governance---risk-management---compliance",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governance-diamond",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governance-document",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governance-framework",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governance-graph",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governance-requirement",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governed-information",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governed-party",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governed-use-case",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "governing-body",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "grc",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "guardian",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "guardianship-arrangement",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "guardianship-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "hardware-security-module",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "hash",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "hash-function",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "holder",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "holder-binding",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "host",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "hourglass-model",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "hsm",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "human-auditable",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "human-experience",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "human-readable",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "human-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "ial",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "identification",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-assurance",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-assurance-level",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-binding",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-controller",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-data",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-document",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-proofing",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "identity-provider",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "idp",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "impersonation",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "information-theoretic-security",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "integrity",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "intermediary-system",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "internet-protocol",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "internet-protocol-suite",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "ip",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "ip-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "issuance",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "issuance-request",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "jurisdiction",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "kate",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "keri",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "key",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "key-establishment",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "key-event",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "key-event-log",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "key-event-receipt-infrastructure",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "key-management-system",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "keys-at-the-edge",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "kms",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "knowledge",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "laws-of-identity",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "layer-1",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "layer-2",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "layer-3",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "layer-4",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "legal-entity",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "legal-entity-identifier",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "legal-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "legal-person",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "legal-system",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "legitimized-human-meaningful-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "lei",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "level-of-assurance",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "liveness-detection",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "locus-of-control",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "machine-readable",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "man-made-thing",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "mandatory",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "message",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "metadata",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "mobile-deep-link",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "mpc",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "multi-party-computation",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "multi-party-control",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "multi-signature",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "multicast",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "multicast-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "natural-person",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "natural-thing",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "network-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "nist-csrc",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "node",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "non-custodial-wallet",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "non-repudiable",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "non-transferable",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "non-transferable-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "objective",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "oobi",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "openwallet-foundation",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "operational-circumstances",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "optional",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "organization",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "organizational-authority",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "out-of-band-introduction",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "owner",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "p2p",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "packet",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "password",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "peer",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "peer-to-peer",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "permission",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "persistent-connection",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "persistent-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "person",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "personal-data",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "personal-data-store",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "personal-data-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "personal-wallet",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "personally-identifiable-information",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "physical-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "pii",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "pki",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "plaintext",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "policy",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "pop",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "presentation",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "presentation-attack",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "presentation-request",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "primary-document",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "principal",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "principles-of-ssi",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "privacy-policy",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "privacy-washing",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "private-key",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "proof",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "proof-of-control",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "proof-of-personhood",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "proof-of-possession",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "proof-of-presence",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "property",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "protected-data",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "protocol-layer",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "protocol-stack",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "pseudonym",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "public-key",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "public-key-certificate",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "public-key-cryptography",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "public-key-infrastructure",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "qr-code",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "rbac",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "real-world-identity",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "recommended",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "record",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "registrant",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "registrar",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "registration",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "registration-agent",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "registry",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "relationship",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "relationship-context",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "relying-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "reputation",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "reputation-graph",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "reputation-system",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "reputational-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "requirement",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "resolver",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "revocation",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "risk",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "risk-assessment",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "risk-decision",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "risk-management",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "risk-mitigation",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "role",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "role-based-access-control",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "role-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "rotation",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "router",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "routing",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "rule",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "rwi",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "schema",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "scid",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "scope",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "second-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "secure-attribution",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "secure-enclave",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "secure-multi-party-computation",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "secure-sockets-layer",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "security-domain",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "security-policy",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "self-addressing-data",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "self-asserted",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "self-certified",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "self-certifying-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "self-sovereign-identity",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "sensitive-data",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "session",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "single-signature-identifier",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "sociotechnical-system",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "software-agent",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "sovrin-foundation",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "spanning-layer",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "specification",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "ssi",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "ssi-system",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "ssl",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "stale-event",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "stale-key",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "stream",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "streaming-media",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "subject",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "subscription",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "supporting-system",
+"cluster_label": "cluster-misc",
+"cluster": "Uncategorised"
+},
+{
+"term": "sybil-attack",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "system-of-record",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "tamper-evident",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "tamper-resistant",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "tcp",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "tcp-ip",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "tcp-ip-stack",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "technical-requirement",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "technical-specification",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "technical-trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "tee",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "term",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "terminology",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "terms-community",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "terms-wiki",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "thing",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "third-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "three-party-model",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "timestamp",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "tls",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "toip",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-application",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-channel",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-communication",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-connection",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-controller",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-endpoint",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-foundation",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-governance-architecture-specification",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "toip-governance-framework",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "toip-governance-metamodel",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "toip-governance-stack",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "toip-identifier",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-intermediary",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-layer",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-layer-1",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-layer-2",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-layer-3",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-layer-4",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-message",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-relationship",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-specification",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-stack",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-system",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-technology-architecture-specification",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-technology-stack",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-trust-community",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-trust-network",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-trust-registry-protocol",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "toip-trust-spanning-protocol",
+"cluster_label": "cluster-ecosystems",
+"cluster": "Ecosystems, SSI & ToIP Architecture"
+},
+{
+"term": "transaction",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "transferable",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "transferable-identifier",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "transitive-trust-decision",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "transmission-control-protocol",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "transport-layer",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "transport-layer-security",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "tribal-knowledge",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "trust",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-anchor",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-application",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-application-layer",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-assurance",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-basis",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-boundary",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-chain",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-community",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-context",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-ecosystem",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-establishment",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-factor",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-framework",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-graph",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-limit",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-network",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-objective",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-over-ip",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-registry",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-registry-protocol",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-relationship",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-root",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-service-provider",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-spanning-layer",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-spanning-protocol",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-support",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-support-layer",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-task",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-task-layer",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-task-protocol",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trust-triangle",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trusted-execution-environment",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "trusted-role",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "trusted-third-party",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "trusted-timestamp-authority",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "trustworthiness",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "trustworthy",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "tsp",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "tta",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "ttp",
+"cluster_label": "cluster-trust",
+"cluster": "Trust, Assurance Levels & Trust Registries"
+},
+{
+"term": "udp",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "unicast",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "unicast-address",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "uniform-resource-identifier",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "uniform-resource-locator",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "uniform-resource-name",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "uri",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "url",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "urn",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "user-agent",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "user-datagram-protocol",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "utility-governance-framework",
+"cluster_label": "cluster-governance",
+"cluster": "Governance, Compliance & Legal"
+},
+{
+"term": "validation",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "vc",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verifiable",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verifiable-data",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verifiable-data-registry",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verifiable-identifier",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verifiable-message",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "verification",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "vid",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "vid-relationship",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "vid-to-vid",
+"cluster_label": "cluster-identity",
+"cluster": "Identity, Identifiers & DIDs"
+},
+{
+"term": "virtual-credential",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "virtual-vault",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "voice-over-ip",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "voip",
+"cluster_label": "cluster-networking",
+"cluster": "Communication, Networking & Protocols"
+},
+{
+"term": "w3c-verifiable-credentials-data-model-specification",
+"cluster_label": "cluster-credentials",
+"cluster": "Credentials & Verifiable Data"
+},
+{
+"term": "wallet-engine",
+"cluster_label": "cluster-wallets",
+"cluster": "Wallets, Agents & Data Stores"
+},
+{
+"term": "witness",
+"cluster_label": "cluster-privacy",
+"cluster": "Privacy, Data, Roles & Parties"
+},
+{
+"term": "zero-knowledge-proof",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "zero-knowledge-service",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "zero-knowledge-service-provider",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "zero-trust-architecture",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+},
+{
+"term": "zkp",
+"cluster_label": "cluster-crypto",
+"cluster": "Cryptography, Keys & Security"
+}
+]

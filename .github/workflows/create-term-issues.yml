@@ -1,0 +1,96 @@
+name: Create per-term review issues
+
+# Temporary workflow: splits the Workflow B batch issues into one issue per
+# pending ToIP term, per the term list in .github/term-issues.json.
+# Removed from main again after the run.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const terms = JSON.parse(fs.readFileSync('.github/term-issues.json', 'utf8'));
+            const { owner, repo } = context.repo;
+            const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+            // labels
+            const labels = {
+              'toip-review': ['0969da', 'ToIP federation review of a single upstream term'],
+              'cluster-credentials': ['bfdadc', 'Credentials & Verifiable Data'],
+              'cluster-identity': ['c2e0c6', 'Identity, Identifiers & DIDs'],
+              'cluster-trust': ['fef2c0', 'Trust, Assurance Levels & Trust Registries'],
+              'cluster-governance': ['f9d0c4', 'Governance, Compliance & Legal'],
+              'cluster-crypto': ['d4c5f9', 'Cryptography, Keys & Security'],
+              'cluster-wallets': ['bfd4f2', 'Wallets, Agents & Data Stores'],
+              'cluster-ecosystems': ['c5def5', 'Ecosystems, SSI & ToIP Architecture'],
+              'cluster-networking': ['e6e6e6', 'Communication, Networking & Protocols'],
+              'cluster-privacy': ['f1c0e8', 'Privacy, Data, Roles & Parties'],
+              'cluster-misc': ['ededed', 'Uncategorised (was in no review batch)'],
+            };
+            for (const [name, [color, description]] of Object.entries(labels)) {
+              try { await github.rest.issues.createLabel({ owner, repo, name, color, description }); }
+              catch (e) { if (e.status !== 422) throw e; }
+            }
+
+            // idempotency: collect existing [ToIP review] titles
+            const existing = new Set();
+            for await (const res of github.paginate.iterator(
+                github.rest.issues.listForRepo, { owner, repo, state: 'all', labels: 'toip-review', per_page: 100 })) {
+              for (const i of res.data) existing.add(i.title);
+            }
+            core.info(`existing per-term issues: ${existing.size}`);
+
+            let created = 0, skipped = 0;
+            for (const { term, cluster_label, cluster } of terms) {
+              const title = `[ToIP review] ${term}`;
+              if (existing.has(title)) { skipped++; continue; }
+              const body = [
+                `ToIP federation review for the upstream term \`${term}\`.`,
+                ``,
+                `- Upstream definition: https://glossary.trustoverip.org/#term:${term} ([source file](https://github.com/trustoverip/ctwg-main-glossary/blob/main/spec/terms-definitions/${term}.md))`,
+                `- Cluster: **${cluster}**`,
+                `- Review state: \`pending\` in [federation/toip-review.md](https://github.com/DIDAS-swiss/didas-glossary/blob/main/federation/toip-review.md)`,
+                ``,
+                `Decide per the three-tier rule in [GOVERNANCE.md](https://github.com/DIDAS-swiss/didas-glossary/blob/main/GOVERNANCE.md):`,
+                ``,
+                `| Decision | Meaning | Action |`,
+                `|---|---|---|`,
+                `| **adopt** | ToIP definition is sufficient | add a \`[[tref:]]\` term file with DE/FR/IT aliases |`,
+                `| **extend** | needs Swiss/swiyu context | local definition with ToIP relation line |`,
+                `| **own** | Swiss law / DIDAS meaning prevails | local definition, divergence stated |`,
+                `| **skip** | out of DIDAS/swiyu scope | mark the row only |`,
+                ``,
+                `Close this issue with the pull request that sets the term's row in \`toip-review.md\` to the decision (and adds the term file for adopt/extend/own).`,
+                ``,
+                `Upstream verified against \`trustoverip/ctwg-main-glossary@00608bb\` (543 terms, current as of 2026-11-11).`,
+              ].join('\n');
+              for (let attempt = 1; ; attempt++) {
+                try {
+                  await github.rest.issues.create({ owner, repo, title, body,
+                    labels: ['glossary', 'toip-review', cluster_label] });
+                  created++;
+                  break;
+                } catch (e) {
+                  if ((e.status === 403 || e.status === 429) && attempt <= 3) {
+                    const wait = (e.response?.headers?.['retry-after'] ? +e.response.headers['retry-after'] : 120) * 1000;
+                    core.warning(`rate limited on ${term}, waiting ${wait / 1000}s (attempt ${attempt})`);
+                    await sleep(wait);
+                  } else { throw e; }
+                }
+              }
+              if (created % 25 === 0) core.info(`created ${created}...`);
+              await sleep(7500);  // ~480/h, under GitHub's content-creation secondary limit
+            }
+            core.notice(`done: ${created} created, ${skipped} already existed`);
