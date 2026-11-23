@@ -282,7 +282,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 <li><strong>Decentralized identity infrastructure</strong> — identifiers, registries, wallets, and cryptographic foundations</li>
 <li><strong>Governance</strong> — trust frameworks, governance documents, and the regulatory context of the BGEID</li>
 <li><strong>Alignment with international standards</strong> — terms are aligned with the <a href="https://glossary.trustoverip.org/">Trust over IP (ToIP) Main Glossary</a> and eSSIF-Lab where applicable. Note that the swiyu credential format is <strong>IETF SD-JWT VC</strong> as profiled by the <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/">Swiss Profile</a>; the W3C Verifiable Credentials Data Model is referenced for terminology only and is not a supported format in the Swiss Profile</li>
-<li><strong>Applications</strong> — Swiss use cases building on the trust infrastructure, such as <a class="term-reference" href="#term:e-collecting">E-Collecting</a> and the <a class="term-reference" href="#term:digital-product-passport">digital product passport</a></li>
+<li><strong>Applications</strong> — use cases discussed in and around the swiyu ecosystem, such as <a class="term-reference" href="#term:e-collecting">E-Collecting</a> and the <a class="term-reference" href="#term:digital-product-passport">digital product passport</a> (each entry states its own legal basis and what it does and does not assert about the trust infrastructure)</li>
 </ul>
 <p>Where a term is fully covered by the ToIP glossary, the DIDAS glossary cross-references it rather than duplicating the definition.</p>
 <h2 id="about-didas" tabindex="-1"><a class="toc-anchor d-print-none" href="#about-didas">§</a> About DIDAS</h2>
@@ -497,19 +497,29 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Relation to ToIP: no equivalent term. DIDAS is an organisation rather than a concept.</p>
 </dd><dt data-sourcefile="terms-definitions/digital-product-passport.md" class="term-local"><span id="term:passaporto-digitale-del-prodotto"><span id="term:passeport-numérique-de-produit"><span id="term:digitaler-produktpass"><span id="term:dpp"><span id="term:digital-product-passport">DPP <span class="term-local-parenthetical-terms">(digitaler Produktpass, passeport numérique de produit, passaporto digitale del prodotto, <span class="term-local-original-term term-original-term" title="original term">digital product passport</span>)</span></span></span></span></span></span></dt><dd>
-<p>A structured collection of product-related data with pre-defined scope and agreed data management and access rights conveyed through a unique identifier, accessible via electronic means through a data carrier. The intended scope of the DPP is information related to usage, maintenance, sustainability, circularity, value retention for re-use, remanufacturing, and recycling.</p>
+<p>Legal source: <a href="https://eur-lex.europa.eu/eli/reg/2024/1781/oj/eng">Regulation (EU) 2024/1781</a> (Ecodesign for Sustainable Products Regulation, ESPR), Article 2 point (28). The definition opens: “‘digital product passport’ means a set of data specific to a product”; it continues by requiring that the set includes the information specified in the applicable delegated act adopted under Article 4 and is accessible by electronic means through a data carrier in accordance with Chapter III <em>(this continuation is paraphrased; Article 2(28) is the binding text)</em>.</p>
 </dd><dd>
-<p>Source: <a href="https://cirpassproject.eu/dpp-in-a-nutshell/">CIRPASS — DPP in a nutshell</a>.</p>
+<p>Related definitions in the same Article: a <strong>data carrier</strong> (point (29)) “means a linear barcode symbol, a two-dimensional symbol or other automatic identification data capture medium” that can be read by a device; a <strong>unique product identifier</strong> (point (30)) “means a unique string of characters for the identification of a product” that also enables a web link to the digital product passport <em>(the closing clauses of both points are paraphrased)</em>.</p>
+</dd><dd>
+<p>Scope of the Regulation (Article 1): “This Regulation also establishes a digital product passport, provides for the setting of mandatory green public procurement requirements and creates a framework to prevent unsold consumer products from being destroyed.” It “applies to any physical goods that are placed on the market or put into service, including components and intermediate products”, with exclusions listed in Article 1(2).</p>
+</dd><dd>
+<p>Swiss context: the ESPR is EU law. This glossary records its definition as the terminological reference; it does not assert whether or how DPP requirements apply to Swiss economic operators, nor that a DPP is issued as a <a class="term-reference" href="#term:credential">credential</a> on the swiyu <a class="term-reference" href="#term:trust-infrastructure">trust infrastructure</a>.</p>
+</dd><dd>
+<p>Does not imply: a DPP is a product-specific data set reachable through a data carrier. It is not a <a class="term-reference" href="#term:verifiable-credential">verifiable credential</a>, and the Regulation’s definition does not prescribe a credential format.</p>
+</dd><dd>
+<p>Supporting definitions:</p>
+</dd><dd>
+<p>[CIRPASS, EU-funded project — descriptive, not a normative source]: “A structured collection of product-related data with pre-defined scope and agreed data management and access rights conveyed through a unique identifier, accessible via electronic means through a data carrier.” (<a href="https://cirpassproject.eu/dpp-in-a-nutshell/">CIRPASS — DPP in a nutshell</a>)</p>
 </dd><dd>
 <p>Relation to ToIP: no equivalent term.</p>
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>digitaler Produktpass</strong></p>
+<p>[DE] <strong>digitaler Produktpass</strong> <em>(proposed — to be verified against the German language version of Regulation (EU) 2024/1781)</em></p>
 </dd><dd>
-<p>[FR] <strong>passeport numérique de produit</strong></p>
+<p>[FR] <strong>passeport numérique de produit</strong> <em>(proposed — to be verified against the French language version)</em></p>
 </dd><dd>
-<p>[IT] <strong>passaporto digitale del prodotto</strong></p>
+<p>[IT] <strong>passaporto digitale del prodotto</strong> <em>(proposed — to be verified against the Italian language version)</em></p>
 </dd><dt data-sourcefile="terms-definitions/ecosystem.md" class="term-local"><span id="term:ecosistema"><span id="term:écosystème"><span id="term:ökosysteme"><span id="term:ökosystem"><span id="term:ecosystems"><span id="term:ecosystem">ecosystems <span class="term-local-parenthetical-terms">(Ökosystem, Ökosysteme, écosystème, ecosistema, <span class="term-local-original-term term-original-term" title="original term">ecosystem</span>)</span></span></span></span></span></span></span></dt><dd>
 <p>In the digital-trust sense used throughout this glossary: a set of independent actors, technical components, <a class="term-reference" href="#term:governance">governance</a> arrangements and shared <a class="term-reference" href="#term:protocol">protocol</a>s that interact to issue, hold, present, verify and rely on digital <a class="term-reference" href="#term:credential">credential</a>s or related trust information.</p>
 </dd><dd>
@@ -1452,8 +1462,8 @@ of repeating it.</p>
                 <div id="build-info" class="small text-muted">
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-calendar-event me-2"></i>
-                        <time class="timestamp" datetime="2026-11-23T21:38:11.052Z">
-                            Generated: 2026-11-23T21:38:11.052Z
+                        <time class="timestamp" datetime="2026-11-23T21:44:23.158Z">
+                            Generated: 2026-11-23T21:44:23.158Z
                         </time>
                     </div>
                     <div class="d-flex align-items-center mb-1">
