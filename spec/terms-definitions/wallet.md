@@ -1,4 +1,4 @@
-[[def: wallet, wallets, Wallet, portefeuille, portefeuilles, portafoglio, portafogli]]
+[[def: wallet, wallets, Wallet, digitales Portemonnaie, portefeuille, portefeuilles, portefeuille électronique, portafoglio, portafogli, portafoglio elettronico]]
 
 ~ A user agent, optionally including a hardware component, that stores and processes cryptographic keys and [[ref: credential]]s and enables its controller to perform cryptographically verifiable operations — in particular to receive credentials at issuance and to release [[ref: claim]]s from them in presentations. Wallets exist in different models: personal and organisational, custodial and non-custodial; the holder and the wallet operator need not be the same party.
 
@@ -10,8 +10,10 @@
 
 ~ Language equivalents:
 
-~ [DE] **Wallet** (der englische Begriff wird auch im Deutschen verwendet; die Anwendung des Bundes heisst swiyu Wallet)
+~ [DE] **Wallet** (der englische Begriff wird auch im Deutschen verwendet; die Anwendung des Bundes heisst swiyu Wallet) — offizielle swiyu-Übersetzung: **digitales Portemonnaie (Wallet)** (official swiyu translation, [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary))
 
-~ [FR] **portefeuille**
+~ [FR] **portefeuille** — traduction officielle swiyu: **portefeuille électronique (wallet)**
 
-~ [IT] **portafoglio**
+~ [IT] **portafoglio** — traduzione ufficiale swiyu: **portafoglio elettronico (wallet)**
+
+~ [RM] **bursa digitala (wallet)** (official swiyu translation)

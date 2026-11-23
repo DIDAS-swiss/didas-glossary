@@ -18,8 +18,12 @@
 
 ~ Language equivalents:
 
-~ [DE] **Nachweis**, **Beglaubigung** — im BGEID-Kontext auch: **elektronischer Nachweis**
+~ Two official registers exist and differ in FR/IT: the BGEID legal wording and the swiyu product terminology (official swiyu translation, [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary)). Where they differ, both are given.
 
-~ [FR] **attestation** — dans le contexte de la LSIE: **attestation électronique**
+~ [DE] **Nachweis** (also the official swiyu translation), **Beglaubigung** — im BGEID-Kontext auch: **elektronischer Nachweis**
 
-~ [IT] **attestato** — nel contesto della LSIE: **attestato elettronico**
+~ [FR] **attestation** — dans le contexte de la LSIE: **attestation électronique**; terminologie produit swiyu: **document**
+
+~ [IT] **attestato** — nel contesto della LSIE: **attestato elettronico**; terminologia di prodotto swiyu: **documento**
+
+~ [RM] **cumprova** (official swiyu translation)

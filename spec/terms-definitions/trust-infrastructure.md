@@ -10,8 +10,10 @@
 
 ~ Language equivalents:
 
-~ [DE] **Vertrauensinfrastruktur**
+~ [DE] **Vertrauensinfrastruktur** (also the official swiyu translation: **swiyu Vertrauensinfrastruktur**)
 
-~ [FR] **infrastructure de confiance**
+~ [FR] **infrastructure de confiance** (also the official swiyu translation: **infrastructure de confiance swiyu**)
 
-~ [IT] **infrastruttura di fiducia**
+~ [IT] **infrastruttura di fiducia** (also the official swiyu translation: **infrastruttura di fiducia swiyu**)
+
+~ [RM] **infrastructura da confidenza swiyu** (official swiyu translation)

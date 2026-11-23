@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="undefined">
     <meta name="author" content="undefined">
-    <meta property="spec-up-t:github-repo-info" content="DIDAS-swiss,didas-glossary,main">
+    <meta property="spec-up-t:github-repo-info" content="DIDAS-swiss,didas-glossary,claude/axios-prototype-pollution-fix-yte65z">
     <link rel="icon" href="undefined" type="image/x-icon">
     <meta name="generator" content="Spec-Up-T">
     <title>DIDAS Glossary</title>
@@ -393,6 +393,8 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>swiyu context (Swiss Profile, <code>swiss-profile-vc:1.0.0</code>): credentials are issued as <a class="term-reference" href="#term:verifiable-credentials">verifiable credentials</a> in the <strong>IETF SD-JWT VC</strong> format (<a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/">Swiss Profile VC</a>). The credential format profiles “W3C VCDM” and “ISO mdoc” are <strong>NOT SUPPORTED</strong> (<a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-issuance/">Swiss Profile Issuance §3.3.1</a>). Under the BGEID, the legal term for a credential issued on the trust infrastructure is <em>elektronischer Nachweis</em> (electronic credential); the e-ID is one such credential among others.</p>
 </dd><dd>
+<p>The BGEID covers the e-ID <strong>and other electronic credentials</strong> (Art. 1 para. 1 let. c), and three of its rules apply to any of them: anyone wishing to issue may use the trust infrastructure (Art. 5 para. 1); the <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:holder" href="https://glossary.trustoverip.org/#term:holder">holder</a> receives the credential as a data package and may keep it by technical means of their own choosing (Art. 7); and on presentation the holder must be able to determine which parts of it, and which information derived from them, reach the <a class="term-reference" href="#term:verifier">verifier</a>, with the <a class="term-reference" href="#term:issuer">issuer</a> learning nothing of the presentation (Art. 10). The duty of care that limits <em>what a verifier may ask for</em> is narrower: Art. 23 binds it only for the e-ID (see <a class="term-reference" href="#term:verifier">verifier</a>).</p>
+</dd><dd>
 <p>Does not imply: possession of a credential establishes neither the factual truth of its claims, nor that the issuer was authorised to issue it, nor that any relying party will accept it. Those are separate properties, established (or not) by separate mechanisms.</p>
 </dd><dd>
 <p>Supporting definitions:</p>
@@ -403,11 +405,15 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Nachweis</strong>, <strong>Beglaubigung</strong> — im BGEID-Kontext auch: <strong>elektronischer Nachweis</strong></p>
+<p>Two official registers exist and differ in FR/IT: the BGEID legal wording and the swiyu product terminology (official swiyu translation, <a href="https://github.com/swiyu-admin-ch/swiyu_glossary">swiyu_glossary</a>). Where they differ, both are given.</p>
 </dd><dd>
-<p>[FR] <strong>attestation</strong> — dans le contexte de la LSIE: <strong>attestation électronique</strong></p>
+<p>[DE] <strong>Nachweis</strong> (also the official swiyu translation), <strong>Beglaubigung</strong> — im BGEID-Kontext auch: <strong>elektronischer Nachweis</strong></p>
 </dd><dd>
-<p>[IT] <strong>attestato</strong> — nel contesto della LSIE: <strong>attestato elettronico</strong></p>
+<p>[FR] <strong>attestation</strong> — dans le contexte de la LSIE: <strong>attestation électronique</strong>; terminologie produit swiyu: <strong>document</strong></p>
+</dd><dd>
+<p>[IT] <strong>attestato</strong> — nel contesto della LSIE: <strong>attestato elettronico</strong>; terminologia di prodotto swiyu: <strong>documento</strong></p>
+</dd><dd>
+<p>[RM] <strong>cumprova</strong> (official swiyu translation)</p>
 </dd><dt data-sourcefile="terms-definitions/didas.md" class="term-local"><span id="term:digital-identity-and-data-sovereignty-association"><span id="term:didas">Digital Identity and Data Sovereignty Association <span class="term-local-parenthetical-terms">(<span class="term-local-original-term term-original-term" title="original term">DIDAS</span>)</span></span></span></dt><dd>
 <p>The association «Digital Identity and Data Sovereignty», DIDAS for short. A charitable, not-for-profit association under Art. 60 ff. of the Swiss Civil Code, seated in Rotkreuz in the Canton of Zug, politically and confessionally neutral.</p>
 </dd><dd>
@@ -447,11 +453,13 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Ökosystem</strong></p>
+<p>[DE] <strong>Ökosystem</strong> (also the official swiyu translation: <strong>(swiyu) Ökosystem</strong>)</p>
 </dd><dd>
-<p>[FR] <strong>écosystème</strong></p>
+<p>[FR] <strong>écosystème</strong> (also the official swiyu translation: <strong>écosystème (swiyu)</strong>)</p>
 </dd><dd>
-<p>[IT] <strong>ecosistema</strong></p>
+<p>[IT] <strong>ecosistema</strong> (also the official swiyu translation: <strong>ecosistema (swiyu)</strong>)</p>
+</dd><dd>
+<p>[RM] <strong>ecosistem (swiyu)</strong> (official swiyu translation)</p>
 </dd><dt data-sourcefile="terms-definitions/e-collecting.md" class="term-local"><span id="term:raccolta-elettronica-delle-firme"><span id="term:récolte-électronique-de-signatures"><span id="term:elektronische-unterschriftensammlung"><span id="term:e-collecting">elektronische Unterschriftensammlung <span class="term-local-parenthetical-terms">(récolte électronique de signatures, raccolta elettronica delle firme, <span class="term-local-original-term term-original-term" title="original term">E-Collecting</span>)</span></span></span></span></span></dt><dd>
 <p>The electronic collection of signatures for popular initiatives and referenda in Switzerland, as a digital counterpart to the paper-based signature collection governed by the Federal Act on Political Rights.</p>
 </dd><dd>
@@ -542,7 +550,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 <p>[FR] <strong>International Patient Summary</strong> (terme anglais en usage; littéralement: résumé international du patient — <em>proposed</em>)</p>
 </dd><dd>
 <p>[IT] <strong>International Patient Summary</strong> (termine inglese in uso; letteralmente: sintesi internazionale del paziente — <em>proposed</em>)</p>
-</dd><dt data-sourcefile="terms-definitions/issuer.md" class="term-local"><span id="term:emittenti"><span id="term:emittente"><span id="term:émettrice"><span id="term:émetteur"><span id="term:ausstellerin"><span id="term:aussteller"><span id="term:issuers"><span id="term:issuer">issuers <span class="term-local-parenthetical-terms">(Aussteller, Ausstellerin, émetteur, émettrice, emittente, emittenti, <span class="term-local-original-term term-original-term" title="original term">issuer</span>)</span></span></span></span></span></span></span></span></span></dt><dd>
+</dd><dt data-sourcefile="terms-definitions/issuer.md" class="term-local"><span id="term:emittenti"><span id="term:emittente"><span id="term:émettrice"><span id="term:émetteur"><span id="term:ausstellende-organisation"><span id="term:ausstellerin"><span id="term:aussteller"><span id="term:issuers"><span id="term:issuer">issuers <span class="term-local-parenthetical-terms">(Aussteller, Ausstellerin, ausstellende Organisation, émetteur, émettrice, emittente, emittenti, <span class="term-local-original-term term-original-term" title="original term">issuer</span>)</span></span></span></span></span></span></span></span></span></span></dt><dd>
 <p>The role an actor performs when it signs a set of <a class="term-reference" href="#term:claim">claim</a>s as a <a class="term-reference" href="#term:credential">credential</a> and provides that credential to a <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:holder" href="https://glossary.trustoverip.org/#term:holder">holder</a>.</p>
 </dd><dd>
 <p>Relation to ToIP: equivalent with Swiss extension — <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:issuer" href="https://glossary.trustoverip.org/#term:issuer">issuer</a>.</p>
@@ -555,11 +563,13 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Aussteller</strong>, <strong>Ausstellerin</strong></p>
+<p>[DE] <strong>Aussteller</strong>, <strong>Ausstellerin</strong> — offizielle swiyu-Übersetzung: <strong>ausstellende Organisation</strong> (official swiyu translation, <a href="https://github.com/swiyu-admin-ch/swiyu_glossary">swiyu_glossary</a>)</p>
 </dd><dd>
-<p>[FR] <strong>émetteur</strong>, <strong>émettrice</strong></p>
+<p>[FR] <strong>émetteur</strong>, <strong>émettrice</strong> (also the official swiyu translation)</p>
 </dd><dd>
-<p>[IT] <strong>emittente</strong></p>
+<p>[IT] <strong>emittente</strong> (also the official swiyu translation)</p>
+</dd><dd>
+<p>[RM] <strong>emittent</strong> (official swiyu translation)</p>
 </dd><dt data-sourcefile="terms-definitions/minute-of-agreement.md" class="term-local"><span id="term:minute-of-agreement"><span class="term-local-original-term term-original-term" title="original term">Minute of Agreement</span></span></dt><dd>
 <p>A legal procedure available in Scotland: a document drawn up between two or more parties in the presence of their solicitors, without the need for formal court action. In its usual format, it contains numbered paragraphs that record formal but legally binding provisions by which each party has agreed to be bound. If it contains any provision which is enforceable in Scotland, it can be registered in other parts of the United Kingdom for recognition and enforcement. A Minute of Agreement can also be registered for recognition and enforcement in EU Member States or non-EU European Free Trade Association (EFTA) countries. A separate arrangement applies to Gibraltar. A foreign equivalent may also be known as an Authentic Instrument.</p>
 </dd><dd>
@@ -714,7 +724,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 <p>[FR] <strong>déclaration de confiance</strong></p>
 </dd><dd>
 <p>[IT] <strong>dichiarazione di fiducia</strong></p>
-</dd><dt data-sourcefile="terms-definitions/verifiable-credential.md" class="term-local"><span id="term:attestato-verificabile"><span id="term:attestation-vérifiable"><span id="term:verifizierbarer-nachweis"><span id="term:vcs"><span id="term:vc"><span id="term:verifiable-credentials"><span id="term:verifiable-credential">verifiable credentials <span class="term-local-parenthetical-terms">(VC, VCs, verifizierbarer Nachweis, attestation vérifiable, attestato verificabile, <span class="term-local-original-term term-original-term" title="original term">verifiable credential</span>)</span></span></span></span></span></span></span></span></dt><dd>
+</dd><dt data-sourcefile="terms-definitions/verifiable-credential.md" class="term-local"><span id="term:documento-verificabile"><span id="term:document-vérifiable"><span id="term:attestato-verificabile"><span id="term:attestation-vérifiable"><span id="term:verifizierbarer-nachweis"><span id="term:vcs"><span id="term:vc"><span id="term:verifiable-credentials"><span id="term:verifiable-credential">verifiable credentials <span class="term-local-parenthetical-terms">(VC, VCs, verifizierbarer Nachweis, attestation vérifiable, attestato verificabile, document vérifiable, documento verificabile, <span class="term-local-original-term term-original-term" title="original term">verifiable credential</span>)</span></span></span></span></span></span></span></span></span></span></dt><dd>
 <p>A tamper-evident <a class="term-reference" href="#term:credential">credential</a> whose authorship by an <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:issuer" href="https://glossary.trustoverip.org/#term:issuer">issuer</a> can be cryptographically verified. Verifiable credentials can be used to build verifiable <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:presentation" href="https://glossary.trustoverip.org/#term:presentation">presentation</a>s, whose integrity can also be cryptographically verified. The <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:claim" href="https://glossary.trustoverip.org/#term:claim">claim</a>s in a credential can be about different <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:subject" href="https://glossary.trustoverip.org/#term:subject">subject</a>s.</p>
 </dd><dd>
 <p>Relation to ToIP: related but not equivalent — <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:verifiable-credential" href="https://glossary.trustoverip.org/#term:verifiable-credential">verifiable-credential</a>. The upstream definition ties the term to the W3C Verifiable Credentials Data Model specifically. This glossary uses the term format-neutrally for the concept, because the Swiss Profile instantiates it with a different format (IETF SD-JWT VC) and does not support W3C VCDM.</p>
@@ -729,12 +739,16 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>verifizierbarer Nachweis</strong> — im BGEID-Kontext: <strong>elektronischer Nachweis</strong></p>
+<p>Two official registers exist and differ in FR/IT: the BGEID legal wording and the swiyu product terminology (official swiyu translation, <a href="https://github.com/swiyu-admin-ch/swiyu_glossary">swiyu_glossary</a>). Where they differ, both are given.</p>
 </dd><dd>
-<p>[FR] <strong>attestation vérifiable</strong> — dans le contexte de la LSIE: <strong>attestation électronique</strong></p>
+<p>[DE] <strong>verifizierbarer Nachweis</strong> (also the official swiyu translation) — im BGEID-Kontext: <strong>elektronischer Nachweis</strong></p>
 </dd><dd>
-<p>[IT] <strong>attestato verificabile</strong> — nel contesto della LSIE: <strong>attestato elettronico</strong></p>
-</dd><dt data-sourcefile="terms-definitions/verifier.md" class="term-local"><span id="term:verificatrice"><span id="term:verificatore"><span id="term:vérificatrice"><span id="term:vérificateur"><span id="term:verifikatorin"><span id="term:verifikator"><span id="term:verifiers"><span id="term:verifier">verifiers <span class="term-local-parenthetical-terms">(Verifikator, Verifikatorin, vérificateur, vérificatrice, verificatore, verificatrice, <span class="term-local-original-term term-original-term" title="original term">verifier</span>)</span></span></span></span></span></span></span></span></span></dt><dd>
+<p>[FR] <strong>attestation vérifiable</strong> — dans le contexte de la LSIE: <strong>attestation électronique</strong>; terminologie produit swiyu: <strong>document vérifiable</strong></p>
+</dd><dd>
+<p>[IT] <strong>attestato verificabile</strong> — nel contesto della LSIE: <strong>attestato elettronico</strong>; terminologia di prodotto swiyu: <strong>documento verificabile</strong></p>
+</dd><dd>
+<p>[RM] <strong>cumprova verifitgabla</strong> (official swiyu translation)</p>
+</dd><dt data-sourcefile="terms-definitions/verifier.md" class="term-local"><span id="term:verificatrice"><span id="term:verificatore"><span id="term:vérificatrice"><span id="term:vérificateur"><span id="term:prüfende-organisation"><span id="term:verifikatorin"><span id="term:verifikator"><span id="term:verifiers"><span id="term:verifier">verifiers <span class="term-local-parenthetical-terms">(Verifikator, Verifikatorin, prüfende Organisation, vérificateur, vérificatrice, verificatore, verificatrice, <span class="term-local-original-term term-original-term" title="original term">verifier</span>)</span></span></span></span></span></span></span></span></span></span></dt><dd>
 <p>The technical role an actor performs when it requests a presentation of <a class="term-reference" href="#term:claim">claim</a>s from a <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:holder" href="https://glossary.trustoverip.org/#term:holder">holder</a> and evaluates the returned proofs. Distinct from the <strong>relying party</strong>, the business or legal role that decides whether to accept the presented claims for a purpose. One organisation often performs both roles, but the roles remain distinct: proof evaluation is a technical act; acceptance is a business and legal decision.</p>
 </dd><dd>
 <p>What proof evaluation can establish, each as a separate check: integrity and issuer authorship of the presented credential (signature verification against the issuer’s published key); integrity of the presentation; holder/key binding, where the credential carries a <code>cnf</code> key and the presentation includes a key-binding proof; and credential status, where the verifier reads the referenced <a class="term-reference" href="#term:status-list">status list</a> entry. What it does not establish: the factual truth of the claims, the issuer’s authorisation to issue them, the verifier’s own authorisation to request them, any legal entitlement, or acceptance by the relying party.</p>
@@ -745,13 +759,17 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>swiyu governance context: trust and governance information about a verifier can be evaluated by the wallet before disclosure. Under the <a class="term-reference" href="#term:trust-protocol">trust protocol</a> the wallet retrieves the applicable <a class="term-reference" href="#term:trust-statement">trust statement</a>s about the verifier, validates them, derives the <a class="term-reference" href="#term:trust-marker">trust marker</a>s for that interaction, and can display them; it then applies its own policy, and the <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/">Swiss Profile Trust</a> attaches normative force to specific markers. The resulting trust marker is an evaluation result for that interaction, not a persistent property of the verifier.</p>
 </dd><dd>
+<p>For the e-ID the limit on what a verifier may ask for is statutory, not only protocol-level. BGEID Art. 23 lets a verifier request the personal data the e-ID contains only where the check of identity, or of a partial aspect of it, is provided for in legislation, or where it is strictly necessary for the reliability of the transaction, in particular to prevent misuse and identity theft. A breach is entered in the trust register, visible to the holder during a transaction, and can lead to exclusion from the register. The Act sets no equivalent test for other electronic credentials; what a verifier may ask for there is left to the <a class="term-reference" href="#term:governance">governance</a> of the <a class="term-reference" href="#term:trust-domain">trust domain</a>.</p>
+</dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Verifikator</strong>, <strong>Verifikatorin</strong></p>
+<p>[DE] <strong>Verifikator</strong>, <strong>Verifikatorin</strong> — offizielle swiyu-Übersetzung: <strong>prüfende Organisation</strong> (official swiyu translation, <a href="https://github.com/swiyu-admin-ch/swiyu_glossary">swiyu_glossary</a>)</p>
 </dd><dd>
-<p>[FR] <strong>vérificateur</strong>, <strong>vérificatrice</strong></p>
+<p>[FR] <strong>vérificateur</strong>, <strong>vérificatrice</strong> (also the official swiyu translation)</p>
 </dd><dd>
-<p>[IT] <strong>verificatore</strong>, <strong>verificatrice</strong></p>
+<p>[IT] <strong>verificatore</strong>, <strong>verificatrice</strong> (also the official swiyu translation)</p>
+</dd><dd>
+<p>[RM] <strong>verifitgader</strong> (official swiyu translation)</p>
 </dd><dt data-sourcefile="terms-definitions/trust-infrastructure.md" class="term-local"><span id="term:infrastruttura-di-fiducia"><span id="term:infrastructure-de-confiance"><span id="term:vertrauensinfrastruktur"><span id="term:trust-infrastructure">Vertrauensinfrastruktur <span class="term-local-parenthetical-terms">(infrastructure de confiance, infrastruttura di fiducia, <span class="term-local-original-term term-original-term" title="original term">trust infrastructure</span>)</span></span></span></span></span></dt><dd>
 <p>The federal technical and organisational infrastructure that supports <a class="term-reference" href="#term:credential">credential</a> issuance, presentation and verification through common identifier, registry, status, trust and <a class="term-reference" href="#term:protocol">protocol</a> components. In the swiyu ecosystem these components include the Base Registry (identifiers and published keys, <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-anchor/">Swiss Profile Anchor</a>), the status registry (<a class="term-reference" href="#term:status-list">status list</a> publication), and the swiyu Trust Registry with its root trust anchors (<a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/">Swiss Profile Trust</a>).</p>
 </dd><dd>
@@ -763,12 +781,14 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Vertrauensinfrastruktur</strong></p>
+<p>[DE] <strong>Vertrauensinfrastruktur</strong> (also the official swiyu translation: <strong>swiyu Vertrauensinfrastruktur</strong>)</p>
 </dd><dd>
-<p>[FR] <strong>infrastructure de confiance</strong></p>
+<p>[FR] <strong>infrastructure de confiance</strong> (also the official swiyu translation: <strong>infrastructure de confiance swiyu</strong>)</p>
 </dd><dd>
-<p>[IT] <strong>infrastruttura di fiducia</strong></p>
-</dd><dt data-sourcefile="terms-definitions/wallet.md" class="term-local"><span id="term:portafogli"><span id="term:portafoglio"><span id="term:portefeuilles"><span id="term:portefeuille"><span id="term:wallets"><span id="term:wallet">wallets <span class="term-local-parenthetical-terms">(Wallet, portefeuille, portefeuilles, portafoglio, portafogli, <span class="term-local-original-term term-original-term" title="original term">wallet</span>)</span></span></span></span></span></span></span></dt><dd>
+<p>[IT] <strong>infrastruttura di fiducia</strong> (also the official swiyu translation: <strong>infrastruttura di fiducia swiyu</strong>)</p>
+</dd><dd>
+<p>[RM] <strong>infrastructura da confidenza swiyu</strong> (official swiyu translation)</p>
+</dd><dt data-sourcefile="terms-definitions/wallet.md" class="term-local"><span id="term:portafoglio-elettronico"><span id="term:portafogli"><span id="term:portafoglio"><span id="term:portefeuille-électronique"><span id="term:portefeuilles"><span id="term:portefeuille"><span id="term:digitales-portemonnaie"><span id="term:wallets"><span id="term:wallet">wallets <span class="term-local-parenthetical-terms">(Wallet, digitales Portemonnaie, portefeuille, portefeuilles, portefeuille électronique, portafoglio, portafogli, portafoglio elettronico, <span class="term-local-original-term term-original-term" title="original term">wallet</span>)</span></span></span></span></span></span></span></span></span></span></dt><dd>
 <p>A user agent, optionally including a hardware component, that stores and processes cryptographic keys and <a class="term-reference" href="#term:credential">credential</a>s and enables its controller to perform cryptographically verifiable operations — in particular to receive credentials at issuance and to release <a class="term-reference" href="#term:claim">claim</a>s from them in presentations. Wallets exist in different models: personal and organisational, custodial and non-custodial; the holder and the wallet operator need not be the same party.</p>
 </dd><dd>
 <p>Relation to ToIP: equivalent with Swiss extension — <a class="x-term-reference term-reference" data-local-href="#term:toip-glossary:digital-wallet" href="https://glossary.trustoverip.org/#term:digital-wallet">digital-wallet</a>. The ToIP Main Glossary files <code>wallet</code> as a pointer to <code>digital wallet</code> and explicitly covers custodial and non-custodial, personal and enterprise forms; this glossary keeps that breadth.</p>
@@ -779,11 +799,13 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
-<p>[DE] <strong>Wallet</strong> (der englische Begriff wird auch im Deutschen verwendet; die Anwendung des Bundes heisst swiyu Wallet)</p>
+<p>[DE] <strong>Wallet</strong> (der englische Begriff wird auch im Deutschen verwendet; die Anwendung des Bundes heisst swiyu Wallet) — offizielle swiyu-Übersetzung: <strong>digitales Portemonnaie (Wallet)</strong> (official swiyu translation, <a href="https://github.com/swiyu-admin-ch/swiyu_glossary">swiyu_glossary</a>)</p>
 </dd><dd>
-<p>[FR] <strong>portefeuille</strong></p>
+<p>[FR] <strong>portefeuille</strong> — traduction officielle swiyu: <strong>portefeuille électronique (wallet)</strong></p>
 </dd><dd>
-<p>[IT] <strong>portafoglio</strong></p>
+<p>[IT] <strong>portafoglio</strong> — traduzione ufficiale swiyu: <strong>portafoglio elettronico (wallet)</strong></p>
+</dd><dd>
+<p>[RM] <strong>bursa digitala (wallet)</strong> (official swiyu translation)</p>
 </dd></dl>
 <!-- file: terms-definitions/beta-id.md -->
 
@@ -898,13 +920,13 @@ there is one:</p>
 stops attesting to a credential; the status list is the mechanism that makes
 such an event checkable.
 </code></pre>
-<p>“No equivalent term” is a finding rather than an omission. It is what makes a
-Tier 3 definition defensible, so the file says it out loud instead of leaving a
-reader to wonder whether anyone looked.</p>
-<p>Always write the reference as <code>[[xref: toip-glossary, &lt;term&gt;]]</code> and never as a
-link to <code>glossary.trustoverip.org</code>. An <code>[[xref:]]</code> renders with the upstream
-definition attached, and the federation workflow keeps it current; a pasted URL
-does neither.</p>
+<p>Recording “no equivalent term” is what justifies defining the term locally at
+Tier 3. Stating it explicitly tells the reader that the upstream glossary was
+checked and the term was not there.</p>
+<p>Always write the reference as <code>[[xref: toip-glossary, &lt;term&gt;]]</code>, not as a link to
+<code>glossary.trustoverip.org</code>. An <code>[[xref:]]</code> renders with the upstream definition
+attached, and the federation workflow keeps that definition current. The workflow
+does not detect plain URLs, so a pasted link is never updated.</p>
 <p><code>npm run check:toip</code> enforces all of this: one relation line per term, every
 <code>[[xref:]]</code> resolving to a cached upstream definition, every <code>[[ref:]]</code>
 resolving to a term this glossary defines and no bare upstream URLs. It runs in
@@ -931,9 +953,9 @@ of repeating it.</p>
 <li><a href="https://www.didas.swiss/">DIDAS — Digital Identity &amp; Data Sovereignty Association</a></li>
 <li><a href="https://github.com/swiyu-admin-ch">swiyu Trust Infrastructure</a> — the Swiss federal trust infrastructure for digital credentials</li>
 <li><a href="https://glossary.trustoverip.org/">Trust over IP Foundation Glossary</a> — the international reference glossary this project aligns with</li>
-<li><a href="https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-08.txt">IETF SD-JWT VC</a> — the credential format used in the swiyu ecosystem, as profiled by the <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/">Swiss Profile VC</a></li>
+<li><a href="https://www.ietf.org/archive/id/draft-ietf-oauth-sd-jwt-vc-15.html">IETF SD-JWT VC</a> (draft 15, the version <code>swiss-profile-vc:1.0.0</code> references) — the credential format used in the swiyu ecosystem, as profiled by the <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/">Swiss Profile VC</a></li>
 <li><a href="https://www.w3.org/TR/vc-data-model/">W3C Verifiable Credentials Data Model</a> — conceptual reference for verifiable-credential terminology; not a supported format in the Swiss Profile</li>
-<li><a href="https://www.fedlex.admin.ch/">BGEID</a> — Federal Act on Electronic Proof of Identity (Switzerland)</li>
+<li><strong>BGEID</strong> — Bundesgesetz über den elektronischen Identitätsnachweis und andere elektronische Nachweise (E-ID-Gesetz) of 20 December 2024, BBl 2025 20, published on <a href="https://www.fedlex.admin.ch/">fedlex.admin.ch</a> (Federal Act on Electronic Proof of Identity and Other Electronic Credentials). Governs the federal trust infrastructure and the e-ID</li>
 </ul>
 
                 </article>
@@ -1044,20 +1066,20 @@ of repeating it.</p>
                 </div>
             </div>
             <hr id="external-ref-changes-divider" style="display: none;">
-            <p class="d-none ps-3 pe-3" id="w3c-state">W3C Recommendation, 14 September 2026</p>
+            <p class="d-none ps-3 pe-3" id="w3c-state">W3C Recommendation, 23 November 2026</p>
             <!-- Build Information Section -->
             <div class="ps-3 pe-3">
                 <p class="mb-2 fw-bold">Build Information:</p>
                 <div id="build-info" class="small text-muted">
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-calendar-event me-2"></i>
-                        <time class="timestamp" datetime="2026-09-14T06:42:54.062Z">
-                            Generated: 2026-09-14T06:42:54.062Z
+                        <time class="timestamp" datetime="2026-11-23T16:21:21.016Z">
+                            Generated: 2026-11-23T16:21:21.016Z
                         </time>
                     </div>
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-signpost-split me-2"></i>
-                        <span>Source branch: <strong>main</strong></span>
+                        <span>Source branch: <strong>claude/axios-prototype-pollution-fix-yte65z</strong></span>
                     </div>
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-box me-2"></i>
@@ -1065,7 +1087,7 @@ of repeating it.</p>
                     </div>
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-cpu me-2"></i>
-                        <span>Node.js: <strong>v22.22.2</strong></span>
+                        <span>Node.js: <strong>v22.23.4</strong></span>
                     </div>
                 </div>
             </div>

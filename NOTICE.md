@@ -17,6 +17,7 @@ source inline (`~ Source: …` or a supporting-definitions block).
 | Chartered Governance Institute (Australia; UK & Ireland) | Quoted with attribution as short excerpts | `governance` supporting definitions |
 | Mark Greeven, IMD | Adapted with attribution | `ecosystem` first paragraph |
 | [swiyu-admin-ch specifications](https://swiyu-admin-ch.github.io/specifications/) | Published by the Swiss Confederation; referenced with attribution | swiyu-context paragraphs (see `federation/swiyu-refs.md`) |
+| [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary) (official translation termbase, TBX) | Published by the Swiss Confederation; referenced with attribution | "official swiyu translation" notes in Language equivalents |
 | [spec-up-t](https://github.com/trustoverip/spec-up-t) (toolchain dependency, not redistributed) | Apache 2.0 | Rendering toolchain |
 
 ## Per-entry license exception
