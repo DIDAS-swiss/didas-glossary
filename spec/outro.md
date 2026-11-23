@@ -141,7 +141,7 @@ authority to another (the policy is in
   concept — and keep the does-not-imply sentence: it is what stops the
   mapping from becoming a silent import. Ruled and candidate mappings are
   aggregated in
-  [federation/eu-mapping.md](https://github.com/DIDAS-swiss/didas-glossary/blob/main/federation/eu-mapping.md);
+  the [EU-CH Interoperability Mapping section](#eu-ch-interoperability-mapping) of this glossary (`spec/eu-mapping.md`);
   update its row in the same PR.
 - **Terminology sources are not specifications.** The official swiyu
   translation termbase and similar terminology material feed the

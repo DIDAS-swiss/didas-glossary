@@ -251,7 +251,7 @@ jobs:
 
             [View diff on GitHub](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/compare/${{ steps.check.outputs.stored }}...${{ steps.check.outputs.latest }})
 
-            Review [`federation/eu-mapping.md`](https://github.com/DIDAS-swiss/didas-glossary/blob/main/federation/eu-mapping.md)
+            Review [`spec/eu-mapping.md`](https://github.com/DIDAS-swiss/didas-glossary/blob/main/spec/eu-mapping.md)
             and every term carrying a `Relation to eIDAS/ARF:` line. Merging this
             PR is the editorial re-approval of the baseline.
           labels: glossary

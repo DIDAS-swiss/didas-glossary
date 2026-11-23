@@ -28,7 +28,7 @@ the swiyu trust ecosystem, maintained by the DIDAS community.
 - **ToIP federation review**: tracked term-by-term in
   [federation/toip-review.md](federation/toip-review.md).
 - **EU/CH interoperability mapping**: terminology-level, classified per pair,
-  in [federation/eu-mapping.md](federation/eu-mapping.md).
+  in [spec/eu-mapping.md](spec/eu-mapping.md), rendered as a section of the published glossary.
 - **Authoring conventions**: documented in the contribution guide at the end
   of the rendered glossary (`spec/outro.md`).
 - **Changelog**: notable changes are recorded in [changelog/](changelog/).
