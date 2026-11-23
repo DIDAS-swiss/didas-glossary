@@ -260,7 +260,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
                             data-bs-target="#sidebarMenu" aria-label="Close"></button>
                     </div>
                     <div id="toc" class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-                        <ul class="toc"><li><a href="#purpose">Purpose</a></li><li><a href="#scope">Scope</a></li><li><a href="#about-didas">About DIDAS</a></li><li><a href="#status">Status</a></li><li><a href="#contributing">Contributing</a><ul><li><a href="#authoring-conventions">Authoring conventions</a></li><li><a href="#multilingual-aliases">Multilingual aliases</a></li><li><a href="#the-toip-relation-line">The ToIP relation line</a></li><li><a href="#keeping-federation-up-to-date">Keeping federation up to date</a></li><li><a href="#toip-cross-reference-first-policy">ToIP cross-reference-first policy</a></li></ul></li><li><a href="#further-resources">Further Resources</a></li></ul>
+                        <ul class="toc"><li><a href="#purpose">Purpose</a></li><li><a href="#scope">Scope</a></li><li><a href="#about-didas">About DIDAS</a></li><li><a href="#status">Status</a></li><li><a href="#contributing">Contributing</a><ul><li><a href="#authoring-conventions">Authoring conventions</a></li><li><a href="#multilingual-aliases">Multilingual aliases</a></li><li><a href="#the-toip-relation-line">The ToIP relation line</a></li><li><a href="#normative-scope-separation">Normative scope separation</a></li><li><a href="#keeping-federation-up-to-date">Keeping federation up to date</a></li><li><a href="#toip-cross-reference-first-policy">ToIP cross-reference-first policy</a></li></ul></li><li><a href="#further-resources">Further Resources</a></li></ul>
                         <div class="spec-footer mt-3">
                             <a class="mx-auto p-2" href="https://github.com/trustoverip/spec-up-t"
                                 target="_blank" rel="noopener">Powered By Spec-Up-T</a>
@@ -931,6 +931,44 @@ does not detect plain URLs, so a pasted link is never updated.</p>
 <code>[[xref:]]</code> resolving to a cached upstream definition, every <code>[[ref:]]</code>
 resolving to a term this glossary defines and no bare upstream URLs. It runs in
 CI on every pull request that touches a term.</p>
+<h3 id="normative-scope-separation" tabindex="-1"><a class="toc-anchor d-print-none" href="#normative-scope-separation">§</a> Normative scope separation</h3>
+<p>Entries draw on three normative spaces, and an entry must never let one lend
+authority to another (the policy is in
+<a href="https://github.com/DIDAS-swiss/didas-glossary/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>,
+“Normative scope separation”). In practice, when writing a term:</p>
+<ul>
+<li>
+<p><strong>A swiyu-context statement cites a Swiss source.</strong> Anything the entry says
+about the swiyu ecosystem — behaviour, requirements, MUST/SHOULD/MAY — comes
+from a Swiss Profile, the Trust Protocol or Swiss law (BGEID), with the
+specific section named. No other source can carry such a statement.</p>
+</li>
+<li>
+<p><strong>ToIP appears on the relation line.</strong> The term’s relationship to the ToIP
+Main Glossary lives in the ToIP relation line described above — nowhere
+else, and a ToIP definition never substitutes for a Swiss source.</p>
+</li>
+<li>
+<p><strong>eIDAS 2 / EU ARF appears as a labelled comparison only.</strong> Where the EU
+framework names a corresponding concept, record the mapping as its own line,
+for example:</p>
+<pre><code>~ Relation to eIDAS/ARF: the EU framework names the corresponding concept
+*electronic attestation of attributes (EAA)*; the relationship is &lt;equivalent
+with … / narrower / broader / related but not equivalent&gt;. This mapping does
+not make eIDAS or ARF requirements applicable in the swiyu context.
+</code></pre>
+<p>Classify the relationship explicitly — same label does not mean same
+concept — and keep the does-not-imply sentence: it is what stops the
+mapping from becoming a silent import.</p>
+</li>
+<li>
+<p><strong>Terminology sources are not specifications.</strong> The official swiyu
+translation termbase and similar terminology material feed the
+language-equivalents block (attributed, e.g. “official swiyu translation”)
+and may suggest candidate terms; they never back a definitional or
+normative sentence.</p>
+</li>
+</ul>
 <h3 id="keeping-federation-up-to-date" tabindex="-1"><a class="toc-anchor d-print-none" href="#keeping-federation-up-to-date">§</a> Keeping federation up to date</h3>
 <p>After adding any <code>[[xref:]]</code> or <code>[[tref:]]</code> reference, run:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> run xrefs
@@ -1073,8 +1111,8 @@ of repeating it.</p>
                 <div id="build-info" class="small text-muted">
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-calendar-event me-2"></i>
-                        <time class="timestamp" datetime="2026-11-23T19:08:00.551Z">
-                            Generated: 2026-11-23T19:08:00.551Z
+                        <time class="timestamp" datetime="2026-11-23T19:58:00.693Z">
+                            Generated: 2026-11-23T19:58:00.693Z
                         </time>
                     </div>
                     <div class="d-flex align-items-center mb-1">
