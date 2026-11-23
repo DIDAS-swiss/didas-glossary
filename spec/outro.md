@@ -108,6 +108,40 @@ does not detect plain URLs, so a pasted link is never updated.
 resolving to a term this glossary defines and no bare upstream URLs. It runs in
 CI on every pull request that touches a term.
 
+### Normative scope separation
+
+Entries draw on three normative spaces, and an entry must never let one lend
+authority to another (the policy is in
+[GOVERNANCE.md](https://github.com/DIDAS-swiss/didas-glossary/blob/main/GOVERNANCE.md),
+"Normative scope separation"). In practice, when writing a term:
+
+- **A swiyu-context statement cites a Swiss source.** Anything the entry says
+  about the swiyu ecosystem — behaviour, requirements, MUST/SHOULD/MAY — comes
+  from a Swiss Profile, the Trust Protocol or Swiss law (BGEID), with the
+  specific section named. No other source can carry such a statement.
+- **ToIP appears on the relation line.** The term's relationship to the ToIP
+  Main Glossary lives in the ToIP relation line described above — nowhere
+  else, and a ToIP definition never substitutes for a Swiss source.
+- **eIDAS 2 / EU ARF appears as a labelled comparison only.** Where the EU
+  framework names a corresponding concept, record the mapping as its own line,
+  for example:
+
+  ```
+  ~ Relation to eIDAS/ARF: the EU framework names the corresponding concept
+  *electronic attestation of attributes (EAA)*; the relationship is <equivalent
+  with … / narrower / broader / related but not equivalent>. This mapping does
+  not make eIDAS or ARF requirements applicable in the swiyu context.
+  ```
+
+  Classify the relationship explicitly — same label does not mean same
+  concept — and keep the does-not-imply sentence: it is what stops the
+  mapping from becoming a silent import.
+- **Terminology sources are not specifications.** The official swiyu
+  translation termbase and similar terminology material feed the
+  language-equivalents block (attributed, e.g. "official swiyu translation")
+  and may suggest candidate terms; they never back a definitional or
+  normative sentence.
+
 ### Keeping federation up to date
 
 After adding any `[[xref:]]` or `[[tref:]]` reference, run:
