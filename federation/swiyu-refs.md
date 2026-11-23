@@ -30,6 +30,18 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 | `trust-infrastructure` | `swiss-profile-anchor.md` | Base Registry sections | Base Registry as identifier/key publication component | 2026-09-13 |
 | `trust-infrastructure` | `swiss-profile-trust.md` | Environment specific details | root trust anchors; swiyu Trust Registry base URL | 2026-09-13 |
 | `ecosystem` | `swiss-profile-trust.md` | Introduction | identification of public ecosystem actors and protection against impersonation | 2026-09-13 |
+| `holder-binding` | `swiss-profile-vc.md` | §4.1.2; §4.3 | `cnf` with `jwk` for key binding; multiple bound keys NOT SUPPORTED; KB-JWT `aud` MUST be the verifier's `client_id` | 2026-11-23 |
+| `holder-binding` | `swiss-profile-issuance.md` | DPoP / key attestation | key attestation at the holder-binding key's security level when a hardware-bound credential is requested; wallets MUST support key attestation | 2026-11-23 |
+| `dcql` | `swiss-profile-verification.md` | §6; §6.1; §6.1.1 | `vp_formats_supported` NOT SUPPORTED, format via DCQL `format`; `multiple` NOT SUPPORTED; DID-based trusted-authorities query | 2026-11-23 |
+| `dpop` | `swiss-profile-issuance.md` | specs table; §7.2; §8.2; §9 | RFC 9449; DPoP header on token, credential and deferred credential requests; issuers MUST provide a DPoP nonce | 2026-11-23 |
+| `did-webvh` | `swiss-profile-anchor.md` | §3.2.1; §3.7.1; DIDDoc constraints | did:webvh 1.0; DID parameters MUST NOT be used; `portable` false, `witness` {}, `watchers` []; controller MUST be the DID itself | 2026-11-23 |
+| `vct` | `swiss-profile-vc.md` | SD-JWT VC section; §5.3 | `vct_metadata_uri` precedence; `vct_version`/`vct_subtype`/`vct_subtype_version` MUST be disclosures if present; Type Metadata via HTTP GET | 2026-11-23 |
+| `base-registry` | `swiss-profile-anchor.md` | Base Registry constraints | unsupported DID features (portability, witnesses, watchers, `alsoKnownAs`, `services`, some verification relationships) | 2026-11-23 |
+| `base-registry` | `swiss-profile-vc.md` | TSL §§ (status provider, registry checks) | "The Base Registry, provided by FOITT, acts as the Status Provider"; registry upload checks | 2026-11-23 |
+| `oca` | `oca-v1-0.md` | Introduction; OCA Bundle; OCA Bundle reference (SD-JWT VC) | OCA bundle structure (one root capture base, overlays); `oca` render method in Type Metadata; `uri#integrity` MUST be verified | 2026-11-23 |
+| `wallet-backup-container` | `swiss-profile-portability.md` | File format; meta.json; wbak; Container Types | JWE with `dir`/`A256GCM`; `profile_version` REQUIRED; batch + hardware holder binding SHOULD hold one credential; refreshability | 2026-11-23 |
+| `proximity-verification` | `swiss-profile-proximity.md` | Introduction; Terms; Cryptography; Specifications | ISO/IEC 18013-5 engagement/transport with DC-API; reader/device crypto MUSTs; reader = CheckApp, device = wallet | 2026-11-23 |
+| `electronic-credential` | `swiss-profile-vc.md` | all | issued as SD-JWT VC in the swiyu trust infrastructure (legal statements cite the BGEID, not a spec) | 2026-11-23 |
 
 ## Translation source
 

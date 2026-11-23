@@ -33,7 +33,9 @@
  *
  *   5. EU-framework vocabulary (eIDAS, ARF, EUDI, Wallet Unit, WSCA/WSCD,
  *      EAA/QEAA/PuB-EAA) appears only inside a labelled mapping paragraph
- *      starting "~ Relation to eIDAS/ARF:"
+ *      starting "~ Relation to eIDAS/ARF:" — except in an entry that records
+ *      an EU term and declares "~ Normative space: eIDAS 2 / EU ARF", which
+ *      must instead state that none of it applies in the swiyu context
  *   6. every such mapping paragraph classifies the relationship (equivalent /
  *      narrower / broader / related but not equivalent) and carries a
  *      does-not-imply sentence, so the mapping cannot become a silent import
@@ -146,6 +148,18 @@ for (const { name, text } of files) {
   const EU_VOCAB = /\beIDAS\b|\bARF\b|\bEUDI\b|Wallet Unit|\bWSCA\b|\bWSCD\b|\bQEAA\b|\bPuB-EAA\b|\bEAA\b/;
   const NORMATIVE = /\*\*(MUST|SHOULD|MAY)( NOT)?\*\*/;
   const SWISS_SOURCE = /swiyu-admin-ch\.github\.io|BGEID|fedlex\.admin\.ch|Swiss Profile|Trust Protocol 2\.0/;
+  // An entry that records an EU-framework term (EAA, QEAA, …) declares itself
+  // with a "~ Normative space: eIDAS 2 / EU ARF" paragraph. Such an entry may
+  // use EU vocabulary throughout, but must say that none of it applies in the
+  // swiyu context.
+  const EU_SPACE = '~ Normative space: eIDAS 2 / EU ARF';
+  const isEuEntry = lines.some((line) => line.startsWith(EU_SPACE));
+  if (isEuEntry && !/does not make eIDAS or ARF requirements applicable in the swiyu context/.test(text)) {
+    problems.push(
+      `${name}: declared as an eIDAS 2 / EU ARF entry but has no does-not-imply sentence ` +
+        `("… does not make eIDAS or ARF requirements applicable in the swiyu context")`
+    );
+  }
   for (const line of lines) {
     if (!line.startsWith('~ ')) continue;
     const isMapping = line.startsWith(EU_MARKER);
@@ -162,7 +176,7 @@ for (const { name, text } of files) {
             `("… does not make eIDAS or ARF requirements applicable in the swiyu context")`
         );
       }
-    } else if (EU_VOCAB.test(line)) {
+    } else if (!isEuEntry && EU_VOCAB.test(line)) {
       problems.push(
         `${name}: EU-framework vocabulary outside the labelled mapping line. Move it into ` +
           `a paragraph starting "${EU_MARKER}" — EU concepts enter only as classified ` +

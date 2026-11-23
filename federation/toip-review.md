@@ -223,7 +223,7 @@ Term count: 543 (snapshot of upstream `main`; regenerate the list when upstream 
 | `hardware-security-module` | hardware-security-module | pending | | |  |
 | `hash-function` | hash-function | pending | | |  |
 | `hash` | hash | pending | | |  |
-| `holder-binding` | holder-binding | pending | | |  |
+| `holder-binding` | holder-binding | own | Holder Binding / liaison au titulaire / vincolo al titolare | danielsaeuberli | [holder-binding.md](../spec/terms-definitions/holder-binding.md) — related but not equivalent (ToIP: holder↔wallet; Swiss Profiles: credential↔key) |
 | `holder` | holder | pending | | |  |
 | `host` | host | pending | | |  |
 | `hourglass-model` | hourglass-model | pending | | |  |
