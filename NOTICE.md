@@ -18,6 +18,7 @@ source inline (`~ Source: …` or a supporting-definitions block).
 | Mark Greeven, IMD | Adapted with attribution | `ecosystem` first paragraph |
 | [swiyu-admin-ch specifications](https://swiyu-admin-ch.github.io/specifications/) | Published by the Swiss Confederation; referenced with attribution | swiyu-context paragraphs (see `federation/swiyu-refs.md`) |
 | [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary) (official translation termbase, TBX) | Published by the Swiss Confederation; referenced with attribution | "official swiyu translation" notes in Language equivalents |
+| [EU ARF Annex 1](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework) (© European Commission) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | eIDAS/ARF mapping lines and `federation/eu-mapping.md` |
 | [spec-up-t](https://github.com/trustoverip/spec-up-t) (toolchain dependency, not redistributed) | Apache 2.0 | Rendering toolchain |
 
 ## Per-entry license exception

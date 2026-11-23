@@ -197,3 +197,62 @@ jobs:
             editorial re-approval of the baseline.
           labels: glossary
           delete-branch: true
+
+  check-arf-drift:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Check for ARF Annex 1 changes
+        id: check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          REPO="eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework"
+          LATEST=$(curl -sf \
+            -H "Authorization: token $GH_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${REPO}/commits?path=docs/annexes/annex-1&per_page=1" \
+            | jq -r '.[0].sha')
+          STORED=$(cat output/swiyu-specs-cache/arf-last-seen-commit.txt 2>/dev/null || echo "none")
+          echo "stored=$STORED" >> $GITHUB_OUTPUT
+          echo "latest=$LATEST" >> $GITHUB_OUTPUT
+          if [ "$LATEST" = "$STORED" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Update ARF baseline
+        if: steps.check.outputs.changed == 'true'
+        run: echo "${{ steps.check.outputs.latest }}" > output/swiyu-specs-cache/arf-last-seen-commit.txt
+
+      - name: Open PR with updated baseline
+        if: steps.check.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore(federation): update ARF drift baseline"
+          branch: automation/arf-drift
+          title: "EU ARF Annex 1 changed — review the EU/CH interoperability mapping"
+          body: |
+            The definitions annex of the EU Architecture and Reference Framework
+            ([eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework),
+            `docs/annexes/annex-1`) changed since the last check.
+
+            | | |
+            |---|---|
+            | Previous baseline | `${{ steps.check.outputs.stored }}` |
+            | Current commit    | `${{ steps.check.outputs.latest }}` |
+
+            [View diff on GitHub](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/compare/${{ steps.check.outputs.stored }}...${{ steps.check.outputs.latest }})
+
+            Review [`federation/eu-mapping.md`](https://github.com/DIDAS-swiss/didas-glossary/blob/main/federation/eu-mapping.md)
+            and every term carrying a `Relation to eIDAS/ARF:` line. Merging this
+            PR is the editorial re-approval of the baseline.
+          labels: glossary
+          delete-branch: true
