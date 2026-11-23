@@ -1,4 +1,4 @@
-[[def: verifier, verifiers, Verifikator, Verifikatorin, prüfende Organisation, vérificateur, vérificatrice, verificatore, verificatrice]]
+[[def: verifier, verifiers, Verifikator, Verifikatorin, prüfende Organisation, vérificateur, vérificatrice, organisation vérificatrice, verificatore, verificatrice, organizzazione verificatrice]]
 
 ~ The technical role an actor performs when it requests a presentation of [[ref: claim]]s from a [[xref: toip-glossary, holder]] and evaluates the returned proofs. Distinct from the **relying party**, the business or legal role that decides whether to accept the presented claims for a purpose. One organisation often performs both roles, but the roles remain distinct: proof evaluation is a technical act; acceptance is a business and legal decision.
 
@@ -16,8 +16,8 @@
 
 ~ [DE] **Verifikator**, **Verifikatorin** — offizielle swiyu-Übersetzung: **prüfende Organisation** (official swiyu translation, [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary))
 
-~ [FR] **vérificateur**, **vérificatrice** (also the official swiyu translation)
+~ [FR] **vérificateur**, **vérificatrice** — terminologie swiyu actuelle: **organisation vérificatrice** (swiyu terminology table, 2026-11; the published termbase still carries *vérificateur*)
 
-~ [IT] **verificatore**, **verificatrice** (also the official swiyu translation)
+~ [IT] **verificatore**, **verificatrice** — terminologia swiyu attuale: **organizzazione verificatrice** (swiyu terminology table, 2026-11)
 
 ~ [RM] **verifitgader** (official swiyu translation)
