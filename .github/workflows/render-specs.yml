@@ -37,6 +37,14 @@ jobs:
           echo "end install"
           echo "Spec-Up-T version:"
           npm list spec-up-t
+          echo "cache-bust custom assets"
+          # Asset URLs are otherwise identical across deploys, so browsers keep
+          # serving a stale custom-body.js / custom.css. Version them with the
+          # commit for this render only; the committed specs.json is unchanged.
+          jq --arg v "${GITHUB_SHA::7}" \
+            '.specs[0].assets |= map(.path |= (sub("\\?v=.*$"; "") + "?v=" + $v))' \
+            specs.json > specs.tmp.json && mv specs.tmp.json specs.json
+          jq -r '.specs[0].assets[].path' specs.json
           echo "start render"
           node -e "require('spec-up-t')({ nowatch: true })"
           echo "end render"
