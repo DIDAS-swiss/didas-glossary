@@ -42,3 +42,21 @@ the `tbx/` path of the termbase weekly, baseline
 A terminology source, not a definition source: the termbase carries no
 definitions and is not federated. The ToIP Main Glossary remains the
 definitional upstream; BGEID remains the legal-wording authority.
+
+## Addendum (same day): internal swiyu terminology documentation
+
+The swiyu team's internal terminology documentation (supplied by the
+maintainer, 2026-11-23) corroborated and extended the pass:
+
+- FR/IT role names are ahead of the published termbase: *organisation
+  émettrice / organisation vérificatrice* (recorded alongside the
+  published forms)
+- holder binding in swiyu is typically **device binding**, not person
+  binding (noted in `verifiable-credential`)
+- two new specification files exist and are now in the watched list:
+  `swiss-profile-portability` (Wallet Backup Container, 1.0 draft) and
+  `swiss-profile-proximity` (DC-API over ISO-18013-5, 1.0 draft)
+- technical term candidates filed as new-term issues (device binding,
+  DCQL, DPoP, did:webvh, vct, base registry, OCA, wallet backup
+  container, proximity verification); Hyperledger/AnonCreds-era
+  content deliberately not adopted

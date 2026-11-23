@@ -44,7 +44,7 @@ Baseline: `swiyu_glossary@29025eb` (verified 2026-11-23), watched by the
 
 ## Specs watched
 
-All eight spec files in `_specifications/` are watched by the drift workflow:
+All ten spec files in `_specifications/` are watched by the drift workflow:
 
 | Spec file | Published URL |
 |---|---|
@@ -55,4 +55,6 @@ All eight spec files in `_specifications/` are watched by the drift workflow:
 | `swiss-profile-verification.md` | https://swiyu-admin-ch.github.io/specifications/swiss-profile-verification/ |
 | `swiss-profile-trust.md` | https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/ |
 | `trust-protocol-v2-0.md` | https://swiyu-admin-ch.github.io/specifications/trust-protocol-v2-0/ |
+| `swiss-profile-portability.md` | https://swiyu-admin-ch.github.io/specifications/swiss-profile-portability/ |
+| `swiss-profile-proximity.md` | https://swiyu-admin-ch.github.io/specifications/swiss-profile-proximity/ |
 | `oca-v1-0.md` | https://swiyu-admin-ch.github.io/specifications/oca-v1-0/ |
