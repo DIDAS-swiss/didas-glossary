@@ -14,7 +14,7 @@ The glossary covers concepts in the following areas:
 - **Decentralized identity infrastructure** — identifiers, registries, wallets, and cryptographic foundations
 - **Governance** — trust frameworks, governance documents, and the regulatory context of the BGEID
 - **Alignment with international standards** — terms are aligned with the [Trust over IP (ToIP) Main Glossary](https://glossary.trustoverip.org/) and eSSIF-Lab where applicable. Note that the swiyu credential format is **IETF SD-JWT VC** as profiled by the [Swiss Profile](https://swiyu-admin-ch.github.io/specifications/swiss-profile-vc/); the W3C Verifiable Credentials Data Model is referenced for terminology only and is not a supported format in the Swiss Profile
-- **Applications** — Swiss use cases building on the trust infrastructure, such as [[ref: E-Collecting]] and the [[ref: digital product passport]]
+- **Applications** — use cases discussed in and around the swiyu ecosystem, such as [[ref: E-Collecting]] and the [[ref: digital product passport]] (each entry states its own legal basis and what it does and does not assert about the trust infrastructure)
 
 Where a term is fully covered by the ToIP glossary, the DIDAS glossary cross-references it rather than duplicating the definition.
 
