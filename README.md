@@ -13,6 +13,11 @@ the swiyu trust ecosystem, maintained by the DIDAS community.
   [Trust over IP Main Glossary](https://glossary.trustoverip.org/): common
   SSI/VC terms are adopted or cross-referenced rather than redefined.
 - Every term carries aliases in all four working languages (EN/DE/FR/IT).
+- **Normative scope separation**: entries keep three normative spaces apart —
+  the ToIP reference vocabulary, Swiss law and the Swiss Profiles (the only
+  sources for swiyu statements), and eIDAS 2 / EU ARF (interoperability
+  mapping only). No entry imports authority from one space into another; see
+  [GOVERNANCE.md](GOVERNANCE.md).
 
 ## Contributing and governance
 
