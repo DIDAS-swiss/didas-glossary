@@ -29,7 +29,20 @@
  *   4. no term links to glossary.trustoverip.org by URL, because an [[xref:]]
  *      is tracked by the federation workflow and a pasted URL is not
  *
- * Exit code 0 means all four hold. Exit code 1 lists what does not.
+ * It also enforces the normative scope separation (GOVERNANCE.md):
+ *
+ *   5. EU-framework vocabulary (eIDAS, ARF, EUDI, Wallet Unit, WSCA/WSCD,
+ *      EAA/QEAA/PuB-EAA) appears only inside a labelled mapping paragraph
+ *      starting "~ Relation to eIDAS/ARF:"
+ *   6. every such mapping paragraph classifies the relationship (equivalent /
+ *      narrower / broader / related but not equivalent) and carries a
+ *      does-not-imply sentence, so the mapping cannot become a silent import
+ *   7. a paragraph with normative force (**MUST** / **SHOULD** / **MAY**)
+ *      cites a Swiss source in the same paragraph — a swiyu-admin-ch.github.io
+ *      link, a BGEID article or a Fedlex reference — because only Swiss law
+ *      and the Swiss Profiles can carry swiyu statements
+ *
+ * Exit code 0 means all of these hold. Exit code 1 lists what does not.
  */
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
@@ -127,6 +140,43 @@ for (const { name, text } of files) {
       problems.push(`${name}: [[ref: ${ref.trim()}]] names no term defined in this glossary`);
     }
   }
+
+  // Normative scope separation (GOVERNANCE.md). Paragraphs are the '~ ' lines.
+  const EU_MARKER = '~ Relation to eIDAS/ARF:';
+  const EU_VOCAB = /\beIDAS\b|\bARF\b|\bEUDI\b|Wallet Unit|\bWSCA\b|\bWSCD\b|\bQEAA\b|\bPuB-EAA\b|\bEAA\b/;
+  const NORMATIVE = /\*\*(MUST|SHOULD|MAY)( NOT)?\*\*/;
+  const SWISS_SOURCE = /swiyu-admin-ch\.github\.io|BGEID|fedlex\.admin\.ch|Swiss Profile|Trust Protocol 2\.0/;
+  for (const line of lines) {
+    if (!line.startsWith('~ ')) continue;
+    const isMapping = line.startsWith(EU_MARKER);
+    if (isMapping) {
+      if (!/equivalent|narrower|broader|related but not equivalent/.test(line)) {
+        problems.push(
+          `${name}: the eIDAS/ARF mapping line does not classify the relationship ` +
+            `(equivalent / narrower / broader / related but not equivalent)`
+        );
+      }
+      if (!/does not make|not applicable in the swiyu context/i.test(line)) {
+        problems.push(
+          `${name}: the eIDAS/ARF mapping line has no does-not-imply sentence ` +
+            `("… does not make eIDAS or ARF requirements applicable in the swiyu context")`
+        );
+      }
+    } else if (EU_VOCAB.test(line)) {
+      problems.push(
+        `${name}: EU-framework vocabulary outside the labelled mapping line. Move it into ` +
+          `a paragraph starting "${EU_MARKER}" — EU concepts enter only as classified ` +
+          `interoperability mapping, never as part of a swiyu statement`
+      );
+    }
+    if (NORMATIVE.test(line) && !SWISS_SOURCE.test(line)) {
+      problems.push(
+        `${name}: normative wording (MUST/SHOULD/MAY) in a paragraph without a Swiss source. ` +
+          `Only Swiss law and the Swiss Profiles carry swiyu statements — cite the ` +
+          `swiyu-admin-ch.github.io section or the BGEID article in the same paragraph`
+      );
+    }
+  }
 }
 
 if (cache === null) {
@@ -143,4 +193,4 @@ if (problems.length > 0) {
   process.exit(1);
 }
 
-console.log('Every term states its relationship to the ToIP Main Glossary.');
+console.log('Every term states its relationship to the ToIP Main Glossary, and the normative scope separation holds.');

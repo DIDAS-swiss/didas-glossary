@@ -8,7 +8,7 @@
 
 ~ Where statements are published and retrieved: the [Swiss Profile Trust](https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/) names the swiyu Trust Registry as the component through which applicable statements are published and served, and names the root trust anchors. The registry is infrastructure for publication and retrieval; it does not decide what an actor may do.
 
-~ Does not imply: a valid statement does not by itself establish that an interaction may proceed, oblige a relying party to accept the interaction, or establish the factual truth of information outside the statement's defined semantics. A statement that fails validation **MUST NOT** contribute to setting the corresponding [[ref: trust marker]].
+~ Does not imply: a valid statement does not by itself establish that an interaction may proceed, oblige a relying party to accept the interaction, or establish the factual truth of information outside the statement's defined semantics. A statement that fails validation **MUST NOT** contribute to setting the corresponding [[ref: trust marker]] ([Trust Protocol 2.0](https://swiyu-admin-ch.github.io/specifications/trust-protocol-v2-0/)).
 
 ~ Language equivalents:
 
