@@ -23,7 +23,20 @@ body:
     id: rationale
     attributes:
       label: Rationale and sources
-      description: Why is the change needed? Include links to sources, standards or legal texts.
+      description: Why is the change needed? Include links to sources, standards or legal texts, and name the normative space of each source (ToIP / Swiss law & Swiss Profiles / eIDAS 2 & EU ARF) per the scope separation in GOVERNANCE.md. Changed or added swiyu statements need a Swiss source with section.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope-impact
+    attributes:
+      label: Does the change touch the normative scope separation?
+      description: Per GOVERNANCE.md, "Normative scope separation"
+      options:
+        - "No — wording only, same sources"
+        - "Yes — adds or changes a swiyu statement (Swiss Profile / Trust Protocol / BGEID section cited)"
+        - "Yes — adds or changes an eIDAS 2 / EU ARF mapping line (labelled, classified, with does-not-imply)"
+        - "Yes — the ToIP relation changes (tier ruling needed)"
+        - "Not sure"
     validations:
       required: true
   - type: dropdown
