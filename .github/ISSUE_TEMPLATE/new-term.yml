@@ -12,6 +12,12 @@ body:
         [ToIP Main Glossary](https://glossary.trustoverip.org/#terms-and-definitions)
         first — the answer determines how your proposal is handled
         (see [GOVERNANCE.md](../blob/main/GOVERNANCE.md)).
+
+        **Normative scope separation** (GOVERNANCE.md): entries keep three
+        normative spaces apart — the ToIP reference vocabulary, Swiss law and
+        the Swiss Profiles (the only sources for swiyu statements), and
+        eIDAS 2 / EU ARF (interoperability mapping only). Please say below
+        which space each part of your proposal draws on.
   - type: input
     id: term
     attributes:
@@ -31,7 +37,21 @@ body:
     id: sources
     attributes:
       label: Sources
-      description: "Where does this definition come from? (standard, law, publication, organisation — include links)"
+      description: "Where does this definition come from? (standard, law, publication, organisation — include links). Name the normative space of each source: ToIP, Swiss law / Swiss Profile / Trust Protocol (with section), or eIDAS 2 / EU ARF. Statements about the swiyu ecosystem need a Swiss source — no other space can carry them."
+    validations:
+      required: true
+  - type: dropdown
+    id: normative-space
+    attributes:
+      label: Primary normative space
+      description: Which normative space does the proposed definition draw on? (per the scope separation in GOVERNANCE.md)
+      options:
+        - Generic / vendor-neutral standards literature
+        - ToIP reference vocabulary
+        - Swiss law or Swiss Profiles (BGEID, swiyu specifications, Trust Protocol)
+        - eIDAS 2 / EU ARF — proposed as interoperability mapping only
+        - Terminology source only (translations, candidate lists)
+        - Not sure
     validations:
       required: true
   - type: dropdown
@@ -71,4 +91,4 @@ body:
     id: context
     attributes:
       label: Swiss / swiyu context (optional)
-      description: Anything specific to the Swiss legal context (BGEID, ZertES, LSIE) or the swiyu ecosystem that the definition must capture.
+      description: Anything specific to the Swiss legal context (BGEID, ZertES, LSIE) or the swiyu ecosystem that the definition must capture. Cite the specific Swiss Profile / Trust Protocol / BGEID section — per the normative scope separation, only Swiss sources can carry swiyu statements; EU (eIDAS/ARF) concepts enter only as a labelled mapping line.
