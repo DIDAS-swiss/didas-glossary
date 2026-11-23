@@ -204,10 +204,139 @@ function start() {
   mount();
   bridge();
   wireFont();
+  views();
 }
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', start, { once: true });
 } else {
   start();
+}
+
+/* Sectioned views. The other DIDAS sites are separate pages with a horizontal
+ * menu; a spec-up-t document is one long page. This presents that one page as
+ * four views — Overview, Terms, EU-CH Mapping, Contributing — behind a
+ * horizontal menu in the masthead. The document itself is untouched: every
+ * element keeps its place and its anchor, hash navigation switches to the
+ * view that contains the target, and a non-empty search temporarily shows the
+ * whole document so spec-up-t's own search keeps finding everything. If the
+ * expected section headings are ever missing, nothing activates and the page
+ * stays a single scroll.
+ */
+function views() {
+  const VIEWS = [
+    { key: 'overview', label: 'Overview', start: 'didas-glossary' },
+    { key: 'terms', label: 'Terms', start: 'terms-and-definitions' },
+    { key: 'mapping', label: 'EU-CH Mapping', start: 'eu-ch-interoperability-mapping' },
+    { key: 'contributing', label: 'Contributing', start: 'contributing' },
+  ];
+  const content = document.getElementById('content');
+  if (!content) return;
+
+  const starts = new Map(VIEWS.map((v) => [v.start, v.key]));
+  let current = null;
+  for (const el of Array.from(content.children)) {
+    if (el.id && starts.has(el.id)) current = starts.get(el.id);
+    if (current) el.setAttribute('data-view', current);
+  }
+  for (const v of VIEWS) {
+    if (!content.querySelector(`[data-view="${v.key}"]`)) return;
+  }
+
+  const bar = document.querySelector('.site-masthead');
+  if (!bar) return;
+  const nav = document.createElement('nav');
+  nav.className = 'views';
+  nav.setAttribute('aria-label', 'Sections');
+  for (const v of VIEWS) {
+    const a = document.createElement('a');
+    a.href = '#' + v.start;
+    a.textContent = v.label;
+    a.setAttribute('data-view-link', v.key);
+    nav.appendChild(a);
+  }
+  bar.appendChild(nav);
+
+  function viewOf(id) {
+    let el = document.getElementById(id);
+    while (el && el.parentElement && el.parentElement !== content) el = el.parentElement;
+    return el ? el.getAttribute('data-view') : null;
+  }
+
+  // The sidebar TOC lists every heading of the document; scope it to the
+  // active view so the sidebar matches what is on screen. Entries are hidden,
+  // not removed, so spec-up-t's own TOC behaviour is untouched.
+  // The Terms view has no section headings, so its sidebar gets an A-Z index of
+  // the terms instead — the same role the page menu plays on the other sites.
+  const tocList = document.querySelector('#toc .toc');
+  if (tocList) {
+    const entries = Array.from(document.querySelectorAll('#content dl dt'))
+      .map((dt) => {
+        // spec-up-t nests one span per alias; the innermost carries the
+        // canonical anchor, and .term-original-term the canonical label.
+        const anchors = dt.querySelectorAll('[id^="term:"]');
+        const original = dt.querySelector('.term-original-term');
+        if (!anchors.length || !original) return null;
+        const label = original.textContent.trim();
+        return label ? { id: anchors[anchors.length - 1].id, label } : null;
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.label.localeCompare(b.label, 'en', { sensitivity: 'base' }));
+    for (const { id, label } of entries) {
+      const li = document.createElement('li');
+      li.className = 'didas-term-index';
+      const a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = label;
+      li.appendChild(a);
+      tocList.appendChild(li);
+    }
+  }
+
+  const tocItems = Array.from(document.querySelectorAll('#toc .toc li'))
+    .map((li) => {
+      const a = li.querySelector(':scope > a[href^="#"]');
+      return a ? { li, key: viewOf(decodeURIComponent(a.getAttribute('href').slice(1))) } : null;
+    })
+    .filter((item) => item && item.key);
+
+  function activate(key, scrollTo) {
+    document.body.setAttribute('data-active-view', key);
+    for (const { li, key: itemKey } of tocItems) {
+      li.hidden = !document.body.classList.contains('search-all') && itemKey !== key;
+    }
+    for (const a of nav.querySelectorAll('[data-view-link]')) {
+      a.setAttribute('aria-current', String(a.getAttribute('data-view-link') === key));
+    }
+    if (scrollTo) {
+      const el = document.getElementById(scrollTo);
+      if (el) el.scrollIntoView();
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }
+
+  function route() {
+    const id = decodeURIComponent((location.hash || '').slice(1));
+    if (!id) {
+      activate('terms');
+      return;
+    }
+    const key = viewOf(id);
+    if (key) activate(key, id);
+  }
+
+  window.addEventListener('hashchange', route);
+
+  // Only a real text input counts: in spec-up-t 1.7 the id "search" belongs to
+  // an SVG icon symbol, not to a field.
+  const search = document.querySelector('input[type="search"], input#search');
+  if (search) {
+    const sync = () =>
+      document.body.classList.toggle('search-all', (search.value || '').trim().length > 0);
+    search.addEventListener('input', sync);
+    sync();
+  }
+
+  route();
 }

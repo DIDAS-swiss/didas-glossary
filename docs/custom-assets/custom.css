@@ -172,3 +172,45 @@ a[logo] img,
 h1, h2, h3 {
   letter-spacing: -0.01em;
 }
+
+/* === sectioned views ===================================================
+   The horizontal section menu in the masthead, in the same design language
+   as the other DIDAS sites, and the show-one-view rule it drives. A
+   non-empty search (body.search-all) shows the whole document; print always
+   does. */
+.site-masthead .views {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 20px;
+  max-width: var(--mh-width);
+  margin-inline: auto;
+  padding-inline: 24px;
+  padding-block: 0 8px;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.site-masthead .views a {
+  color: var(--mh-ink);
+  text-decoration: none;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+.site-masthead .views a:hover { color: var(--mh-hover); }
+.site-masthead .views a[aria-current="true"] {
+  color: var(--mh-hover);
+  border-bottom-color: currentColor;
+}
+
+body[data-active-view="overview"]:not(.search-all) #content > [data-view]:not([data-view="overview"]),
+body[data-active-view="terms"]:not(.search-all) #content > [data-view]:not([data-view="terms"]),
+body[data-active-view="mapping"]:not(.search-all) #content > [data-view]:not([data-view="mapping"]),
+body[data-active-view="contributing"]:not(.search-all) #content > [data-view]:not([data-view="contributing"]) {
+  display: none;
+}
+@media print {
+  #content > [data-view] { display: revert !important; }
+  .site-masthead .views { display: none; }
+}
+#content [id] { scroll-margin-top: 12px; }
