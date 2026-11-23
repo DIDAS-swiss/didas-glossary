@@ -143,6 +143,11 @@ authority to another (the policy is in
   aggregated in
   the [EU-CH Interoperability Mapping section](#eu-ch-interoperability-mapping) of this glossary (`spec/eu-mapping.md`);
   update its row in the same PR.
+- **EU terms recorded for mapping are marked as such.** An entry for an EU
+  term (e.g. *electronic attestation of attributes*) starts its body with
+  `~ Normative space: eIDAS 2 / EU ARF` and includes the sentence "… does not
+  make eIDAS or ARF requirements applicable in the swiyu context". Only such an
+  entry may use EU vocabulary outside a mapping line.
 - **Terminology sources are not specifications.** The official swiyu
   translation termbase and similar terminology material feed the
   language-equivalents block (attributed, e.g. "official swiyu translation")

@@ -54,10 +54,14 @@ Rules that follow:
    ToIP trust-registry), the entry records the correspondence and classifies
    it (equivalent / narrower / broader / related but not equivalent), rather
    than treating same-sounding terms as the same concept.
-3. **"Does not imply" guards the boundary.** An entry that cites an EU or
+3. **EU terms get their own entries, clearly marked.** A term of the EU
+   framework that the glossary records for mapping (e.g. EAA, QEAA) carries a
+   `~ Normative space: eIDAS 2 / EU ARF` paragraph and states that nothing in
+   it applies in the swiyu context.
+4. **"Does not imply" guards the boundary.** An entry that cites an EU or
    ToIP concept for mapping purposes states that the citation does not make
    that framework's requirements applicable in the swiyu context.
-4. **Terminology sources are a fourth, non-normative input.** Official
+5. **Terminology sources are a fourth, non-normative input.** Official
    translation sources (e.g. the swiyu translation termbase) and terminology
    documentation inform the language-equivalents blocks and candidate lists;
    they define nothing and are cited as terminology, not as specification.
