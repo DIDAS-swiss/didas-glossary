@@ -105,7 +105,11 @@ does not detect plain URLs, so a pasted link is never updated.
 
 `npm run check:toip` enforces all of this: one relation line per term, every
 `[[xref:]]` resolving to a cached upstream definition, every `[[ref:]]`
-resolving to a term this glossary defines and no bare upstream URLs. It runs in
+resolving to a term this glossary defines and no bare upstream URLs. It also
+enforces the normative scope separation: EU-framework vocabulary only inside a
+labelled `~ Relation to eIDAS/ARF:` paragraph that classifies the relationship
+and carries a does-not-imply sentence, and normative wording (MUST/SHOULD/MAY)
+only in paragraphs that cite a Swiss source. It runs in
 CI on every pull request that touches a term.
 
 ### Normative scope separation

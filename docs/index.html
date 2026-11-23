@@ -715,7 +715,7 @@ customElements.define("slide-panels",class extends HTMLElement{static get observ
 </dd><dd>
 <p>Where statements are published and retrieved: the <a href="https://swiyu-admin-ch.github.io/specifications/swiss-profile-trust/">Swiss Profile Trust</a> names the swiyu Trust Registry as the component through which applicable statements are published and served, and names the root trust anchors. The registry is infrastructure for publication and retrieval; it does not decide what an actor may do.</p>
 </dd><dd>
-<p>Does not imply: a valid statement does not by itself establish that an interaction may proceed, oblige a relying party to accept the interaction, or establish the factual truth of information outside the statement’s defined semantics. A statement that fails validation <strong>MUST NOT</strong> contribute to setting the corresponding <a class="term-reference" href="#term:trust-marker">trust marker</a>.</p>
+<p>Does not imply: a valid statement does not by itself establish that an interaction may proceed, oblige a relying party to accept the interaction, or establish the factual truth of information outside the statement’s defined semantics. A statement that fails validation <strong>MUST NOT</strong> contribute to setting the corresponding <a class="term-reference" href="#term:trust-marker">trust marker</a> (<a href="https://swiyu-admin-ch.github.io/specifications/trust-protocol-v2-0/">Trust Protocol 2.0</a>).</p>
 </dd><dd>
 <p>Language equivalents:</p>
 </dd><dd>
@@ -929,7 +929,11 @@ attached, and the federation workflow keeps that definition current. The workflo
 does not detect plain URLs, so a pasted link is never updated.</p>
 <p><code>npm run check:toip</code> enforces all of this: one relation line per term, every
 <code>[[xref:]]</code> resolving to a cached upstream definition, every <code>[[ref:]]</code>
-resolving to a term this glossary defines and no bare upstream URLs. It runs in
+resolving to a term this glossary defines and no bare upstream URLs. It also
+enforces the normative scope separation: EU-framework vocabulary only inside a
+labelled <code>~ Relation to eIDAS/ARF:</code> paragraph that classifies the relationship
+and carries a does-not-imply sentence, and normative wording (MUST/SHOULD/MAY)
+only in paragraphs that cite a Swiss source. It runs in
 CI on every pull request that touches a term.</p>
 <h3 id="normative-scope-separation" tabindex="-1"><a class="toc-anchor d-print-none" href="#normative-scope-separation">§</a> Normative scope separation</h3>
 <p>Entries draw on three normative spaces, and an entry must never let one lend
@@ -1111,8 +1115,8 @@ of repeating it.</p>
                 <div id="build-info" class="small text-muted">
                     <div class="d-flex align-items-center mb-1">
                         <i class="bi bi-calendar-event me-2"></i>
-                        <time class="timestamp" datetime="2026-11-23T19:58:00.693Z">
-                            Generated: 2026-11-23T19:58:00.693Z
+                        <time class="timestamp" datetime="2026-11-23T20:04:48.376Z">
+                            Generated: 2026-11-23T20:04:48.376Z
                         </time>
                     </div>
                     <div class="d-flex align-items-center mb-1">
