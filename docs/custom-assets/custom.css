@@ -31,7 +31,7 @@
   --mh-ink:   var(--bs-secondary-color);
   --mh-hover: var(--didas-accent);
   --mh-wash:  var(--bs-tertiary-bg);
-  --mh-width: 100%;   /* the glossary lays out full width, so the bar spans it */
+  --mh-width: 100%;   /* fallback; custom-body.js sets it to the page container's width */
 
   border-bottom: 1px solid var(--mh-rule);
   background: var(--bs-body-bg);
@@ -214,3 +214,73 @@ body[data-active-view="contributing"]:not(.search-all) #content > [data-view]:no
   .site-masthead .views { display: none; }
 }
 #content [id] { scroll-margin-top: 12px; }
+
+/* === search with autocomplete =========================================== */
+.site-masthead .views { align-items: center; }
+.didas-search {
+  position: relative;
+  margin-left: auto;
+  min-width: 0;
+  flex: 0 1 260px;
+}
+.didas-search input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  padding: 5px 9px;
+  border: 1px solid var(--mh-rule);
+  border-radius: 4px;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+.didas-search input:focus {
+  outline: 2px solid var(--mh-hover);
+  outline-offset: -1px;
+}
+.didas-search ul {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 1050;
+  width: min(420px, calc(100vw - 32px));
+  max-height: 60vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--mh-rule);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.didas-search li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 10px;
+  padding: 7px 12px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+.didas-search li[aria-selected="true"],
+.didas-search li:hover { background: var(--mh-wash); }
+.didas-search li .label { color: var(--bs-body-color); font-weight: 500; }
+.didas-search li .meta {
+  color: var(--mh-ink);
+  font-size: 0.72rem;
+  align-self: center;
+}
+.didas-search li .snip {
+  grid-column: 1 / -1;
+  color: var(--mh-ink);
+  font-size: 0.76rem;
+  margin-top: 2px;
+}
+.didas-search li.empty { color: var(--mh-ink); cursor: default; }
+@media (max-width: 575.98px) {
+  .didas-search { flex-basis: 100%; margin-left: 0; }
+}

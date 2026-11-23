@@ -205,6 +205,8 @@ function start() {
   bridge();
   wireFont();
   views();
+  termSearch();
+  alignMasthead();
 }
 
 if (document.readyState === 'loading') {
@@ -339,4 +341,225 @@ function views() {
   }
 
   route();
+}
+
+/* Search with autocomplete. The spec-up-t 1.7 page has no search field, and
+ * with sectioned views the browser's find-in-page only sees the active view.
+ * This field searches the whole document: term names and all their aliases
+ * (so DE/FR/IT/RM names find the English entry), section headings, and the
+ * definition text. Choosing a suggestion sets the location hash, so the view
+ * layer switches to the right view and scrolls to the target.
+ */
+function termSearch() {
+  const content = document.getElementById('content');
+  const host = document.querySelector('.site-masthead .views') ||
+    document.querySelector('.site-masthead .bar');
+  if (!content || !host) return;
+
+  const fold = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+
+  const entries = [];
+  for (const dt of content.querySelectorAll('dl dt')) {
+    const anchors = dt.querySelectorAll('[id^="term:"]');
+    const original = dt.querySelector('.term-original-term');
+    if (!anchors.length || !original) continue;
+    const label = original.textContent.trim();
+    const paren = dt.querySelector('.term-local-parenthetical-terms');
+    const aliases = paren
+      ? paren.textContent.replace(/^\(|\)$/g, '').split(',').map((a) => a.trim()).filter(Boolean)
+      : [];
+    // The heading shows one alias as its visible text: the first text node of
+    // the innermost anchor span.
+    const display = anchors[anchors.length - 1].firstChild;
+    if (display && display.nodeType === 3 && display.textContent.trim()) aliases.push(display.textContent.trim());
+    let text = '';
+    for (let n = dt.nextElementSibling; n && n.tagName === 'DD'; n = n.nextElementSibling) {
+      text += ' ' + n.textContent;
+    }
+    text = text.replace(/\s+/g, ' ').trim();
+    // One list drives both matching and the "alias: …" note, so they agree.
+    const all = [...new Set([label, ...aliases])];
+    entries.push({
+      kind: 'term',
+      id: anchors[anchors.length - 1].id,
+      label,
+      aliases: all.slice(1),
+      names: all.map(fold),
+      text,
+      folded: fold(text),
+    });
+  }
+  for (const h of content.querySelectorAll(':scope > h1[id], :scope > h2[id]')) {
+    const label = h.textContent.replace(/^\s*§\s*(\d+\.\s*)?/, '').trim();
+    entries.push({ kind: 'section', id: h.id, label, aliases: [], names: [fold(label)], text: '', folded: '' });
+  }
+  if (!entries.length) return;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'didas-search';
+  wrap.innerHTML = `
+    <input type="search" id="didas-search-input" autocomplete="off" spellcheck="false"
+      placeholder="Search terms…" aria-label="Search the glossary"
+      role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="didas-search-list">
+    <ul id="didas-search-list" role="listbox" hidden></ul>`;
+  host.appendChild(wrap);
+  const input = wrap.querySelector('input');
+  const list = wrap.querySelector('ul');
+  let results = [];
+  let active = -1;
+
+  function snippet(entry, q) {
+    const i = entry.folded.indexOf(q);
+    if (i < 0) return '';
+    const start = Math.max(0, i - 40);
+    return (start > 0 ? '…' : '') + entry.text.slice(start, i + q.length + 60).trim() + '…';
+  }
+
+  function search(raw) {
+    const q = fold(raw.trim());
+    if (!q) return [];
+    const scored = [];
+    for (const e of entries) {
+      let score = 0;
+      let via = '';
+      for (let k = 0; k < e.names.length; k++) {
+        const n = e.names[k];
+        const s = n === q ? 100 : n.startsWith(q) ? 80 : n.includes(q) ? 60 : 0;
+        if (s > score) {
+          score = s;
+          via = k === 0 ? '' : e.aliases[k - 1] || '';
+        }
+      }
+      if (e.kind === 'section' && score) score -= 15;
+      let snip = '';
+      if (!score && e.folded.includes(q)) {
+        score = 20;
+        snip = snippet(e, q);
+      }
+      if (score) scored.push({ e, score, via, snip });
+    }
+    return scored
+      .sort((a, b) => b.score - a.score || a.e.label.localeCompare(b.e.label))
+      .slice(0, 10);
+  }
+
+  function render() {
+    list.innerHTML = '';
+    if (!results.length) {
+      const li = document.createElement('li');
+      li.className = 'empty';
+      li.textContent = 'No matches';
+      list.appendChild(li);
+    }
+    results.forEach((r, i) => {
+      const li = document.createElement('li');
+      li.id = 'didas-search-opt-' + i;
+      li.setAttribute('role', 'option');
+      li.setAttribute('aria-selected', String(i === active));
+      const title = document.createElement('span');
+      title.className = 'label';
+      title.textContent = r.e.label;
+      li.appendChild(title);
+      const meta = document.createElement('span');
+      meta.className = 'meta';
+      meta.textContent = r.e.kind === 'section' ? 'section'
+        : r.via ? 'alias: ' + r.via
+        : r.snip ? 'in definition' : 'term';
+      li.appendChild(meta);
+      if (r.snip) {
+        const s = document.createElement('span');
+        s.className = 'snip';
+        s.textContent = r.snip;
+        li.appendChild(s);
+      }
+      li.addEventListener('mousedown', (ev) => {
+        ev.preventDefault();
+        go(i);
+      });
+      list.appendChild(li);
+    });
+    list.hidden = false;
+    input.setAttribute('aria-expanded', 'true');
+    input.setAttribute('aria-activedescendant', active >= 0 ? 'didas-search-opt-' + active : '');
+  }
+
+  function close() {
+    list.hidden = true;
+    active = -1;
+    input.setAttribute('aria-expanded', 'false');
+    input.removeAttribute('aria-activedescendant');
+  }
+
+  function go(i) {
+    const r = results[i];
+    if (!r) return;
+    const hash = '#' + r.e.id;
+    if (location.hash === hash) {
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
+    } else {
+      location.hash = hash;
+    }
+    input.value = '';
+    close();
+    input.blur();
+  }
+
+  input.addEventListener('input', () => {
+    results = search(input.value);
+    active = results.length ? 0 : -1;
+    if (input.value.trim()) render();
+    else close();
+  });
+  input.addEventListener('keydown', (ev) => {
+    if (list.hidden && ev.key !== 'Escape') return;
+    if (ev.key === 'ArrowDown') {
+      ev.preventDefault();
+      if (results.length) active = (active + 1) % results.length;
+      render();
+    } else if (ev.key === 'ArrowUp') {
+      ev.preventDefault();
+      if (results.length) active = (active - 1 + results.length) % results.length;
+      render();
+    } else if (ev.key === 'Enter') {
+      ev.preventDefault();
+      go(active >= 0 ? active : 0);
+    } else if (ev.key === 'Escape') {
+      input.value = '';
+      close();
+    }
+  });
+  input.addEventListener('blur', () => setTimeout(close, 100));
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === '/' && document.activeElement !== input &&
+        !/INPUT|TEXTAREA/.test(document.activeElement.tagName)) {
+      ev.preventDefault();
+      input.focus();
+    }
+  });
+}
+
+/* The other DIDAS sites size the masthead to their content column
+ * (--mh-width = the page's wrap width), so the bar lines up with the text
+ * below it. Here the content sits in spec-up-t's Bootstrap container, whose
+ * width depends on the breakpoint and on the wide/narrow toggle, so the width
+ * is measured rather than hard-coded. The bar's 24px inline padding is shared
+ * across sites; adding the container's own gutter on each side puts the
+ * masthead's content edge on the container's content edge.
+ */
+function alignMasthead() {
+  const masthead = document.querySelector('.site-masthead');
+  const content = document.getElementById('content');
+  const container = content && content.closest('.container, .container-fluid');
+  if (!masthead || !container) return;
+
+  function apply() {
+    const gutter = parseFloat(getComputedStyle(container).paddingLeft) || 0;
+    const width = container.getBoundingClientRect().width;
+    masthead.style.setProperty('--mh-width', Math.round(width + 2 * (24 - gutter)) + 'px');
+  }
+
+  apply();
+  window.addEventListener('resize', apply);
+  // The width toggle swaps container and container-fluid on this element.
+  new MutationObserver(apply).observe(container, { attributes: true, attributeFilter: ['class'] });
 }
