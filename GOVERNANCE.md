@@ -31,6 +31,37 @@ Authoring conventions (file format, alias order, language-equivalents section)
 are specified in the contribution guide rendered at the end of the glossary
 (`spec/outro.md`).
 
+## Normative scope separation
+
+The glossary draws on three normative spaces, and no entry may import
+authority from one into another:
+
+| Normative space | What it governs | How it appears in an entry |
+|---|---|---|
+| **ToIP Main Glossary** | The international reference vocabulary | The ToIP relation line (`[[tref:]]` / `[[xref:]]` / "no equivalent term") per the three-tier rule |
+| **Swiss law and the Swiss Profiles** (BGEID, swiyu specifications, Trust Protocol) | What is normative **in the swiyu ecosystem** | The only admissible source for swiyu-context statements, MUST/SHOULD/MAY wording included |
+| **eIDAS 2 / EU ARF** (Regulation (EU) 2024/1183, EUDI ARF) | The EU framework | Interoperability mapping only — a clearly labelled EU-side comparison (e.g. "Relation to eIDAS/ARF: …"), never a definition source for a swiyu term |
+
+Rules that follow:
+
+1. **No silent import.** A definition, requirement or construct from one space
+   (e.g. an ARF concept such as *Wallet Unit*, or a ToIP definition) never
+   becomes a swiyu statement by proximity. If an entry states what holds in
+   the swiyu ecosystem, its source is a Swiss Profile, the Trust Protocol or
+   Swiss law — nothing else.
+2. **Mappings are explicit and classified.** Where two spaces name
+   corresponding concepts (elektronischer Nachweis ↔ EAA; trust registry ↔
+   ToIP trust-registry), the entry records the correspondence and classifies
+   it (equivalent / narrower / broader / related but not equivalent), rather
+   than treating same-sounding terms as the same concept.
+3. **"Does not imply" guards the boundary.** An entry that cites an EU or
+   ToIP concept for mapping purposes states that the citation does not make
+   that framework's requirements applicable in the swiyu context.
+4. **Terminology sources are a fourth, non-normative input.** Official
+   translation sources (e.g. the swiyu translation termbase) and terminology
+   documentation inform the language-equivalents blocks and candidate lists;
+   they define nothing and are cited as terminology, not as specification.
+
 ## Roles
 
 - **Community** — anyone may propose a new term or a change via the issue
