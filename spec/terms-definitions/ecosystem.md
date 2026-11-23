@@ -10,8 +10,10 @@
 
 ~ Language equivalents:
 
-~ [DE] **Ökosystem**
+~ [DE] **Ökosystem** (also the official swiyu translation: **(swiyu) Ökosystem**)
 
-~ [FR] **écosystème**
+~ [FR] **écosystème** (also the official swiyu translation: **écosystème (swiyu)**)
 
-~ [IT] **ecosistema**
+~ [IT] **ecosistema** (also the official swiyu translation: **ecosistema (swiyu)**)
+
+~ [RM] **ecosistem (swiyu)** (official swiyu translation)

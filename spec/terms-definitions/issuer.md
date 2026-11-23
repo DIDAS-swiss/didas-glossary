@@ -1,4 +1,4 @@
-[[def: issuer, issuers, Aussteller, Ausstellerin, émetteur, émettrice, emittente, emittenti]]
+[[def: issuer, issuers, Aussteller, Ausstellerin, ausstellende Organisation, émetteur, émettrice, emittente, emittenti]]
 
 ~ The role an actor performs when it signs a set of [[ref: claim]]s as a [[ref: credential]] and provides that credential to a [[xref: toip-glossary, holder]].
 
@@ -12,8 +12,10 @@
 
 ~ Language equivalents:
 
-~ [DE] **Aussteller**, **Ausstellerin**
+~ [DE] **Aussteller**, **Ausstellerin** — offizielle swiyu-Übersetzung: **ausstellende Organisation** (official swiyu translation, [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary))
 
-~ [FR] **émetteur**, **émettrice**
+~ [FR] **émetteur**, **émettrice** (also the official swiyu translation)
 
-~ [IT] **emittente**
+~ [IT] **emittente** (also the official swiyu translation)
+
+~ [RM] **emittent** (official swiyu translation)

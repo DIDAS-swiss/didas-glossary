@@ -31,6 +31,17 @@ paragraph of a term. Keep `Spec file` matching the filename under `_specificatio
 | `trust-infrastructure` | `swiss-profile-trust.md` | Environment specific details | root trust anchors; swiyu Trust Registry base URL | 2026-09-13 |
 | `ecosystem` | `swiss-profile-trust.md` | Introduction | identification of public ecosystem actors and protection against impersonation | 2026-09-13 |
 
+## Translation source
+
+Official DE/FR/IT/RM translations in the terms' `Language equivalents` blocks come
+from the Confederation's translation termbase
+[swiyu-admin-ch/swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary)
+(TBX, Weblate-managed). It is a terminology source, not a definition source: it is
+not federated, and the ToIP Main Glossary remains the definitional upstream.
+Baseline: `swiyu_glossary@29025eb` (verified 2026-11-23), watched by the
+`check-translation-drift` job in `check-swiyu-specs.yml`
+(`output/swiyu-specs-cache/glossary-last-seen-commit.txt`).
+
 ## Specs watched
 
 All eight spec files in `_specifications/` are watched by the drift workflow:

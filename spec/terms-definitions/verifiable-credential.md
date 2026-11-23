@@ -1,4 +1,4 @@
-[[def: verifiable credential, verifiable credentials, VC, VCs, verifizierbarer Nachweis, attestation vérifiable, attestato verificabile]]
+[[def: verifiable credential, verifiable credentials, VC, VCs, verifizierbarer Nachweis, attestation vérifiable, attestato verificabile, document vérifiable, documento verificabile]]
 
 ~ A tamper-evident [[ref: credential]] whose authorship by an [[xref: toip-glossary, issuer]] can be cryptographically verified. Verifiable credentials can be used to build verifiable [[xref: toip-glossary, presentation]]s, whose integrity can also be cryptographically verified. The [[xref: toip-glossary, claim]]s in a credential can be about different [[xref: toip-glossary, subject]]s.
 
@@ -14,8 +14,12 @@
 
 ~ Language equivalents:
 
-~ [DE] **verifizierbarer Nachweis** — im BGEID-Kontext: **elektronischer Nachweis**
+~ Two official registers exist and differ in FR/IT: the BGEID legal wording and the swiyu product terminology (official swiyu translation, [swiyu_glossary](https://github.com/swiyu-admin-ch/swiyu_glossary)). Where they differ, both are given.
 
-~ [FR] **attestation vérifiable** — dans le contexte de la LSIE: **attestation électronique**
+~ [DE] **verifizierbarer Nachweis** (also the official swiyu translation) — im BGEID-Kontext: **elektronischer Nachweis**
 
-~ [IT] **attestato verificabile** — nel contesto della LSIE: **attestato elettronico**
+~ [FR] **attestation vérifiable** — dans le contexte de la LSIE: **attestation électronique**; terminologie produit swiyu: **document vérifiable**
+
+~ [IT] **attestato verificabile** — nel contesto della LSIE: **attestato elettronico**; terminologia di prodotto swiyu: **documento verificabile**
+
+~ [RM] **cumprova verifitgabla** (official swiyu translation)
